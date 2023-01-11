@@ -4,14 +4,16 @@
  */
 exports.up = function (knex) {
   return knex.schema.createTable("meal_packs", (table) => {
-    table.increments("meal_pack_id").primary();
-    table
-      .integer("business_id")
-      .references("user_id")
-      .inTable("users")
-      .onDelete("CASCADE");
+    table.increments("id").primary();
     table.string("name").notNullable();
-    table.integer("quantity");
+    table
+      .integer("store_id")
+      .references("id")
+      .inTable("stores")
+      .onDelete("CASCADE");
+    table.boolean("is_publishing").notNullable();
+    table.boolean("is_delete").notNullable();
+    table.json("recipe");
   });
 };
 
