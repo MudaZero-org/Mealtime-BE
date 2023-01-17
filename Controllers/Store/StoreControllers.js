@@ -1,5 +1,6 @@
 const knex = require("../../db/knex");
 const { ERROR_MSGS } = require("../../Configs/Constants");
+const mealpackModel = require("../model/MealpackModel");
 
 const StoreController = {
   helloWorld: async (req, res) => {
@@ -14,7 +15,7 @@ const StoreController = {
     try {
       let { store_id } = req.params;
       store_id = Number(store_id);
-      
+
       const data = await knex
         .select({
           id: "id",
@@ -25,15 +26,38 @@ const StoreController = {
           is_delete: "is_delete",
         })
         .from("meal_packs")
-        .where("store_id", store_id)
-      
+        .where("store_id", store_id);
+
       res.status(200).json(data);
     } catch (error) {
       console.log(error);
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
     }
   },
-
+  getRecipeInfo: async (req, res) => {
+    try {
+      const recipe648470 = require("../../db/spooonacular/recipes/648470.json");
+      const recipe663323 = require("../../db/spooonacular/recipes/663323.json");
+      const recipe664206 = require("../../db/spooonacular/recipes/664206.json");
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+    }
+  },
+  getCurrentPastMealpack: async (req, res) => {
+    try {
+      const { store_id: storeId, publish_status: publishStatus } = req.params;
+      const data = await mealpackModel.getAllMealPackCurrentPast(
+        storeId,
+        publishStatus
+      );
+      console.log(data);
+      res.status(200).json(data);
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+    }
+  },
 };
 
 module.exports = StoreController;
