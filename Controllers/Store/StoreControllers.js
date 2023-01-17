@@ -27,7 +27,7 @@ const StoreController = {
         .from("meal_packs")
         .where("store_id", store_id)
       
-      res.json(data);
+      res.status(200).json(data);
     } catch (error) {
       console.log(error);
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });

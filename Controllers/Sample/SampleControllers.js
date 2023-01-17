@@ -38,11 +38,11 @@ const SampleController = {
       }
 
       if (eggplant) {
-        res.send(eggplantRecipe);
+        res.status(200).json(eggplantRecipe);
       } else if (onion && chicken) {
-        res.send(onionChicken);
+        res.status(200).json(onionChicken);
       } else if (potato && onion && carrot) {
-        res.send(potatoOnionCarrot);
+        res.status(200).json(potatoOnionCarrot);
       } else {
         res.status(500).json({
           message: "no recipe found by these ingredients",
