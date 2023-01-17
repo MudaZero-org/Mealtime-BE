@@ -13,6 +13,75 @@ const CustomerController = {
 			res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
 		}
 	},
+	logIn2: async (req, res) => {
+		try {
+			const { userEmail, userPassword } = req.body;
+			let refreshTokens = [];
+
+			let user = await userModel.getUserEmailPass(userEmail);
+
+			if (!user) {
+				return res.status(400).send({
+					email: "The email you entered isn’t connected to an account",
+				});
+			}
+
+			let isPasswordMatched = await bcrypt.compare(
+				userPassword,
+				user[0].password
+			);
+
+			if (!isPasswordMatched) {
+				return res.status(400).send({
+					error: "Email and password does not match.",
+				});
+			}
+
+			const accessToken = await jwt.sign(
+				{ userEmail },
+				process.env.SECRET_KEY,
+				{
+					algorithm: "HS256",
+					expiresIn: "1h",
+				}
+			);
+
+			if (!accessToken) {
+				return res.status(404).send({
+					error: "Token not found",
+				});
+			}
+
+			const refreshToken = await jwt.sign(
+				{ userEmail },
+				process.env.SECRET_KEY,
+				{
+					algorithm: "HS256",
+					expiresIn: "5m",
+				}
+			);
+
+			refreshTokens.push(refreshToken);
+
+			const secret = process.env.SECRET_KEY;
+			let verifiedToken = await jwt.verify(
+				accessToken,
+				secret,
+				(err, decoded) => {
+					if (!err) {
+						req.body.userEmail = decoded.userEmail;
+					}
+				}
+			);
+
+			let userData = await userModel.getUserByEmail(userEmail);
+
+			res.send({ userData, accessToken, refreshToken });
+		} catch (error) {
+			console.log(error);
+			res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+		}
+	},
 
 	logIn: async (req, res) => {
 		try {
@@ -73,9 +142,6 @@ const CustomerController = {
 										});
 									});
 							} else {
-								res.status(403).send({
-									error: "Invalid token",
-								});
 							}
 						});
 					} else {
@@ -84,11 +150,64 @@ const CustomerController = {
 						});
 					}
 				} else {
-					res.status(400).send({
-						error: "Email and password does not match.",
-					});
 				}
 			}
+		} catch (error) {
+			console.log(error);
+			res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+		}
+	},
+	signUp2: async (req, res) => {
+		try {
+			let user = await userModel.getUserEmailPass(req.body.email);
+
+			if (user.length !== 0) {
+				return res.status(401).send({
+					message: "This email address is already taken",
+				});
+			}
+
+			let hashedPassword = await bcrypt.hashSync(req.body.password, 10);
+			req.body.password = hashedPassword;
+
+			await userModel.saveUserData(req.body);
+
+			const { userEmail } = req.body;
+
+			const accessToken = await jwt.sign(
+				{ userEmail },
+				process.env.SECRET_KEY,
+				{
+					algorithm: "HS256",
+					expiresIn: "1h",
+				}
+			);
+
+			if (!accessToken) {
+				return res.status(404).send({
+					error: "Token not found",
+				});
+			}
+
+			const refreshToken = await jwt.sign(
+				{ userEmail: req.body.email },
+				process.env.SECRET_KEY,
+				{
+					algorithm: "HS256",
+					expiresIn: "5m",
+				}
+			);
+
+			const secret = process.env.SECRET_KEY;
+			let verifiedToken = jwt.verify(accessToken, secret, (err, decoded) => {
+				if (!err) {
+					req.body.userEmail = decoded.userEmail;
+				}
+			});
+
+			let userData = await userModel.getUserByEmail(req.body.email);
+
+			res.send({ userData, accessToken, refreshToken });
 		} catch (error) {
 			console.log(error);
 			res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });

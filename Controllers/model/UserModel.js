@@ -22,6 +22,16 @@ module.exports = {
 			})
 			.from("stores");
 	},
+	getUserEmailPass(userEmail) {
+		return knex
+			.select({
+				userId: "id",
+				email: "email",
+				password: "password",
+			})
+			.from("stores")
+			.where("email", "=", userEmail);
+	},
 
 	getUserByEmail(userEmail) {
 		return knex
