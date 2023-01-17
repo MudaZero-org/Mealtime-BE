@@ -1,0 +1,363 @@
+{
+  "vegetarian": false,
+  "vegan": false,
+  "glutenFree": true,
+  "dairyFree": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 4,
+  "gaps": "no",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 1,
+  "healthScore": 8,
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 69.52,
+  "extendedIngredients": [
+      {
+          "id": 5114,
+          "aisle": "Meat",
+          "image": "rotisserie-chicken.png",
+          "consistency": "SOLID",
+          "name": "chicken",
+          "nameClean": "cooked chicken",
+          "original": "3 cups diced cooked chicken",
+          "originalName": "diced cooked chicken",
+          "amount": 3.0,
+          "unit": "cups",
+          "meta": [
+              "diced",
+              "cooked"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 3.0,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 709.764,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 10012061,
+          "aisle": "Baking",
+          "image": "almonds-slivered.png",
+          "consistency": "SOLID",
+          "name": "slivered almonds",
+          "nameClean": "slivered almonds",
+          "original": "1/4 cup toasted slivered almonds",
+          "originalName": "toasted slivered almonds",
+          "amount": 0.25,
+          "unit": "cup",
+          "meta": [
+              "toasted"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.25,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 59.147,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 1039354,
+          "aisle": "Canned and Jarred",
+          "image": "pineapple-with-can.png",
+          "consistency": "SOLID",
+          "name": "pineapple tidbits",
+          "nameClean": "pineapple tidbits",
+          "original": "1 cup pineapple tidbits",
+          "originalName": "pineapple tidbits",
+          "amount": 1.0,
+          "unit": "cup",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "cup",
+                  "unitLong": "cup"
+              },
+              "metric": {
+                  "amount": 236.588,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 11291,
+          "aisle": "Produce",
+          "image": "spring-onions.jpg",
+          "consistency": "SOLID",
+          "name": "green onions",
+          "nameClean": "spring onions",
+          "original": "2 tablespoons sliced green onions",
+          "originalName": "sliced green onions",
+          "amount": 2.0,
+          "unit": "tablespoons",
+          "meta": [
+              "sliced"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 2.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              },
+              "metric": {
+                  "amount": 2.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              }
+          }
+      },
+      {
+          "id": 11590,
+          "aisle": "Canned and Jarred;Ethnic Foods",
+          "image": "water-chestnuts.png",
+          "consistency": "SOLID",
+          "name": "water chestnuts",
+          "nameClean": "canned water chestnuts",
+          "original": "1 5 oz. can water chestnuts, drained",
+          "originalName": "water chestnuts, drained",
+          "amount": 5.0,
+          "unit": "oz",
+          "meta": [
+              "drained",
+              "canned"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 5.0,
+                  "unitShort": "oz",
+                  "unitLong": "ounces"
+              },
+              "metric": {
+                  "amount": 141.748,
+                  "unitShort": "g",
+                  "unitLong": "grams"
+              }
+          }
+      },
+      {
+          "id": 1056,
+          "aisle": "Milk, Eggs, Other Dairy",
+          "image": "sour-cream.jpg",
+          "consistency": "SOLID",
+          "name": "cream",
+          "nameClean": "sour cream",
+          "original": "3/4 cup sour cream",
+          "originalName": "sour cream",
+          "amount": 0.75,
+          "unit": "cup",
+          "meta": [
+              "sour"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.75,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 177.441,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 2021,
+          "aisle": "Spices and Seasonings",
+          "image": "ginger.png",
+          "consistency": "SOLID",
+          "name": "ground ginger",
+          "nameClean": "ginger powder",
+          "original": "1 teaspoon ground ginger",
+          "originalName": "ground ginger",
+          "amount": 1.0,
+          "unit": "teaspoon",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "tsp",
+                  "unitLong": "teaspoon"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "tsp",
+                  "unitLong": "teaspoon"
+              }
+          }
+      },
+      {
+          "id": 2047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt.jpg",
+          "consistency": "SOLID",
+          "name": "salt",
+          "nameClean": "table salt",
+          "original": "1/2 teaspoon salt",
+          "originalName": "salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 0.5,
+                  "unitShort": "tsps",
+                  "unitLong": "teaspoons"
+              },
+              "metric": {
+                  "amount": 0.5,
+                  "unitShort": "tsps",
+                  "unitLong": "teaspoons"
+              }
+          }
+      },
+      {
+          "id": 1002030,
+          "aisle": "Spices and Seasonings",
+          "image": "pepper.jpg",
+          "consistency": "SOLID",
+          "name": "pepper",
+          "nameClean": "black pepper",
+          "original": "Dash pepper",
+          "originalName": "pepper",
+          "amount": 1.0,
+          "unit": "Dash",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "Dash",
+                  "unitLong": "Dash"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "Dash",
+                  "unitLong": "Dash"
+              }
+          }
+      }
+  ],
+  "id": 632821,
+  "title": "Asian Chicken Salad",
+  "readyInMinutes": 45,
+  "servings": 8,
+  "sourceUrl": "https://www.foodista.com/recipe/GTBZT3NS/asian-chicken-salad",
+  "image": "https://spoonacular.com/recipeImages/632821-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "Asian Chicken Salad is a main course that serves 8. Watching your figure? This gluten free and primal recipe has <b>183 calories</b>, <b>15g of protein</b>, and <b>9g of fat</b> per serving. For <b>70 cents per serving</b>, this recipe <b>covers 8%</b> of your daily requirements of vitamins and minerals. If you have pepper, green onions, salt, and a few other ingredients on hand, you can make it. 1 person were glad they tried this recipe. It is brought to you by Foodista. This recipe is typical of Asian cuisine. From preparation to the plate, this recipe takes about <b>45 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 21%</b>. This score is rather bad. If you like this recipe, take a look at these similar recipes: <a href=\"https://spoonacular.com/recipes/asian-chicken-salad-491436\">Asian Chicken Salad</a>, <a href=\"https://spoonacular.com/recipes/asian-chicken-salad-160595\">Asian Chicken Salad</a>, and <a href=\"https://spoonacular.com/recipes/asian-chicken-salad-290463\">Asian Chicken Salad</a>.",
+  "cuisines": [
+      "Asian"
+  ],
+  "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+  ],
+  "diets": [
+      "gluten free",
+      "primal"
+  ],
+  "occasions": [],
+  "winePairing": {
+      "pairedWines": [
+          "riesling",
+          "gewurztraminer",
+          "chenin blanc"
+      ],
+      "pairingText": "Asian works really well with Riesling, Gewurztraminer, and Chenin Blanc. The best wine for Asian food depends on the cuisine and dish - of course - but these acidic whites pair with a number of traditional meals, spicy or not. You could try J.J. Prum Graacher Himmelreich Kabinett Riesling. Reviewers quite like it with a 4.4 out of 5 star rating and a price of about 22 dollars per bottle.",
+      "productMatches": [
+          {
+              "id": 437965,
+              "title": "J.J. Prum Graacher Himmelreich Kabinett Riesling",
+              "description": "",
+              "price": "$21.99",
+              "imageUrl": "https://spoonacular.com/productImages/437965-312x231.jpg",
+              "averageRating": 0.8800000000000001,
+              "ratingCount": 19.0,
+              "score": 0.8627586206896553,
+              "link": "https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Fjj-prum-graacher-himmelreich-kabinett-riesling-1998%2F9594"
+          }
+      ]
+  },
+  "instructions": "Combine and chill first 5 ingredients. Blend sour cream, ginger, salt and pepper; add to chicken mixture. Toss lightly. Serve with toasted almonds. Serves 6-8.",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "Combine and chill first 5 ingredients. Blend sour cream, ginger, salt and pepper; add to chicken mixture. Toss lightly.",
+                  "ingredients": [
+                      {
+                          "id": 1102047,
+                          "name": "salt and pepper",
+                          "localizedName": "salt and pepper",
+                          "image": "salt-and-pepper.jpg"
+                      },
+                      {
+                          "id": 1056,
+                          "name": "sour cream",
+                          "localizedName": "sour cream",
+                          "image": "sour-cream.jpg"
+                      },
+                      {
+                          "id": 5006,
+                          "name": "whole chicken",
+                          "localizedName": "whole chicken",
+                          "image": "whole-chicken.jpg"
+                      },
+                      {
+                          "id": 11216,
+                          "name": "ginger",
+                          "localizedName": "ginger",
+                          "image": "ginger.png"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 2,
+                  "step": "Serve with toasted almonds.",
+                  "ingredients": [
+                      {
+                          "id": 12061,
+                          "name": "almonds",
+                          "localizedName": "almonds",
+                          "image": "almonds.jpg"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 3,
+                  "step": "Serves 6-8.",
+                  "ingredients": [],
+                  "equipment": []
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/asian-chicken-salad-632821"
+}

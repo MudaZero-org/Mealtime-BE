@@ -1,0 +1,400 @@
+{
+  "vegetarian": true,
+  "vegan": false,
+  "glutenFree": true,
+  "dairyFree": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 5,
+  "gaps": "no",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 1,
+  "healthScore": 5,
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 66.44,
+  "extendedIngredients": [
+      {
+          "id": 11124,
+          "aisle": "Produce",
+          "image": "sliced-carrot.png",
+          "consistency": "SOLID",
+          "name": "carrots",
+          "nameClean": "carrot",
+          "original": "2 medium carrots peeled and grated",
+          "originalName": "carrots peeled and grated",
+          "amount": 2.0,
+          "unit": "medium",
+          "meta": [
+              "grated",
+              "peeled"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 2.0,
+                  "unitShort": "medium",
+                  "unitLong": "mediums"
+              },
+              "metric": {
+                  "amount": 2.0,
+                  "unitShort": "medium",
+                  "unitLong": "mediums"
+              }
+          }
+      },
+      {
+          "id": 11143,
+          "aisle": "Produce",
+          "image": "celery.jpg",
+          "consistency": "SOLID",
+          "name": "celery",
+          "nameClean": "celery",
+          "original": "2 stalks celery",
+          "originalName": "celery",
+          "amount": 2.0,
+          "unit": "stalks",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 2.0,
+                  "unitShort": "stalks",
+                  "unitLong": "stalks"
+              },
+              "metric": {
+                  "amount": 2.0,
+                  "unitShort": "stalks",
+                  "unitLong": "stalks"
+              }
+          }
+      },
+      {
+          "id": 1123,
+          "aisle": "Milk, Eggs, Other Dairy",
+          "image": "egg.png",
+          "consistency": "SOLID",
+          "name": "eggs",
+          "nameClean": "egg",
+          "original": "8 eggs",
+          "originalName": "eggs",
+          "amount": 8.0,
+          "unit": "",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 8.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 8.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 1021009,
+          "aisle": "Cheese",
+          "image": "cheddar-cheese.png",
+          "consistency": "SOLID",
+          "name": "extra sharp cheddar cheese",
+          "nameClean": "extra sharp cheddar cheese",
+          "original": "1/2 cup extra sharp cheddar cheese",
+          "originalName": "extra sharp cheddar cheese",
+          "amount": 0.5,
+          "unit": "cup",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 0.5,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 118.294,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 1049003,
+          "aisle": "Produce",
+          "image": "apple.jpg",
+          "consistency": "SOLID",
+          "name": "fuji apple",
+          "nameClean": "fuji apple",
+          "original": "1 fuji apple",
+          "originalName": "fuji apple",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 4053,
+          "aisle": "Oil, Vinegar, Salad Dressing",
+          "image": "olive-oil.jpg",
+          "consistency": "LIQUID",
+          "name": "olive oil",
+          "nameClean": "olive oil",
+          "original": "3 tablespoons olive oil",
+          "originalName": "olive oil",
+          "amount": 3.0,
+          "unit": "tablespoons",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 3.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              },
+              "metric": {
+                  "amount": 3.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              }
+          }
+      },
+      {
+          "id": 11282,
+          "aisle": "Produce",
+          "image": "brown-onion.png",
+          "consistency": "SOLID",
+          "name": "onion",
+          "nameClean": "onion",
+          "original": "1/4 cup onion, diced",
+          "originalName": "onion, diced",
+          "amount": 0.25,
+          "unit": "cup",
+          "meta": [
+              "diced"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.25,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 59.147,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 11352,
+          "aisle": "Produce",
+          "image": "potatoes-yukon-gold.png",
+          "consistency": "SOLID",
+          "name": "potatoes",
+          "nameClean": "potato",
+          "original": "3 small potatoes",
+          "originalName": "potatoes",
+          "amount": 3.0,
+          "unit": "small",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 3.0,
+                  "unitShort": "small",
+                  "unitLong": "smalls"
+              },
+              "metric": {
+                  "amount": 3.0,
+                  "unitShort": "small",
+                  "unitLong": "smalls"
+              }
+          }
+      }
+  ],
+  "id": 632463,
+  "title": "Apple and Potato Fritatta",
+  "readyInMinutes": 45,
+  "servings": 8,
+  "sourceUrl": "http://www.foodista.com/recipe/ZNRH5K5W/apple-and-potato-fritatta",
+  "image": "https://spoonacular.com/recipeImages/632463-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "You can never have too many hor d'oeuvre recipes, so give Apple and Potato Fritattan a try. Watching your figure? This gluten free and lacto ovo vegetarian recipe has <b>209 calories</b>, <b>9g of protein</b>, and <b>12g of fat</b> per serving. This recipe serves 8 and costs 66 cents per serving. 1 person found this recipe to be flavorful and satisfying. A mixture of carrots, fuji apple, eggs, and a handful of other ingredients are all it takes to make this recipe so tasty. From preparation to the plate, this recipe takes approximately <b>45 minutes</b>. It is brought to you by Foodista. With a spoonacular <b>score of 41%</b>, this dish is pretty good. Users who liked this recipe also liked <a href=\"https://spoonacular.com/recipes/roasted-delicata-squash-and-goat-cheese-fritatta-with-an-apple-salad-with-walnuts-and-lime-562943\">Roasted Delicata Squash and Goat Cheese Fritatta with an Apple Salad with Walnuts and Lime</a>, <a href=\"https://spoonacular.com/recipes/ham-fritatta-1104528\">Ham Fritatta</a>, and <a href=\"https://spoonacular.com/recipes/summer-squash-fritatta-521826\">Summer Squash Fritatta</a>.",
+  "cuisines": [],
+  "dishTypes": [
+      "antipasti",
+      "morning meal",
+      "starter",
+      "brunch",
+      "snack",
+      "appetizer",
+      "breakfast",
+      "antipasto",
+      "hor d'oeuvre"
+  ],
+  "diets": [
+      "gluten free",
+      "lacto ovo vegetarian"
+  ],
+  "occasions": [],
+  "winePairing": {
+      "pairedWines": [
+          "sparkling wine",
+          "sparkling rose"
+      ],
+      "pairingText": "Antipasti works really well with Sparkling Wine and Sparkling rosé. If you're serving a selection of appetizers, you can't go wrong with these. Both are very food friendly and complement a variety of flavors. One wine you could try is Bodegas Naveran Dama Cava. It has 5 out of 5 stars and a bottle costs about 22 dollars.",
+      "productMatches": [
+          {
+              "id": 441149,
+              "title": "Bodegas Naveran Dama Cava",
+              "description": "One of only a few vintage Cavas made in Spain. Dama is full-bodied yet bright and crisp. The Naverán estate has been producing high-quality Cavas since 1901. All Cavas made here are from vineyards owned and controlled by the estate. Dama is fermented in the bottle (a la méthode champenoise) and aged in its lees for 24 months.\n\nCaves Navera´n is a premium Cava producer that uses estate-grown grapes. Navera´n Dama is a Cava masterpiece, a combination of Chardonnay, which gives the wine body and volume, and Parellada, which imparts a zesty, bright character that cuts through the buttery roundness of the Chardonnay. Champagne lovers will enjoy this Mediterranean \"farmer's fizz\" with oysters, raw tuna and sushi. Its fresh acidity also compliments fruit desserts, especially peaches and sliced oranges.",
+              "price": "$21.99",
+              "imageUrl": "https://spoonacular.com/productImages/441149-312x231.jpg",
+              "averageRating": 1.0,
+              "ratingCount": 5.0,
+              "score": 0.9375,
+              "link": "https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Fbodegas-naveran-dama-cava-2009%2F119100"
+          }
+      ]
+  },
+  "instructions": "<ol><li>Directions: Preheat oven to 375 degrees.  In a large saucepan over medium heat add potatoes in a single layer with 1 tbsp olive oil. Cook 5 minutes each side until just browned and opaque. Cook potatoes in batches if you have to. In the mean time crack the eggs into a large bowl and whisk together with a splash of water. Add in the carrots, celery, and salt. While the last batch of potatoes are baking thinly slice apples and onions. Add to pan with a tablespoon of olive oil after removing potatoes and cook until softened stirring occasionally. Once soft remove everything from pan add a tablespoon of oil and the egg mixture. Layer apples, onions, and potatoes into pan and cook 10 minutes or until edges are coming away from the pan. Once the bottom of </li></ol>",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "Add in the carrots, celery, and salt. While the last batch of potatoes are baking thinly slice apples and onions.",
+                  "ingredients": [
+                      {
+                          "id": 11352,
+                          "name": "potato",
+                          "localizedName": "potato",
+                          "image": "potatoes-yukon-gold.png"
+                      },
+                      {
+                          "id": 11124,
+                          "name": "carrot",
+                          "localizedName": "carrot",
+                          "image": "sliced-carrot.png"
+                      },
+                      {
+                          "id": 9003,
+                          "name": "apple",
+                          "localizedName": "apple",
+                          "image": "apple.jpg"
+                      },
+                      {
+                          "id": 11143,
+                          "name": "celery",
+                          "localizedName": "celery",
+                          "image": "celery.jpg"
+                      },
+                      {
+                          "id": 11282,
+                          "name": "onion",
+                          "localizedName": "onion",
+                          "image": "brown-onion.png"
+                      },
+                      {
+                          "id": 2047,
+                          "name": "salt",
+                          "localizedName": "salt",
+                          "image": "salt.jpg"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 2,
+                  "step": "Add to pan with a tablespoon of olive oil after removing potatoes and cook until softened stirring occasionally. Once soft remove everything from pan add a tablespoon of oil and the egg mixture.",
+                  "ingredients": [
+                      {
+                          "id": 4053,
+                          "name": "olive oil",
+                          "localizedName": "olive oil",
+                          "image": "olive-oil.jpg"
+                      },
+                      {
+                          "id": 11352,
+                          "name": "potato",
+                          "localizedName": "potato",
+                          "image": "potatoes-yukon-gold.png"
+                      },
+                      {
+                          "id": 1123,
+                          "name": "egg",
+                          "localizedName": "egg",
+                          "image": "egg.png"
+                      },
+                      {
+                          "id": 4582,
+                          "name": "cooking oil",
+                          "localizedName": "cooking oil",
+                          "image": "vegetable-oil.jpg"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404645,
+                          "name": "frying pan",
+                          "localizedName": "frying pan",
+                          "image": "pan.png"
+                      }
+                  ]
+              },
+              {
+                  "number": 3,
+                  "step": "Layer apples, onions, and potatoes into pan and cook 10 minutes or until edges are coming away from the pan. Once the bottom of",
+                  "ingredients": [
+                      {
+                          "id": 11352,
+                          "name": "potato",
+                          "localizedName": "potato",
+                          "image": "potatoes-yukon-gold.png"
+                      },
+                      {
+                          "id": 9003,
+                          "name": "apple",
+                          "localizedName": "apple",
+                          "image": "apple.jpg"
+                      },
+                      {
+                          "id": 11282,
+                          "name": "onion",
+                          "localizedName": "onion",
+                          "image": "brown-onion.png"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404645,
+                          "name": "frying pan",
+                          "localizedName": "frying pan",
+                          "image": "pan.png"
+                      }
+                  ],
+                  "length": {
+                      "number": 10,
+                      "unit": "minutes"
+                  }
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/apple-and-potato-fritatta-632463"
+}

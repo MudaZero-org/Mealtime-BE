@@ -33,16 +33,7 @@ const StoreController = {
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
     }
   },
-  getRecipeInfo: async (req, res) => {
-    try {
-      const recipe648470 = require("../../db/spooonacular/recipes/648470.json");
-      const recipe663323 = require("../../db/spooonacular/recipes/663323.json");
-      const recipe664206 = require("../../db/spooonacular/recipes/664206.json");
-    } catch (error) {
-      console.log(error);
-      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
-    }
-  },
+
 };
 
 module.exports = StoreController;
