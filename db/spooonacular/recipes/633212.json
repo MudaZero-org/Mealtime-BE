@@ -1,0 +1,378 @@
+{
+  "vegetarian": true,
+  "vegan": true,
+  "glutenFree": true,
+  "dairyFree": true,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 5,
+  "gaps": "no",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 4,
+  "healthScore": 45,
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 145.93,
+  "extendedIngredients": [
+      {
+          "id": 1002030,
+          "aisle": "Spices and Seasonings",
+          "image": "pepper.jpg",
+          "consistency": "SOLID",
+          "name": "pepper",
+          "nameClean": "black pepper",
+          "original": "1/2 teaspoon freshly-ground black pepper",
+          "originalName": "freshly-ground black pepper",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "meta": [
+              "black",
+              "freshly-ground"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.5,
+                  "unitShort": "tsps",
+                  "unitLong": "teaspoons"
+              },
+              "metric": {
+                  "amount": 0.5,
+                  "unitShort": "tsps",
+                  "unitLong": "teaspoons"
+              }
+          }
+      },
+      {
+          "id": 11209,
+          "aisle": "Produce",
+          "image": "eggplant.png",
+          "consistency": "SOLID",
+          "name": "brinjal",
+          "nameClean": "eggplant",
+          "original": "3 Brinjal large size",
+          "originalName": "Brinjal large size",
+          "amount": 3.0,
+          "unit": "large size",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 3.0,
+                  "unitShort": "large size",
+                  "unitLong": "large sizes"
+              },
+              "metric": {
+                  "amount": 3.0,
+                  "unitShort": "large size",
+                  "unitLong": "large sizes"
+              }
+          }
+      },
+      {
+          "id": 11215,
+          "aisle": "Produce",
+          "image": "garlic.png",
+          "consistency": "SOLID",
+          "name": "garlic",
+          "nameClean": "garlic",
+          "original": "4 cloves of garlic- minced",
+          "originalName": "garlic- minced",
+          "amount": 4.0,
+          "unit": "cloves",
+          "meta": [
+              "minced"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 4.0,
+                  "unitShort": "cloves",
+                  "unitLong": "cloves"
+              },
+              "metric": {
+                  "amount": 4.0,
+                  "unitShort": "cloves",
+                  "unitLong": "cloves"
+              }
+          }
+      },
+      {
+          "id": 9152,
+          "aisle": "Produce",
+          "image": "lemon-juice.jpg",
+          "consistency": "LIQUID",
+          "name": "lemon juice",
+          "nameClean": "lemon juice",
+          "original": "3 tablespoons Lemon Juice",
+          "originalName": "Lemon Juice",
+          "amount": 3.0,
+          "unit": "tablespoons",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 3.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              },
+              "metric": {
+                  "amount": 3.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              }
+          }
+      },
+      {
+          "id": 1034053,
+          "aisle": "Oil, Vinegar, Salad Dressing",
+          "image": "olive-oil.jpg",
+          "consistency": "LIQUID",
+          "name": "olive oil",
+          "nameClean": "extra virgin olive oil",
+          "original": "1/4 cup extra-virgin olive oil",
+          "originalName": "extra-virgin olive oil",
+          "amount": 0.25,
+          "unit": "cup",
+          "meta": [
+              "extra-virgin"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.25,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 59.147,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 11297,
+          "aisle": "Produce;Spices and Seasonings",
+          "image": "parsley.jpg",
+          "consistency": "SOLID",
+          "name": "parsley/coriander leaves",
+          "nameClean": "parsley",
+          "original": "Fresh Parsley/Coriander leaves chopped for garnish",
+          "originalName": "Fresh Parsley/Coriander leaves chopped for garnish",
+          "amount": 5.0,
+          "unit": "servings",
+          "meta": [
+              "fresh",
+              "chopped",
+              "for garnish"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 5.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 5.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 2047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt.jpg",
+          "consistency": "SOLID",
+          "name": "salt",
+          "nameClean": "table salt",
+          "original": "salt, to taste",
+          "originalName": "salt, to taste",
+          "amount": 5.0,
+          "unit": "servings",
+          "meta": [
+              "to taste"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 5.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 5.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 12698,
+          "aisle": "Ethnic Foods;Health Foods",
+          "image": "tahini-paste.png",
+          "consistency": "SOLID",
+          "name": "tahini",
+          "nameClean": "tahini",
+          "original": "1/4 cup tahini",
+          "originalName": "tahini",
+          "amount": 0.25,
+          "unit": "cup",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 0.25,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 59.147,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      }
+  ],
+  "id": 633212,
+  "title": "Baba Gonoush (Egyptian Dish)",
+  "readyInMinutes": 45,
+  "servings": 5,
+  "sourceUrl": "http://www.foodista.com/recipe/K74YCWJP/baba-gonoush-egyptian-dish",
+  "image": "https://spoonacular.com/recipeImages/633212-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "Baba Gonoush (Egyptian Dish) might be a good recipe to expand your side dish recipe box. This recipe serves 5. For <b>$1.46 per serving</b>, this recipe <b>covers 16%</b> of your daily requirements of vitamins and minerals. Watching your figure? This gluten free, dairy free, paleolithic, and lacto ovo vegetarian recipe has <b>243 calories</b>, <b>5g of protein</b>, and <b>18g of fat</b> per serving. A mixture of pepper, salt, olive oil, and a handful of other ingredients are all it takes to make this recipe so yummy. This recipe from Foodista has 4 fans. From preparation to the plate, this recipe takes around <b>45 minutes</b>. Taking all factors into account, this recipe <b>earns a spoonacular score of 79%</b>, which is solid. Try <a href=\"https://spoonacular.com/recipes/braised-egyptian-greens-with-crispy-chicken-egyptian-molokhia-888078\">Braised Egyptian Greens With Crispy Chicken (Egyptian Molokhia)</a>, <a href=\"https://spoonacular.com/recipes/egyptian-eggplant-100284\">Egyptian Eggplant</a>, and <a href=\"https://spoonacular.com/recipes/egyptian-okra-798859\">EGYPTIAN OKRA</a> for similar recipes.",
+  "cuisines": [],
+  "dishTypes": [
+      "side dish"
+  ],
+  "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "lacto ovo vegetarian",
+      "primal",
+      "whole 30",
+      "vegan"
+  ],
+  "occasions": [],
+  "winePairing": {
+      "pairedWines": [],
+      "pairingText": "",
+      "productMatches": []
+  },
+  "instructions": "<ol><li>Pierce Brinjal with the help of fork, Then grill over a flame till tender. Check tenderness by inserting fork in skin. It takes around 20-30 minutes.</li><li>Cut grilled Brinjal in two parts and scoup out flesh/pulp.</li><li>Add Tahini, Lemon juice, Olive oil, Garlic , salt and pepper and process in an electical processor.</li><li>Baba Gonoush is ready. Garnish with Olive oil and Fresh Parsley/Coriander leave and serve with Pita breadd/khubz.</li></ol>",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "Pierce Brinjal with the help of fork, Then grill over a flame till tender. Check tenderness by inserting fork in skin. It takes around 20-30 minutes.",
+                  "ingredients": [
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404706,
+                          "name": "grill",
+                          "localizedName": "grill",
+                          "image": "grill.jpg"
+                      }
+                  ],
+                  "length": {
+                      "number": 30,
+                      "unit": "minutes"
+                  }
+              },
+              {
+                  "number": 2,
+                  "step": "Cut grilled Brinjal in two parts and scoup out flesh/pulp.",
+                  "ingredients": [
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 3,
+                  "step": "Add Tahini, Lemon juice, Olive oil, Garlic , salt and pepper and process in an electical processor.Baba Gonoush is ready.",
+                  "ingredients": [
+                      {
+                          "id": 1102047,
+                          "name": "salt and pepper",
+                          "localizedName": "salt and pepper",
+                          "image": "salt-and-pepper.jpg"
+                      },
+                      {
+                          "id": 9152,
+                          "name": "lemon juice",
+                          "localizedName": "lemon juice",
+                          "image": "lemon-juice.jpg"
+                      },
+                      {
+                          "id": 4053,
+                          "name": "olive oil",
+                          "localizedName": "olive oil",
+                          "image": "olive-oil.jpg"
+                      },
+                      {
+                          "id": 11215,
+                          "name": "garlic",
+                          "localizedName": "garlic",
+                          "image": "garlic.png"
+                      },
+                      {
+                          "id": 12698,
+                          "name": "tahini",
+                          "localizedName": "tahini",
+                          "image": "tahini-paste.png"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 4,
+                  "step": "Garnish with Olive oil and Fresh Parsley/Coriander leave and serve with Pita breadd/khubz.",
+                  "ingredients": [
+                      {
+                          "id": 10511297,
+                          "name": "fresh parsley",
+                          "localizedName": "fresh parsley",
+                          "image": "parsley.jpg"
+                      },
+                      {
+                          "id": 1012013,
+                          "name": "coriander",
+                          "localizedName": "coriander",
+                          "image": "ground-coriander.jpg"
+                      },
+                      {
+                          "id": 4053,
+                          "name": "olive oil",
+                          "localizedName": "olive oil",
+                          "image": "olive-oil.jpg"
+                      },
+                      {
+                          "id": 18413,
+                          "name": "pita",
+                          "localizedName": "pita",
+                          "image": "pita-bread.jpg"
+                      }
+                  ],
+                  "equipment": []
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/baba-gonoush-egyptian-dish-633212"
+}

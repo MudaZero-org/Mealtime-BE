@@ -1,0 +1,332 @@
+{
+  "vegetarian": true,
+  "vegan": true,
+  "glutenFree": true,
+  "dairyFree": true,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 6,
+  "gaps": "no",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 2,
+  "healthScore": 6,
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 85.48,
+  "extendedIngredients": [
+      {
+          "id": 4053,
+          "aisle": "Oil, Vinegar, Salad Dressing",
+          "image": "olive-oil.jpg",
+          "consistency": "LIQUID",
+          "name": "\"chicken\" broth",
+          "nameClean": "olive oil",
+          "original": "4 tablespoons each: olive oil and liquid broth (vegetable or \"chicken\" broth, page 194 of Radiant Health, Inner Wealth",
+          "originalName": "each: olive oil and liquid broth (vegetable or \"chicken\" broth, page 194 of Radiant Health, Inner Wealth",
+          "amount": 4.0,
+          "unit": "tablespoons",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 4.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              },
+              "metric": {
+                  "amount": 4.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              }
+          }
+      },
+      {
+          "id": 11209,
+          "aisle": "Produce",
+          "image": "eggplant.png",
+          "consistency": "SOLID",
+          "name": "1 eggplant",
+          "nameClean": "eggplant",
+          "original": "pound One 1 eggplant, sliced in ¼-inch thick rounds",
+          "originalName": "One 1 eggplant, sliced in ¼-inch thick rounds",
+          "amount": 1.0,
+          "unit": "pound",
+          "meta": [
+              "thick",
+              "sliced in ¼-inch  rounds"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "lb",
+                  "unitLong": "pound"
+              },
+              "metric": {
+                  "amount": 453.592,
+                  "unitShort": "g",
+                  "unitLong": "grams"
+              }
+          }
+      },
+      {
+          "id": 1002020,
+          "aisle": "Spices and Seasonings",
+          "image": "granulated-garlic.png",
+          "consistency": "SOLID",
+          "name": "garlic granules",
+          "nameClean": "granulated garlic",
+          "original": "2 teaspoons dried garlic granules",
+          "originalName": "dried garlic granules",
+          "amount": 2.0,
+          "unit": "teaspoons",
+          "meta": [
+              "dried"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 2.0,
+                  "unitShort": "tsps",
+                  "unitLong": "teaspoons"
+              },
+              "metric": {
+                  "amount": 2.0,
+                  "unitShort": "tsps",
+                  "unitLong": "teaspoons"
+              }
+          }
+      },
+      {
+          "id": 16124,
+          "aisle": "Ethnic Foods;Condiments",
+          "image": "soy-sauce.jpg",
+          "consistency": "LIQUID",
+          "name": "soy sauce",
+          "nameClean": "soy sauce",
+          "original": "2 tablespoons plus 2 teaspoons tamari, shoyu, or soy sauce",
+          "originalName": "tamari, shoyu, or soy sauce",
+          "amount": 2.0,
+          "unit": "tablespoons",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 2.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              },
+              "metric": {
+                  "amount": 2.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              }
+          }
+      },
+      {
+          "id": 19908,
+          "aisle": "Baking",
+          "image": "raw-brown-sugar.png",
+          "consistency": "SOLID",
+          "name": "sugar",
+          "nameClean": "turbinado sugar",
+          "original": "1 teaspoon organic sugar or sucanat",
+          "originalName": "organic sugar or sucanat",
+          "amount": 1.0,
+          "unit": "teaspoon",
+          "meta": [
+              "organic"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "tsp",
+                  "unitLong": "teaspoon"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "tsp",
+                  "unitLong": "teaspoon"
+              }
+          }
+      }
+  ],
+  "id": 641811,
+  "title": "Easy and Addictive Eggplant \"Chips",
+  "readyInMinutes": 45,
+  "servings": 3,
+  "sourceUrl": "http://www.foodista.com/recipe/PDQSRC4T/easy-and-addictive-eggplant-chips",
+  "image": "https://spoonacular.com/recipeImages/641811-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "If you have roughly <b>45 minutes</b> to spend in the kitchen, Easy and Addictive Eggplant \"Chips might be a super <b>gluten free, dairy free, lacto ovo vegetarian, and vegan</b> recipe to try. This recipe serves 3. One serving contains <b>222 calories</b>, <b>3g of protein</b>, and <b>19g of fat</b>. For <b>85 cents per serving</b>, this recipe <b>covers 7%</b> of your daily requirements of vitamins and minerals. It is brought to you by Foodista. A mixture of chicken\" broth, 1 eggplant, soy sauce, and a handful of other ingredients are all it takes to make this recipe so yummy. 2 people found this recipe to be flavorful and satisfying. It works well as an American side dish. Overall, this recipe earns a <b>solid spoonacular score of 40%</b>. Users who liked this recipe also liked <a href=\"https://spoonacular.com/recipes/easy-and-addictive-eggplant-chips-1352671\">Easy and Addictive Eggplant \"Chips</a>, <a href=\"https://spoonacular.com/recipes/easy-and-addictive-eggplant-chips-1342381\">Easy and Addictive Eggplant \"Chips</a>, and <a href=\"https://spoonacular.com/recipes/totally-addictive-kale-chips-543108\">Totally Addictive Kale Chips</a>.",
+  "cuisines": [
+      "American"
+  ],
+  "dishTypes": [
+      "side dish"
+  ],
+  "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+  ],
+  "occasions": [],
+  "winePairing": {
+      "pairedWines": [],
+      "pairingText": "",
+      "productMatches": []
+  },
+  "instructions": "<ol><li>Preheat the oven to 400 F. Place the eggplant rounds in a single layer on a large cookie sheet. Whisk together all of the other items and pour over the eggplant. Turn the slices over so that the marinade can soak into the other side of the eggplant as well.*</li><li>Allow the eggplant to marinate briefly while the oven is preheating. Turn the slices over again, keeping them in a single layer. Bake them for about 10-15 minutes, or until the underside is very nicely browned.</li><li>Flip the slices over with a spatula and bake for another 5-10 minutes, or until the eggplant is very tender and looks caramelized (gooey and well browned) on both sides. Serve immediately.</li><li>You will have some sauce that doesnt quite absorb into the eggplant. It will bake onto the pan, but if you soak the pan for at least 10 minutes, it will wash off easily.</li></ol>",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "Preheat the oven to 400 F.",
+                  "ingredients": [],
+                  "equipment": [
+                      {
+                          "id": 404784,
+                          "name": "oven",
+                          "localizedName": "oven",
+                          "image": "oven.jpg",
+                          "temperature": {
+                              "number": 400.0,
+                              "unit": "Fahrenheit"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "number": 2,
+                  "step": "Place the eggplant rounds in a single layer on a large cookie sheet.",
+                  "ingredients": [
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      },
+                      {
+                          "id": 10118192,
+                          "name": "cookies",
+                          "localizedName": "cookies",
+                          "image": "shortbread-cookies.jpg"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404727,
+                          "name": "baking sheet",
+                          "localizedName": "baking sheet",
+                          "image": "baking-sheet.jpg"
+                      }
+                  ]
+              },
+              {
+                  "number": 3,
+                  "step": "Whisk together all of the other items and pour over the eggplant. Turn the slices over so that the marinade can soak into the other side of the eggplant as well.*Allow the eggplant to marinate briefly while the oven is preheating. Turn the slices over again, keeping them in a single layer.",
+                  "ingredients": [
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      },
+                      {
+                          "id": 0,
+                          "name": "marinade",
+                          "localizedName": "marinade",
+                          "image": "seasoning.png"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404661,
+                          "name": "whisk",
+                          "localizedName": "whisk",
+                          "image": "whisk.png"
+                      },
+                      {
+                          "id": 404784,
+                          "name": "oven",
+                          "localizedName": "oven",
+                          "image": "oven.jpg"
+                      }
+                  ]
+              },
+              {
+                  "number": 4,
+                  "step": "Bake them for about 10-15 minutes, or until the underside is very nicely browned.Flip the slices over with a spatula and bake for another 5-10 minutes, or until the eggplant is very tender and looks caramelized (gooey and well browned) on both sides.",
+                  "ingredients": [
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404784,
+                          "name": "oven",
+                          "localizedName": "oven",
+                          "image": "oven.jpg"
+                      },
+                      {
+                          "id": 404642,
+                          "name": "spatula",
+                          "localizedName": "spatula",
+                          "image": "spatula-or-turner.jpg"
+                      }
+                  ],
+                  "length": {
+                      "number": 25,
+                      "unit": "minutes"
+                  }
+              },
+              {
+                  "number": 5,
+                  "step": "Serve immediately.You will have some sauce that doesnt quite absorb into the eggplant. It will bake onto the pan, but if you soak the pan for at least 10 minutes, it will wash off easily.",
+                  "ingredients": [
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      },
+                      {
+                          "id": 0,
+                          "name": "sauce",
+                          "localizedName": "sauce",
+                          "image": ""
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404784,
+                          "name": "oven",
+                          "localizedName": "oven",
+                          "image": "oven.jpg"
+                      },
+                      {
+                          "id": 404645,
+                          "name": "frying pan",
+                          "localizedName": "frying pan",
+                          "image": "pan.png"
+                      }
+                  ],
+                  "length": {
+                      "number": 10,
+                      "unit": "minutes"
+                  }
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/easy-and-addictive-eggplant-chips-641811"
+}

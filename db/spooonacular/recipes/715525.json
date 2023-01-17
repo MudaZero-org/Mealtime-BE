@@ -1,0 +1,181 @@
+{
+  "vegetarian": false,
+  "vegan": false,
+  "glutenFree": true,
+  "dairyFree": true,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": true,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 17,
+  "gaps": "no",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 991,
+  "healthScore": 19,
+  "creditsText": "Jen West",
+  "sourceName": "Pink When",
+  "pricePerServing": 238.45,
+  "extendedIngredients": [
+      {
+          "id": 2063,
+          "aisle": "Produce",
+          "image": "rosemary.jpg",
+          "consistency": "SOLID",
+          "name": "fresh rosemary",
+          "nameClean": "fresh rosemary",
+          "original": "1 package fresh Rosemary (using only 2 stems)",
+          "originalName": "fresh Rosemary (using only 2 stems)",
+          "amount": 1.0,
+          "unit": "package",
+          "meta": [
+              "fresh",
+              "(using only 2 stems)"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "pkg",
+                  "unitLong": "package"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "pkg",
+                  "unitLong": "package"
+              }
+          }
+      },
+      {
+          "id": 9150,
+          "aisle": "Produce",
+          "image": "lemon.png",
+          "consistency": "SOLID",
+          "name": "lemons",
+          "nameClean": "lemon",
+          "original": "2 large lemons",
+          "originalName": "lemons",
+          "amount": 2.0,
+          "unit": "large",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 2.0,
+                  "unitShort": "large",
+                  "unitLong": "larges"
+              },
+              "metric": {
+                  "amount": 2.0,
+                  "unitShort": "large",
+                  "unitLong": "larges"
+              }
+          }
+      },
+      {
+          "id": 11282,
+          "aisle": "Produce",
+          "image": "brown-onion.png",
+          "consistency": "SOLID",
+          "name": "onion",
+          "nameClean": "onion",
+          "original": "1 medium onion",
+          "originalName": "onion",
+          "amount": 1.0,
+          "unit": "medium",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "medium",
+                  "unitLong": "medium"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "medium",
+                  "unitLong": "medium"
+              }
+          }
+      },
+      {
+          "id": 14412,
+          "aisle": "Beverages",
+          "image": "water.png",
+          "consistency": "LIQUID",
+          "name": "water",
+          "nameClean": "water",
+          "original": "1 cup water",
+          "originalName": "water",
+          "amount": 1.0,
+          "unit": "cup",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "cup",
+                  "unitLong": "cup"
+              },
+              "metric": {
+                  "amount": 236.588,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 5006,
+          "aisle": "Meat",
+          "image": "whole-chicken.jpg",
+          "consistency": "SOLID",
+          "name": "whole chicken",
+          "nameClean": "whole chicken",
+          "original": "1 4-5lb whole chicken",
+          "originalName": "whole chicken",
+          "amount": 4.0,
+          "unit": "lb",
+          "meta": [
+              "whole"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 4.0,
+                  "unitShort": "lb",
+                  "unitLong": "pounds"
+              },
+              "metric": {
+                  "amount": 1.814,
+                  "unitShort": "kgs",
+                  "unitLong": "kgs"
+              }
+          }
+      }
+  ],
+  "id": 715525,
+  "title": "Slow Cooker Rosemary Whole Chicken",
+  "readyInMinutes": 45,
+  "servings": 3,
+  "sourceUrl": "http://www.pinkwhen.com/slow-cooker-rosemary-whole-chicken/",
+  "image": "https://spoonacular.com/recipeImages/715525-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "Slow Cooker Rosemary Whole Chicken might be just the main course you are searching for. Watching your figure? This caveman, gluten free, dairy free, and primal recipe has <b>660 calories</b>, <b>55g of protein</b>, and <b>44g of fat</b> per serving. For <b>$2.38 per serving</b>, this recipe <b>covers 26%</b> of your daily requirements of vitamins and minerals. Head to the store and pick up rosemary, lemons, onion, and a few other things to make it today. To use up the onion you could follow this main course with the <a href=\"https://spoonacular.com/recipes/candy-corn-cupcakes-63881\">Candy Corn Cupcakes</a> as a dessert. 991 person have made this recipe and would make it again. From preparation to the plate, this recipe takes roughly <b>45 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 87%</b>. This score is spectacular. Try <a href=\"https://spoonacular.com/recipes/rosemary-slow-cooker-chicken-235329\">Rosemary Slow-Cooker Chicken</a>, <a href=\"https://spoonacular.com/recipes/slow-cooker-rosemary-chicken-525583\">Slow Cooker Rosemary Chicken</a>, and <a href=\"https://spoonacular.com/recipes/slow-cooker-lemon-and-rosemary-whole-chicken-542297\">Slow Cooker Lemon and Rosemary Whole Chicken</a> for similar recipes.",
+  "cuisines": [],
+  "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+  ],
+  "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "primal",
+      "whole 30",
+      "ketogenic"
+  ],
+  "occasions": [],
+  "winePairing": {},
+  "instructions": null,
+  "analyzedInstructions": [],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/slow-cooker-rosemary-whole-chicken-715525"
+}

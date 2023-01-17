@@ -1,0 +1,498 @@
+{
+  "vegetarian": true,
+  "vegan": true,
+  "glutenFree": true,
+  "dairyFree": true,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": true,
+  "weightWatcherSmartPoints": 0,
+  "gaps": "no",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 1,
+  "healthScore": 7,
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 42.3,
+  "extendedIngredients": [
+      {
+          "id": 11165,
+          "aisle": "Produce;Spices and Seasonings",
+          "image": "cilantro.png",
+          "consistency": "SOLID",
+          "name": "cilantro",
+          "nameClean": "cilantro",
+          "original": "2 tablespoons Loosely packed cilantro (coriander or chinese",
+          "originalName": "Loosely packed cilantro (coriander or chinese",
+          "amount": 2.0,
+          "unit": "tablespoons",
+          "meta": [
+              "chinese",
+              "loosely packed"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 2.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              },
+              "metric": {
+                  "amount": 2.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              }
+          }
+      },
+      {
+          "id": 11209,
+          "aisle": "Produce",
+          "image": "eggplant.png",
+          "consistency": "SOLID",
+          "name": "mediums sized eggplants",
+          "nameClean": "eggplant",
+          "original": "4 mediums Sized (2 oz. each) Chinese eggplants *",
+          "originalName": "mediums Sized each) Chinese eggplants",
+          "amount": 8.0,
+          "unit": "oz",
+          "meta": [
+              "chinese"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 8.0,
+                  "unitShort": "oz",
+                  "unitLong": "ounces"
+              },
+              "metric": {
+                  "amount": 226.796,
+                  "unitShort": "g",
+                  "unitLong": "grams"
+              }
+          }
+      },
+      {
+          "id": 10211216,
+          "aisle": "Produce",
+          "image": "ginger.png",
+          "consistency": "SOLID",
+          "name": "ginger",
+          "nameClean": "fresh ginger",
+          "original": "3/8 ounce Peeled fresh ginger (1 by ¼ piece cut",
+          "originalName": "Peeled fresh ginger (1 by ¼ piece cut",
+          "amount": 0.375,
+          "unit": "ounce",
+          "meta": [
+              "fresh",
+              "peeled"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.375,
+                  "unitShort": "oz",
+                  "unitLong": "ounces"
+              },
+              "metric": {
+                  "amount": 10.631,
+                  "unitShort": "g",
+                  "unitLong": "grams"
+              }
+          }
+      },
+      {
+          "id": 11297,
+          "aisle": "Produce;Spices and Seasonings",
+          "image": "parsley.jpg",
+          "consistency": "SOLID",
+          "name": "parsley) leaves",
+          "nameClean": "parsley",
+          "original": "Parsley) leaves",
+          "originalName": "Parsley) leaves",
+          "amount": 6.0,
+          "unit": "servings",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 6.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 6.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 1022053,
+          "aisle": "Ethnic Foods;Oil, Vinegar, Salad Dressing",
+          "image": "rice-vinegar.png",
+          "consistency": "LIQUID",
+          "name": "rice wine vinegar",
+          "nameClean": "rice vinegar",
+          "original": "1 tablespoon Rice wine vinegar",
+          "originalName": "Rice wine vinegar",
+          "amount": 1.0,
+          "unit": "tablespoon",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "Tbsp",
+                  "unitLong": "Tbsp"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "Tbsp",
+                  "unitLong": "Tbsp"
+              }
+          }
+      },
+      {
+          "id": 4058,
+          "aisle": "Ethnic Foods",
+          "image": "sesame-oil.png",
+          "consistency": "LIQUID",
+          "name": "sesame oil",
+          "nameClean": "sesame oil",
+          "original": "1 teaspoon Toasted sesame oil",
+          "originalName": "Toasted sesame oil",
+          "amount": 1.0,
+          "unit": "teaspoon",
+          "meta": [
+              "toasted"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "tsp",
+                  "unitLong": "teaspoon"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "tsp",
+                  "unitLong": "teaspoon"
+              }
+          }
+      },
+      {
+          "id": 10116124,
+          "aisle": "Ethnic Foods",
+          "image": "soy-sauce.jpg",
+          "consistency": "LIQUID",
+          "name": "tamari",
+          "nameClean": "tamari",
+          "original": "1/4 cup Tamari",
+          "originalName": "Tamari",
+          "amount": 0.25,
+          "unit": "cup",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 0.25,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 59.147,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": -1,
+          "aisle": "?",
+          "image": null,
+          "consistency": "SOLID",
+          "name": "crosswise into ¼",
+          "nameClean": null,
+          "original": "inch Crosswise into ¼ slices",
+          "originalName": "Crosswise into ¼ slices",
+          "amount": 1.0,
+          "unit": "inch",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "inch",
+                  "unitLong": "inch"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "inch",
+                  "unitLong": "inch"
+              }
+          }
+      }
+  ],
+  "id": 632849,
+  "title": "Asian Marinated Eggplant",
+  "readyInMinutes": 45,
+  "servings": 6,
+  "sourceUrl": "http://www.foodista.com/recipe/W4KWFG6Z/asian-marinated-eggplant",
+  "image": "https://spoonacular.com/recipeImages/632849-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "The recipe Asian Marinated Eggplant could satisfy your Asian craving in approximately <b>45 minutes</b>. Watching your figure? This gluten free, dairy free, lacto ovo vegetarian, and fodmap friendly recipe has <b>25 calories</b>, <b>2g of protein</b>, and <b>1g of fat</b> per serving. This recipe serves 6. For <b>42 cents per serving</b>, this recipe <b>covers 5%</b> of your daily requirements of vitamins and minerals. It is brought to you by Foodista. This recipe is liked by 1 foodies and cooks. Only a few people really liked this side dish. If you have cilantro, rice wine vinegar, ginger, and a few other ingredients on hand, you can make it. Taking all factors into account, this recipe <b>earns a spoonacular score of 19%</b>, which is rather bad. Similar recipes are <a href=\"https://spoonacular.com/recipes/marinated-eggplant-485983\">Marinated Eggplant</a>, <a href=\"https://spoonacular.com/recipes/grilled-marinated-eggplant-1298071\">Grilled Marinated Eggplant</a>, and <a href=\"https://spoonacular.com/recipes/grilled-marinated-eggplant-222756\">Grilled Marinated Eggplant</a>.",
+  "cuisines": [
+      "Asian"
+  ],
+  "dishTypes": [
+      "side dish"
+  ],
+  "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "fodmap friendly",
+      "vegan"
+  ],
+  "occasions": [],
+  "winePairing": {
+      "pairedWines": [
+          "riesling",
+          "gewurztraminer",
+          "chenin blanc"
+      ],
+      "pairingText": "Riesling, Gewurztraminer, and Chenin Blanc are great choices for Asian. The best wine for Asian food depends on the cuisine and dish - of course - but these acidic whites pair with a number of traditional meals, spicy or not. You could try Schloss Vollrads Riesling Spatlese. Reviewers quite like it with a 4.4 out of 5 star rating and a price of about 30 dollars per bottle.",
+      "productMatches": [
+          {
+              "id": 441216,
+              "title": "Schloss Vollrads Riesling Spatlese",
+              "description": "Classic natural sweet Spatlese with nice acidity and elegant, natural residual sugar. Selective harvest, gentle processing of the must, systematic clarification, slow fermentation and careful finishing are the basics for this traditional Vollrads' Riesling.This wine pairs perfectly with Asian cuisine due to the harmony of sweetness and acidity. Also interesting taste combinations can be achieved through the pairing of blue-veined cheese or a fruit dessert.",
+              "price": "$29.99",
+              "imageUrl": "https://spoonacular.com/productImages/441216-312x231.jpg",
+              "averageRating": 0.8800000000000001,
+              "ratingCount": 8.0,
+              "score": 0.8400000000000001,
+              "link": "https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Fschloss-vollrads-riesling-spatlese-2014%2F153988"
+          }
+      ]
+  },
+  "instructions": "<ol><li>* (Here they call them Japanese - the small skinny light purple or lavender ones)</li><li>Combine all ingredients EXCEPT EGGPLANT in a blender or processor. Process until smooth. Prick th eggplants several times with a fork and pull off the leaves. Cut in half lengthwise. On the open side of each half make three deep diagonal slashes in each direction. Place eggplants skin side down in a 13x9x2 oval dish.</li><li>Spoon 1 1/2 teaspoons of the marinade over each eggplant half. Rub into flesh so that it runs into the cuts. Turn eggplants skin side up. Pour remaining marinade into the dish. Let stand 45 minutes.</li><li>Turn eggplants skin side down. Cover tightly with microwave plastic wrap.</li><li>Cook at high power for 10 minutes. Prick plastic to release steam. Remove, uncover, spoon sauce over eggplants. Serve as side dish. Recommended with grilled fish steak or chicken breast (of course I'd baste that with a soy based marinade).</li><li>I may try this over a wok steamer rather than in the microwave.</li><li>WHICH REMINDS ME: Stephen, I love a dish which I have seen referred to as Yu Shaing Eggplant. Based on a Yu Shaing sauce. Which is, to some extent, translated as fish sauce (I know the yu or ju is fish) not made from it but to go with it, I gather. It is certainly not nuoc mam but I don't know if it contains it. It is rather hot and by flavor I would guess it comes from the northern provinces - perhaps NE end of China. I have also had it with fresh pork strings. Glorious. Do you have any idea what it is or a recipe??? I have been unable to find it anywhere in my Chinese library. The restaurant where I eat it is not one to give recipes or ingredients to non-Chinese (if they'd give it to the Chinese. The place is popular with the newer Chinese community here. (The old timers are all Cantonese and so well integrated that they probably consider red beans and rice their d</li></ol>",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "* (Here they call them Japanese - the small skinny light purple or lavender ones)",
+                  "ingredients": [
+                      {
+                          "id": 93811,
+                          "name": "fresh lavender",
+                          "localizedName": "fresh lavender",
+                          "image": "lavender.jpg"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 2,
+                  "step": "Combine all ingredients EXCEPT EGGPLANT in a blender or processor. Process until smooth. Prick th eggplants several times with a fork and pull off the leaves.",
+                  "ingredients": [
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404726,
+                          "name": "blender",
+                          "localizedName": "blender",
+                          "image": "blender.png"
+                      }
+                  ]
+              },
+              {
+                  "number": 3,
+                  "step": "Cut in half lengthwise. On the open side of each half make three deep diagonal slashes in each direction.",
+                  "ingredients": [],
+                  "equipment": []
+              },
+              {
+                  "number": 4,
+                  "step": "Place eggplants skin side down in a 13x9x2 oval dish.Spoon 1 1/2 teaspoons of the marinade over each eggplant half. Rub into flesh so that it runs into the cuts. Turn eggplants skin side up.",
+                  "ingredients": [
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      },
+                      {
+                          "id": 0,
+                          "name": "marinade",
+                          "localizedName": "marinade",
+                          "image": "seasoning.png"
+                      },
+                      {
+                          "id": 1012034,
+                          "name": "dry seasoning rub",
+                          "localizedName": "dry seasoning rub",
+                          "image": "seasoning.png"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 5,
+                  "step": "Pour remaining marinade into the dish.",
+                  "ingredients": [
+                      {
+                          "id": 0,
+                          "name": "marinade",
+                          "localizedName": "marinade",
+                          "image": "seasoning.png"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 6,
+                  "step": "Let stand 45 minutes.Turn eggplants skin side down. Cover tightly with microwave plastic wrap.Cook at high power for 10 minutes. Prick plastic to release steam.",
+                  "ingredients": [
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      },
+                      {
+                          "id": 10018364,
+                          "name": "wrap",
+                          "localizedName": "wrap",
+                          "image": "flour-tortilla.jpg"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404730,
+                          "name": "plastic wrap",
+                          "localizedName": "plastic wrap",
+                          "image": "plastic-wrap.jpg"
+                      },
+                      {
+                          "id": 404762,
+                          "name": "microwave",
+                          "localizedName": "microwave",
+                          "image": "microwave.jpg"
+                      }
+                  ],
+                  "length": {
+                      "number": 55,
+                      "unit": "minutes"
+                  }
+              },
+              {
+                  "number": 7,
+                  "step": "Remove, uncover, spoon sauce over eggplants.",
+                  "ingredients": [
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      },
+                      {
+                          "id": 0,
+                          "name": "sauce",
+                          "localizedName": "sauce",
+                          "image": ""
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 8,
+                  "step": "Serve as side dish. Recommended with grilled fish steak or chicken breast (of course I'd baste that with a soy based marinade).I may try this over a wok steamer rather than in the microwave.WHICH REMINDS ME: Stephen, I love a dish which I have seen referred to as Yu Shaing Eggplant. Based on a Yu Shaing sauce. Which is, to some extent, translated as fish sauce (I know the yu or ju is fish) not made from it but to go with it, I gather. It is certainly not nuoc mam but I don't know if it contains it. It is rather hot and by flavor I would guess it comes from the northern provinces - perhaps NE end of China. I have also had it with fresh pork strings. Glorious. Do you have any idea what it is or a recipe??? I have been unable to find it anywhere in my Chinese library. The restaurant where I eat it is not one to give recipes or ingredients to non-Chinese (if they'd give it to the Chinese. The place is popular with the newer Chinese community here. (The old timers are all Cantonese and so well integrated that they probably consider red beans and rice their d",
+                  "ingredients": [
+                      {
+                          "id": 5062,
+                          "name": "chicken breast",
+                          "localizedName": "chicken breast",
+                          "image": "chicken-breasts.png"
+                      },
+                      {
+                          "id": 6179,
+                          "name": "fish sauce",
+                          "localizedName": "fish sauce",
+                          "image": "asian-fish-sauce.jpg"
+                      },
+                      {
+                          "id": 10016033,
+                          "name": "red kidney beans",
+                          "localizedName": "red kidney beans",
+                          "image": "kidney-beans.jpg"
+                      },
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      },
+                      {
+                          "id": 0,
+                          "name": "marinade",
+                          "localizedName": "marinade",
+                          "image": "seasoning.png"
+                      },
+                      {
+                          "id": 0,
+                          "name": "sauce",
+                          "localizedName": "sauce",
+                          "image": ""
+                      },
+                      {
+                          "id": 23232,
+                          "name": "steak",
+                          "localizedName": "steak",
+                          "image": "ribeye-raw.jpg"
+                      },
+                      {
+                          "id": 10115261,
+                          "name": "fish",
+                          "localizedName": "fish",
+                          "image": "fish-fillet.jpg"
+                      },
+                      {
+                          "id": 10010219,
+                          "name": "pork",
+                          "localizedName": "pork",
+                          "image": "pork-tenderloin-raw.png"
+                      },
+                      {
+                          "id": 20444,
+                          "name": "rice",
+                          "localizedName": "rice",
+                          "image": "uncooked-white-rice.png"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404762,
+                          "name": "microwave",
+                          "localizedName": "microwave",
+                          "image": "microwave.jpg"
+                      },
+                      {
+                          "id": 404666,
+                          "name": "wok",
+                          "localizedName": "wok",
+                          "image": "wok.png"
+                      }
+                  ]
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/asian-marinated-eggplant-632849"
+}

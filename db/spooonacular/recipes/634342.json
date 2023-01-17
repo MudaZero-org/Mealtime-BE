@@ -1,0 +1,311 @@
+{
+  "vegetarian": true,
+  "vegan": true,
+  "glutenFree": true,
+  "dairyFree": true,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 6,
+  "gaps": "GAPS_4",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 1,
+  "healthScore": 58,
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 339.76,
+  "extendedIngredients": [
+      {
+          "id": 11209,
+          "aisle": "Produce",
+          "image": "eggplant.png",
+          "consistency": "SOLID",
+          "name": "aubergine",
+          "nameClean": "eggplant",
+          "original": "1 aubergine",
+          "originalName": "aubergine",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 11477,
+          "aisle": "Produce",
+          "image": "zucchini.jpg",
+          "consistency": "SOLID",
+          "name": "courgette",
+          "nameClean": "zucchini",
+          "original": "1 courgette",
+          "originalName": "courgette",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 1034053,
+          "aisle": "Oil, Vinegar, Salad Dressing",
+          "image": "olive-oil.jpg",
+          "consistency": "LIQUID",
+          "name": "extra virgin olive oil",
+          "nameClean": "extra virgin olive oil",
+          "original": "extra virgin olive oil",
+          "originalName": "extra virgin olive oil",
+          "amount": 1.0,
+          "unit": "serving",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "serving",
+                  "unitLong": "serving"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "serving",
+                  "unitLong": "serving"
+              }
+          }
+      },
+      {
+          "id": 11282,
+          "aisle": "Produce",
+          "image": "brown-onion.png",
+          "consistency": "SOLID",
+          "name": "onion",
+          "nameClean": "onion",
+          "original": "1 onion",
+          "originalName": "onion",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 11821,
+          "aisle": "Produce",
+          "image": "red-pepper.jpg",
+          "consistency": "SOLID",
+          "name": "bell pepper",
+          "nameClean": "red pepper",
+          "original": "1 red pepper",
+          "originalName": "red pepper",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [
+              "red"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 2047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt.jpg",
+          "consistency": "SOLID",
+          "name": "salt",
+          "nameClean": "table salt",
+          "original": "1 cup salt (common table salt is fine here)",
+          "originalName": "salt (common table salt is fine here)",
+          "amount": 1.0,
+          "unit": "cup",
+          "meta": [
+              "fine",
+              "(common table salt is here)"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "cup",
+                  "unitLong": "cup"
+              },
+              "metric": {
+                  "amount": 236.588,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      }
+  ],
+  "id": 634342,
+  "title": "Barley salad with vegetables",
+  "readyInMinutes": 45,
+  "servings": 1,
+  "sourceUrl": "http://www.foodista.com/recipe/WJG6SHB5/barley-salad-with-vegetables",
+  "image": "https://spoonacular.com/recipeImages/634342-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "The recipe Barley salad with vegetables can be made <b>in around 45 minutes</b>. For <b>$3.4 per serving</b>, you get a hor d'oeuvre that serves 1. One serving contains <b>347 calories</b>, <b>9g of protein</b>, and <b>16g of fat</b>. Head to the store and pick up salt, courgette, extra virgin olive oil, and a few other things to make it today. Only a few people made this recipe, and 1 would say it hit the spot. It is brought to you by Foodista. It is a good option if you're following a <b>gluten free, dairy free, paleolithic, and lacto ovo vegetarian</b> diet. With a spoonacular <b>score of 85%</b>, this dish is tremendous. If you like this recipe, take a look at these similar recipes: <a href=\"https://spoonacular.com/recipes/boribap-rice-and-barley-with-vegetables-207197\">Boribap (Rice and Barley with Vegetables)</a>, <a href=\"https://spoonacular.com/recipes/toasted-barley-with-mixed-vegetables-170044\">Toasted Barley with Mixed Vegetables</a>, and <a href=\"https://spoonacular.com/recipes/on-summer-salads-and-barley-with-vegetables-795102\">On summer salads and barley with vegetables</a>.",
+  "cuisines": [],
+  "dishTypes": [
+      "side dish",
+      "antipasti",
+      "salad",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+  ],
+  "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "lacto ovo vegetarian",
+      "primal",
+      "whole 30",
+      "vegan"
+  ],
+  "occasions": [],
+  "winePairing": {
+      "pairedWines": [
+          "chardonnay",
+          "sauvignon blanc",
+          "gruener veltliner"
+      ],
+      "pairingText": "Chardonnay, Sauvignon Blanc, and Gruener Veltliner are my top picks for Salad. Sauvignon Blanc and Gruner Veltliner both have herby notes that complement salads with enough acid to match tart vinaigrettes, while a Chardonnay can be a good pick for creamy salad dressings. One wine you could try is Cycles Gladiator Chardonnay. It has 4.5 out of 5 stars and a bottle costs about 13 dollars.",
+      "productMatches": [
+          {
+              "id": 449227,
+              "title": "Cycles Gladiator Chardonnay",
+              "description": "The aromatics really jump out of the glass. Papaya, peaches, andpineapple on the nose with just a hint of toasted oak. Nectarines and other stone fruit on the forepalate. Ripe, round flavors of peach juice and pineapple. Soft acidity and a lush texture wrap around the tongue towards the back of the palate.Pairs with rich, creamy flavors such as scallops in an orange beurre blanc. Also chicken alfredo, seafood fettuccine, or any pasta smothered in a cream sauce.",
+              "price": "$12.99",
+              "imageUrl": "https://spoonacular.com/productImages/449227-312x231.jpg",
+              "averageRating": 0.9,
+              "ratingCount": 5.0,
+              "score": 0.8375,
+              "link": "https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Fcycles-gladiator-chardonnay-2014%2F150383"
+          }
+      ]
+  },
+  "instructions": "<ol><li>Simply wash the vegetables and cut them in small chunks.</li><li>In a large pan cook them with some extra virgin olive oil until tender.</li><li>Season with salt and if you like with grounded pepper.</li><li>Cook the barley in salted boiling water for 10 mins. Let it cool down with some cold water and then toss with the vegetables.</li><li>A perfect summer dish with lots of veggie. You can enjoy this meal hot or cold as you prefer</li></ol>",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "Simply wash the vegetables and cut them in small chunks.In a large pan cook them with some extra virgin olive oil until tender.Season with salt and if you like with grounded pepper.Cook the barley in salted boiling water for 10 mins.",
+                  "ingredients": [
+                      {
+                          "id": 1034053,
+                          "name": "extra virgin olive oil",
+                          "localizedName": "extra virgin olive oil",
+                          "image": "olive-oil.jpg"
+                      },
+                      {
+                          "id": 11583,
+                          "name": "vegetable",
+                          "localizedName": "vegetable",
+                          "image": "mixed-vegetables.png"
+                      },
+                      {
+                          "id": 20004,
+                          "name": "barley",
+                          "localizedName": "barley",
+                          "image": "pearl-barley.png"
+                      },
+                      {
+                          "id": 1002030,
+                          "name": "pepper",
+                          "localizedName": "pepper",
+                          "image": "pepper.jpg"
+                      },
+                      {
+                          "id": 14412,
+                          "name": "water",
+                          "localizedName": "water",
+                          "image": "water.png"
+                      },
+                      {
+                          "id": 2047,
+                          "name": "salt",
+                          "localizedName": "salt",
+                          "image": "salt.jpg"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404645,
+                          "name": "frying pan",
+                          "localizedName": "frying pan",
+                          "image": "pan.png"
+                      }
+                  ],
+                  "length": {
+                      "number": 10,
+                      "unit": "minutes"
+                  }
+              },
+              {
+                  "number": 2,
+                  "step": "Let it cool down with some cold water and then toss with the vegetables.A perfect summer dish with lots of veggie. You can enjoy this meal hot or cold as you prefer",
+                  "ingredients": [
+                      {
+                          "id": 11583,
+                          "name": "vegetable",
+                          "localizedName": "vegetable",
+                          "image": "mixed-vegetables.png"
+                      },
+                      {
+                          "id": 14412,
+                          "name": "water",
+                          "localizedName": "water",
+                          "image": "water.png"
+                      }
+                  ],
+                  "equipment": []
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/barley-salad-with-vegetables-634342"
+}

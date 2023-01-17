@@ -1,0 +1,357 @@
+{
+  "vegetarian": false,
+  "vegan": false,
+  "glutenFree": true,
+  "dairyFree": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 11,
+  "gaps": "no",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 1,
+  "healthScore": 2,
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 80.85,
+  "extendedIngredients": [
+      {
+          "id": 4053,
+          "aisle": "Oil, Vinegar, Salad Dressing",
+          "image": "olive-oil.jpg",
+          "consistency": "LIQUID",
+          "name": "olive oil",
+          "nameClean": "olive oil",
+          "original": "Olive oil",
+          "originalName": "Olive oil",
+          "amount": 3.0,
+          "unit": "servings",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 3.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 3.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 1012047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt.jpg",
+          "consistency": "SOLID",
+          "name": "sea salt",
+          "nameClean": "coarse sea salt",
+          "original": "Sea salt",
+          "originalName": "Sea salt",
+          "amount": 3.0,
+          "unit": "servings",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 3.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 3.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 11209,
+          "aisle": "Produce",
+          "image": "eggplant.png",
+          "consistency": "SOLID",
+          "name": "eggplant",
+          "nameClean": "eggplant",
+          "original": "3 1/4- to 1/3-inch slices of eggplant, drained on a paper towel for 30 to 45 minutes",
+          "originalName": "eggplant, drained on a paper towel for 30 to 45 minutes",
+          "amount": 3.25,
+          "unit": "inch",
+          "meta": [
+              "drained",
+              "for 30 to 45 minutes"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 3.25,
+                  "unitShort": "inch",
+                  "unitLong": "inches"
+              },
+              "metric": {
+                  "amount": 3.25,
+                  "unitShort": "inch",
+                  "unitLong": "inches"
+              }
+          }
+      },
+      {
+          "id": 11549,
+          "aisle": "Canned and Jarred",
+          "image": "tomato-sauce-or-pasta-sauce.jpg",
+          "consistency": "SOLID",
+          "name": "tomato sauce",
+          "nameClean": "canned tomato sauce",
+          "original": "1/3 cup tomato sauce",
+          "originalName": "tomato sauce",
+          "amount": 0.33333334,
+          "unit": "cup",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 0.333,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 78.863,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 1041009,
+          "aisle": "Cheese",
+          "image": "cheddar-cheese.png",
+          "consistency": "SOLID",
+          "name": "cheese",
+          "nameClean": "cheese",
+          "original": "1 cup grated cheese",
+          "originalName": "grated cheese",
+          "amount": 1.0,
+          "unit": "cup",
+          "meta": [
+              "grated"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "cup",
+                  "unitLong": "cup"
+              },
+              "metric": {
+                  "amount": 236.588,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 7057,
+          "aisle": "Meat",
+          "image": "pepperoni.png",
+          "consistency": "SOLID",
+          "name": "pepperoni",
+          "nameClean": "pepperoni",
+          "original": "About 12 slices of pepperoni",
+          "originalName": "About of pepperoni",
+          "amount": 12.0,
+          "unit": "slices",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 12.0,
+                  "unitShort": "slice",
+                  "unitLong": "slices"
+              },
+              "metric": {
+                  "amount": 12.0,
+                  "unitShort": "slice",
+                  "unitLong": "slices"
+              }
+          }
+      }
+  ],
+  "id": 651956,
+  "title": "Mini eggplant pizza",
+  "readyInMinutes": 45,
+  "servings": 3,
+  "sourceUrl": "https://www.foodista.com/recipe/2R5MSMN3/mini-eggplant-pizza",
+  "image": "https://spoonacular.com/recipeImages/651956-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "If you want to add more <b>Mediterranean</b> recipes to your repertoire, Mini eggplant pizza might be a recipe you should try. For <b>81 cents per serving</b>, you get a hor d'oeuvre that serves 3. One serving contains <b>325 calories</b>, <b>11g of protein</b>, and <b>31g of fat</b>. From preparation to the plate, this recipe takes around <b>45 minutes</b>. It is a good option if you're following a <b>gluten free and primal</b> diet. Head to the store and pick up olive oil, sea salt, pepperoni, and a few other things to make it today. It is brought to you by Foodista. 1 person were glad they tried this recipe. Overall, this recipe earns a <b>not so great spoonacular score of 23%</b>. Try <a href=\"https://spoonacular.com/recipes/mini-eggplant-parmesan-331709\">Mini Eggplant Parmesan</a>, <a href=\"https://spoonacular.com/recipes/mini-eggplant-crust-pizzas-103649\">Mini Eggplant Crust Pizzas</a>, and <a href=\"https://spoonacular.com/recipes/mini-eggplant-parm-roasted-cherry-tomato-basil-pesto-751511\">Mini Eggplant Parm, Roasted Cherry Tomato, Basil Pesto</a> for similar recipes.",
+  "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+  ],
+  "dishTypes": [
+      "antipasti",
+      "starter",
+      "snack",
+      "appetizer",
+      "antipasto",
+      "hor d'oeuvre"
+  ],
+  "diets": [
+      "gluten free",
+      "primal"
+  ],
+  "occasions": [],
+  "winePairing": {
+      "pairedWines": [
+          "sparkling wine",
+          "sparkling rose"
+      ],
+      "pairingText": "Antipasti on the menu? Try pairing with Sparkling Wine and Sparkling rosé. If you're serving a selection of appetizers, you can't go wrong with these. Both are very food friendly and complement a variety of flavors. The Bodegas Naveran Dama Cava with a 5 out of 5 star rating seems like a good match. It costs about 22 dollars per bottle.",
+      "productMatches": [
+          {
+              "id": 441149,
+              "title": "Bodegas Naveran Dama Cava",
+              "description": "One of only a few vintage Cavas made in Spain. Dama is full-bodied yet bright and crisp. The Naverán estate has been producing high-quality Cavas since 1901. All Cavas made here are from vineyards owned and controlled by the estate. Dama is fermented in the bottle (a la méthode champenoise) and aged in its lees for 24 months.\n\nCaves Navera´n is a premium Cava producer that uses estate-grown grapes. Navera´n Dama is a Cava masterpiece, a combination of Chardonnay, which gives the wine body and volume, and Parellada, which imparts a zesty, bright character that cuts through the buttery roundness of the Chardonnay. Champagne lovers will enjoy this Mediterranean \"farmer's fizz\" with oysters, raw tuna and sushi. Its fresh acidity also compliments fruit desserts, especially peaches and sliced oranges.",
+              "price": "$21.99",
+              "imageUrl": "https://spoonacular.com/productImages/441149-312x231.jpg",
+              "averageRating": 1.0,
+              "ratingCount": 5.0,
+              "score": 0.9375,
+              "link": "https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Fbodegas-naveran-dama-cava-2009%2F119100"
+          }
+      ]
+  },
+  "instructions": "Put enough olive oil in the bottom of a pie pan to lightly coat the bottom of the pan. Sprinkle with sea salt. Put the pan in the oven and preheat it to 350 degrees F.\nOnce the pan is preheated, add the eggplant slices. Cook for 5 minutes. Take the pan out of the oven and turn over the eggplant slices. Spoon tomato sauce onto each slice. Top with cheese and pepperoni. Put back in oven and cook for another 5 minutes, or until the cheese is melted.\nRemove from the oven and serve.",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "Put enough olive oil in the bottom of a pie pan to lightly coat the bottom of the pan.",
+                  "ingredients": [
+                      {
+                          "id": 4053,
+                          "name": "olive oil",
+                          "localizedName": "olive oil",
+                          "image": "olive-oil.jpg"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 405915,
+                          "name": "pie form",
+                          "localizedName": "pie form",
+                          "image": "pie-pan.png"
+                      },
+                      {
+                          "id": 404645,
+                          "name": "frying pan",
+                          "localizedName": "frying pan",
+                          "image": "pan.png"
+                      }
+                  ]
+              },
+              {
+                  "number": 2,
+                  "step": "Sprinkle with sea salt.",
+                  "ingredients": [
+                      {
+                          "id": 1012047,
+                          "name": "sea salt",
+                          "localizedName": "sea salt",
+                          "image": "salt.jpg"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 3,
+                  "step": "Put the pan in the oven and preheat it to 350 degrees F.",
+                  "ingredients": [],
+                  "equipment": [
+                      {
+                          "id": 404784,
+                          "name": "oven",
+                          "localizedName": "oven",
+                          "image": "oven.jpg",
+                          "temperature": {
+                              "number": 350.0,
+                              "unit": "Fahrenheit"
+                          }
+                      },
+                      {
+                          "id": 404645,
+                          "name": "frying pan",
+                          "localizedName": "frying pan",
+                          "image": "pan.png"
+                      }
+                  ]
+              },
+              {
+                  "number": 4,
+                  "step": "Once the pan is preheated, add the eggplant slices. Cook for 5 minutes. Take the pan out of the oven and turn over the eggplant slices. Spoon tomato sauce onto each slice. Top with cheese and pepperoni. Put back in oven and cook for another 5 minutes, or until the cheese is melted.",
+                  "ingredients": [
+                      {
+                          "id": 11549,
+                          "name": "tomato sauce",
+                          "localizedName": "tomato sauce",
+                          "image": "tomato-sauce-or-pasta-sauce.jpg"
+                      },
+                      {
+                          "id": 7057,
+                          "name": "pepperoni",
+                          "localizedName": "pepperoni",
+                          "image": "pepperoni.png"
+                      },
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      },
+                      {
+                          "id": 1041009,
+                          "name": "cheese",
+                          "localizedName": "cheese",
+                          "image": "cheddar-cheese.png"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404784,
+                          "name": "oven",
+                          "localizedName": "oven",
+                          "image": "oven.jpg"
+                      },
+                      {
+                          "id": 404645,
+                          "name": "frying pan",
+                          "localizedName": "frying pan",
+                          "image": "pan.png"
+                      }
+                  ],
+                  "length": {
+                      "number": 10,
+                      "unit": "minutes"
+                  }
+              },
+              {
+                  "number": 5,
+                  "step": "Remove from the oven and serve.",
+                  "ingredients": [],
+                  "equipment": [
+                      {
+                          "id": 404784,
+                          "name": "oven",
+                          "localizedName": "oven",
+                          "image": "oven.jpg"
+                      }
+                  ]
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/mini-eggplant-pizza-651956"
+}

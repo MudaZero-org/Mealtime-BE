@@ -1,0 +1,268 @@
+{
+  "vegetarian": false,
+  "vegan": false,
+  "glutenFree": true,
+  "dairyFree": false,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 20,
+  "gaps": "GAPS_3",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 73,
+  "healthScore": 27,
+  "creditsText": "blogspot.com",
+  "sourceName": "blogspot.com",
+  "pricePerServing": 288.2,
+  "extendedIngredients": [
+      {
+          "id": 11124,
+          "aisle": "Produce",
+          "image": "sliced-carrot.png",
+          "consistency": "SOLID",
+          "name": "carrots",
+          "nameClean": "carrot",
+          "original": "2 cups carrots, sliced diagonally about 3/4\" thick",
+          "originalName": "carrots, sliced diagonally about 3/4\" thick",
+          "amount": 2.0,
+          "unit": "cups",
+          "meta": [
+              "thick",
+              "sliced"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 2.0,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 473.176,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 5006,
+          "aisle": "Meat",
+          "image": "whole-chicken.jpg",
+          "consistency": "SOLID",
+          "name": "chicken",
+          "nameClean": "whole chicken",
+          "original": "1 4-5 lb chicken, preferably free-range",
+          "originalName": "chicken, preferably free-range",
+          "amount": 4.0,
+          "unit": "lb",
+          "meta": [
+              "free-range"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 4.0,
+                  "unitShort": "lb",
+                  "unitLong": "pounds"
+              },
+              "metric": {
+                  "amount": 1.814,
+                  "unitShort": "kgs",
+                  "unitLong": "kgs"
+              }
+          }
+      },
+      {
+          "id": 93632,
+          "aisle": "Ethnic Foods",
+          "image": "ghee.jpg",
+          "consistency": "SOLID",
+          "name": "ghee",
+          "nameClean": "clarified butter",
+          "original": "1 Tbsp ghee, melted",
+          "originalName": "ghee, melted",
+          "amount": 1.0,
+          "unit": "Tbsp",
+          "meta": [
+              "melted"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "Tbsp",
+                  "unitLong": "Tbsp"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "Tbsp",
+                  "unitLong": "Tbsp"
+              }
+          }
+      },
+      {
+          "id": 93632,
+          "aisle": "Ethnic Foods",
+          "image": "ghee.jpg",
+          "consistency": "SOLID",
+          "name": "ghee",
+          "nameClean": "clarified butter",
+          "original": "3 Tbsp ghee (or butter or coconut oil), softened",
+          "originalName": "ghee (or butter or coconut oil), softened",
+          "amount": 3.0,
+          "unit": "Tbsp",
+          "meta": [
+              "softened",
+              "(or butter or coconut oil)"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 3.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              },
+              "metric": {
+                  "amount": 3.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              }
+          }
+      },
+      {
+          "id": 1012042,
+          "aisle": "Produce;Spices and Seasonings",
+          "image": "dried-herbs.png",
+          "consistency": "SOLID",
+          "name": "herbes de provence",
+          "nameClean": "herbes de provence",
+          "original": "1 1/2 Tbsp Herbes de Provence (or dried rosemary)",
+          "originalName": "Herbes de Provence (or dried rosemary)",
+          "amount": 1.5,
+          "unit": "Tbsp",
+          "meta": [
+              "dried",
+              "(or rosemary)"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.5,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              },
+              "metric": {
+                  "amount": 1.5,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              }
+          }
+      },
+      {
+          "id": 10211821,
+          "aisle": "Produce",
+          "image": "bell-pepper-orange.png",
+          "consistency": "SOLID",
+          "name": "bell pepper",
+          "nameClean": "bell pepper",
+          "original": "freshly-ground pepper",
+          "originalName": "freshly-ground pepper",
+          "amount": 4.0,
+          "unit": "servings",
+          "meta": [
+              "freshly-ground"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 4.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 4.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 10011282,
+          "aisle": "Produce",
+          "image": "red-onion.png",
+          "consistency": "SOLID",
+          "name": "red onions",
+          "nameClean": "red onion",
+          "original": "2 large red onions, cut into wedges",
+          "originalName": "red onions, cut into wedges",
+          "amount": 2.0,
+          "unit": "large",
+          "meta": [
+              "red",
+              "cut into wedges"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 2.0,
+                  "unitShort": "large",
+                  "unitLong": "larges"
+              },
+              "metric": {
+                  "amount": 2.0,
+                  "unitShort": "large",
+                  "unitLong": "larges"
+              }
+          }
+      },
+      {
+          "id": 1012047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt.jpg",
+          "consistency": "SOLID",
+          "name": "sea salt",
+          "nameClean": "coarse sea salt",
+          "original": "sea salt (I used this Garlic Medley Sea Salt that I love)",
+          "originalName": "sea salt (I used this Garlic Medley Sea Salt that I love)",
+          "amount": 4.0,
+          "unit": "servings",
+          "meta": [
+              "(I used this Garlic Medley Sea Salt that I love)"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 4.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 4.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      }
+  ],
+  "id": 716427,
+  "title": "Roasted Butterflied Chicken w. Onions & Carrots",
+  "readyInMinutes": 45,
+  "servings": 4,
+  "sourceUrl": "http://fullbellysisters.blogspot.com/2014/04/roasted-butterflied-chicken-w-onions.html",
+  "image": "https://spoonacular.com/recipeImages/716427-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "Roasted Butterflied Chicken w. Onions & Carrots is a <b>gluten free and whole 30</b> main course. For <b>$4.08 per serving</b>, this recipe <b>covers 39%</b> of your daily requirements of vitamins and minerals. This recipe makes 4 servings with <b>1159 calories</b>, <b>86g of protein</b>, and <b>84g of fat</b> each. If you have carrots, herbes de provence, ghee, and a few other ingredients on hand, you can make it. To use up the ghee you could follow this main course with the <a href=\"https://spoonacular.com/recipes/rice-pudding-with-pistachios-raisins-and-saffron-114434\">Rice Pudding with Pistachios, Raisins and Saffron</a> as a dessert. This recipe from fullbellysisters.blogspot.com has 73 fans. From preparation to the plate, this recipe takes around <b>45 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 80%</b>. This score is excellent. Try <a href=\"https://spoonacular.com/recipes/roasted-chicken-breasts-with-carrots-and-onions-40150\">Roasted Chicken Breasts With Carrots And Onions</a>, <a href=\"https://spoonacular.com/recipes/garlic-herb-roasted-chicken-with-potatoes-carrots-and-onions-241517\">Garlic-Herb Roasted Chicken with Potatoes, Carrots, and Onions</a>, and <a href=\"https://spoonacular.com/recipes/steak-with-roasted-carrots-and-onions-41332\">Steak With Roasted Carrots And Onions</a> for similar recipes.",
+  "cuisines": [],
+  "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+  ],
+  "diets": [
+      "gluten free",
+      "whole 30",
+      "ketogenic"
+  ],
+  "occasions": [],
+  "winePairing": {},
+  "instructions": "",
+  "analyzedInstructions": [],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/roasted-butterflied-chicken-w-onions-carrots-716427"
+}

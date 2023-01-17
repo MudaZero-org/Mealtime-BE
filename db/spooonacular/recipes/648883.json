@@ -1,0 +1,438 @@
+{
+  "vegetarian": false,
+  "vegan": false,
+  "glutenFree": false,
+  "dairyFree": true,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 7,
+  "gaps": "no",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 1,
+  "healthScore": 44,
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 67.03,
+  "extendedIngredients": [
+      {
+          "id": 6076,
+          "aisle": "Canned and Jarred",
+          "image": "stock-cube.jpg",
+          "consistency": "SOLID",
+          "name": "beef bouillon cube",
+          "nameClean": "beef bouillon cube",
+          "original": "1 beef bouillon cube",
+          "originalName": "beef bouillon cube",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 11124,
+          "aisle": "Produce",
+          "image": "sliced-carrot.png",
+          "consistency": "SOLID",
+          "name": "carrots",
+          "nameClean": "carrot",
+          "original": "1/2 cup sliced carrots, cooked",
+          "originalName": "sliced carrots, cooked",
+          "amount": 0.5,
+          "unit": "cup",
+          "meta": [
+              "cooked",
+              "sliced"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.5,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 118.294,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 20081,
+          "aisle": "Baking",
+          "image": "flour.png",
+          "consistency": "SOLID",
+          "name": "flour",
+          "nameClean": "wheat flour",
+          "original": "2 tablespoons flour",
+          "originalName": "flour",
+          "amount": 2.0,
+          "unit": "tablespoons",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 2.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              },
+              "metric": {
+                  "amount": 2.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              }
+          }
+      },
+      {
+          "id": 11282,
+          "aisle": "Produce",
+          "image": "brown-onion.png",
+          "consistency": "SOLID",
+          "name": "onion",
+          "nameClean": "onion",
+          "original": "1 small onion, chopped",
+          "originalName": "onion, chopped",
+          "amount": 1.0,
+          "unit": "small",
+          "meta": [
+              "chopped"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "small",
+                  "unitLong": "small"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "small",
+                  "unitLong": "small"
+              }
+          }
+      },
+      {
+          "id": 11352,
+          "aisle": "Produce",
+          "image": "potatoes-yukon-gold.png",
+          "consistency": "SOLID",
+          "name": "potatoes",
+          "nameClean": "potato",
+          "original": "1 cup cubed potatoes, cooked",
+          "originalName": "cubed potatoes, cooked",
+          "amount": 1.0,
+          "unit": "cup",
+          "meta": [
+              "cubed",
+              "cooked"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "cup",
+                  "unitLong": "cup"
+              },
+              "metric": {
+                  "amount": 236.588,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      },
+      {
+          "id": 1102047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt-and-pepper.jpg",
+          "consistency": "SOLID",
+          "name": "salt and pepper",
+          "nameClean": "salt and pepper",
+          "original": "1 salt and pepper",
+          "originalName": "salt and pepper",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 17142,
+          "aisle": "Meat",
+          "image": "meat-ground.jpg",
+          "consistency": "SOLID",
+          "name": "veal kidney",
+          "nameClean": "ground veal",
+          "original": "1 veal kidney",
+          "originalName": "veal kidney",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 14412,
+          "aisle": "Beverages",
+          "image": "water.png",
+          "consistency": "LIQUID",
+          "name": "water",
+          "nameClean": "water",
+          "original": "1/4 cup cold water",
+          "originalName": "cold water",
+          "amount": 0.25,
+          "unit": "cup",
+          "meta": [
+              "cold"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.25,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 59.147,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      }
+  ],
+  "id": 648883,
+  "title": "Kidney Pie",
+  "readyInMinutes": 45,
+  "servings": 1,
+  "sourceUrl": "http://www.foodista.com/recipe/CV4SMV7G/kidney-pie",
+  "image": "https://spoonacular.com/recipeImages/648883-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "Kidney Pie could be just the <b>dairy free</b> recipe you've been looking for. This recipe serves 1 and costs 67 cents per serving. One serving contains <b>279 calories</b>, <b>8g of protein</b>, and <b>1g of fat</b>. 1 person were impressed by this recipe. Head to the store and pick up potatoes, veal kidney, flour, and a few other things to make it today. It is brought to you by Foodista. From preparation to the plate, this recipe takes roughly <b>45 minutes</b>. Overall, this recipe earns an <b>awesome spoonacular score of 88%</b>. Users who liked this recipe also liked <a href=\"https://spoonacular.com/recipes/steak-and-kidney-pie-1091218\">Steak and Kidney Pie</a>, <a href=\"https://spoonacular.com/recipes/steak-kidney-pie-1090328\">Steak & Kidney Pie</a>, and <a href=\"https://spoonacular.com/recipes/a-good-steak-kidney-pie-1211675\">A good steak & kidney pie</a>.",
+  "cuisines": [],
+  "dishTypes": [],
+  "diets": [
+      "dairy free"
+  ],
+  "occasions": [],
+  "winePairing": {
+      "pairedWines": [
+          "vin santo",
+          "late harvest riesling",
+          "lambrusco dolce"
+      ],
+      "pairingText": "Vin Santo, Late Harvest Riesling, and Lambrusco Dolce are my top picks for Pie. These wines are all sweet, which is important since wine should usually be sweeter than the food you're pairing with it. One wine you could try is Vineyards Late Harvest Riesling. It has 5 out of 5 stars and a bottle costs about 25 dollars.",
+      "productMatches": [
+          {
+              "id": 431536,
+              "title": "Vineyards Late Harvest Riesling",
+              "description": "Pale yellow in color, the nose opens with aromas of fresh pineapple, juicy nectarine and citrus notes. The wine fully coats the palate expressing vibrant flavors of orange blossom, tart granny smith apple and honeycomb. A long finish displays the perfect balance of sweetness and mouth-watering acidity, inviting another sip.",
+              "price": "$25.0",
+              "imageUrl": "https://spoonacular.com/productImages/431536-312x231.jpg",
+              "averageRating": 1.0,
+              "ratingCount": 1.0,
+              "score": 0.75,
+              "link": "https://www.amazon.com/Willamette-Valley-Vineyards-Harvest-Riesling/dp/B00X4IQOV4?tag=spoonacular-20"
+          }
+      ]
+  },
+  "instructions": "<ol><li>First wash the kidney well. Cover with cold water and let stand for about an hour. Drain. Remove the cords and all of the center fat.</li><li>Cut into small pieces. Now combine the bouillon cube and boiling water. Add the chopped kidney. Simmer for 20 minutes. Combine the flour and cold water, mixing well; add to the kidney mixture, stirring constantly until thickened and smooth. Add the cooked vegetables, and season to taste with salt and pepper. Pour mixture into a baking dish, and cover with small baking powder biscuits or pastry dough. Bake at 400F.</li></ol>",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "First wash the kidney well. Cover with cold water and let stand for about an hour.",
+                  "ingredients": [
+                      {
+                          "id": 13323,
+                          "name": "kidney",
+                          "localizedName": "kidney",
+                          "image": "liver.jpg"
+                      },
+                      {
+                          "id": 14412,
+                          "name": "water",
+                          "localizedName": "water",
+                          "image": "water.png"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 2,
+                  "step": "Drain.",
+                  "ingredients": [],
+                  "equipment": []
+              },
+              {
+                  "number": 3,
+                  "step": "Remove the cords and all of the center fat.",
+                  "ingredients": [],
+                  "equipment": []
+              },
+              {
+                  "number": 4,
+                  "step": "Cut into small pieces. Now combine the bouillon cube and boiling water.",
+                  "ingredients": [
+                      {
+                          "id": 1026076,
+                          "name": "bouillon cube",
+                          "localizedName": "bouillon cube",
+                          "image": ""
+                      },
+                      {
+                          "id": 14412,
+                          "name": "water",
+                          "localizedName": "water",
+                          "image": "water.png"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 5,
+                  "step": "Add the chopped kidney. Simmer for 20 minutes.",
+                  "ingredients": [
+                      {
+                          "id": 13323,
+                          "name": "kidney",
+                          "localizedName": "kidney",
+                          "image": "liver.jpg"
+                      }
+                  ],
+                  "equipment": [],
+                  "length": {
+                      "number": 20,
+                      "unit": "minutes"
+                  }
+              },
+              {
+                  "number": 6,
+                  "step": "Combine the flour and cold water, mixing well; add to the kidney mixture, stirring constantly until thickened and smooth.",
+                  "ingredients": [
+                      {
+                          "id": 13323,
+                          "name": "kidney",
+                          "localizedName": "kidney",
+                          "image": "liver.jpg"
+                      },
+                      {
+                          "id": 20081,
+                          "name": "all purpose flour",
+                          "localizedName": "all purpose flour",
+                          "image": "flour.png"
+                      },
+                      {
+                          "id": 14412,
+                          "name": "water",
+                          "localizedName": "water",
+                          "image": "water.png"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 7,
+                  "step": "Add the cooked vegetables, and season to taste with salt and pepper.",
+                  "ingredients": [
+                      {
+                          "id": 1102047,
+                          "name": "salt and pepper",
+                          "localizedName": "salt and pepper",
+                          "image": "salt-and-pepper.jpg"
+                      },
+                      {
+                          "id": 11583,
+                          "name": "vegetable",
+                          "localizedName": "vegetable",
+                          "image": "mixed-vegetables.png"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 8,
+                  "step": "Pour mixture into a baking dish, and cover with small baking powder biscuits or pastry dough.",
+                  "ingredients": [
+                      {
+                          "id": 18369,
+                          "name": "baking powder",
+                          "localizedName": "baking powder",
+                          "image": "white-powder.jpg"
+                      },
+                      {
+                          "id": 10018338,
+                          "name": "pastry dough",
+                          "localizedName": "pastry dough",
+                          "image": "dough.jpg"
+                      },
+                      {
+                          "id": 18009,
+                          "name": "biscuits",
+                          "localizedName": "biscuits",
+                          "image": "buttermilk-biscuits.jpg"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404646,
+                          "name": "baking pan",
+                          "localizedName": "baking pan",
+                          "image": "roasting-pan.jpg"
+                      }
+                  ]
+              },
+              {
+                  "number": 9,
+                  "step": "Bake at 400F.",
+                  "ingredients": [],
+                  "equipment": [
+                      {
+                          "id": 404784,
+                          "name": "oven",
+                          "localizedName": "oven",
+                          "image": "oven.jpg",
+                          "temperature": {
+                              "number": 400.0,
+                              "unit": "Fahrenheit"
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/kidney-pie-648883"
+}
