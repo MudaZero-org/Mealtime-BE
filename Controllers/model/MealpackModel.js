@@ -28,15 +28,21 @@ const UserModel = {
       .where({ store_id: storeId, is_publishing: status });
   },
   postNewMealPack(data, storeId) {
+    return knex("meal_packs").insert({
+      name: data[0],
+      store_id: Number(storeId),
+      recipe_id: Number(data[1]),
+      recipe: data[2] || null,
+      is_publishing: true,
+      is_delete: false,
+    });
+  },
+  putMealpackPublishStatus(storeId, mealpackId, status) {
     return knex("meal_packs")
-      .insert({
-        name: data[0],
-        store_id: Number(storeId),
-        recipe_id: Number(data[1]),
-        recipe: data[2] || null,
-        is_publishing: true,
-        is_delete: false,
+      .update({
+        is_publishing: status,
       })
+      .where({ store_id: storeId, id: mealpackId });
   },
 };
 

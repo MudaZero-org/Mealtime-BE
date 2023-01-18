@@ -12,4 +12,9 @@ router.get(
 
 router.post("/:store_id/mealpack", store_ctrl.postNewMealpackInfo);
 
+router.put(
+  "/:store_id/mealpack/:mealpack_id",
+  store_ctrl.putMealPackPublishingStatus
+);
+
 module.exports = router;
