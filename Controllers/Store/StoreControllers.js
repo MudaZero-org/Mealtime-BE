@@ -29,6 +29,7 @@ const StoreController = {
         storeId,
         publishStatus
       );
+      
       console.log(data);
       res.status(200).json(data);
     } catch (error) {
@@ -40,12 +41,11 @@ const StoreController = {
     try {
       const { store_id } = req.params;
       const { data } = req.body;
+      console.log(data);
 
-      await mealpackModel.postNewMealPack(data, store_id).then(
-        res.status(200).json({
-          message: "mealpack information posted successfully",
-        })
-      );
+      const returnData = await mealpackModel.postNewMealPack(data, store_id);
+      console.log(returnData);
+      res.status(200).json(returnData);
     } catch (error) {
       console.log(error);
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
@@ -55,14 +55,15 @@ const StoreController = {
     try {
       const { store_id, mealpack_id } = req.params;
       const { is_publishing } = req.body;
+      console.log(is_publishing);
 
-      await mealpackModel
-        .putMealpackPublishStatus(store_id, mealpack_id, is_publishing)
-        .then(
-          res.status(200).json({
-            message: "mealpack publish status update successfully",
-          })
-        );
+      const data = await mealpackModel.putMealpackPublishStatus(
+        store_id,
+        mealpack_id,
+        is_publishing
+      );
+      console.log(data);
+      res.status(200).json(data);
     } catch (error) {
       console.log(error);
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
