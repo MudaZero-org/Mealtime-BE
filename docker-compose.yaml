@@ -1,19 +1,9 @@
-version: "3"
+version: "3.9"
 services:
-  app:
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    image: adnanrahic/express-docker-app
-    deploy:
-      mode: replicated
-      replicas: 6
-      labels: [APP=APP]
-      update_config:
-        parallelism: 1
-        delay: 10s
-      restart_policy:
-        condition: on-failure
-        delay: 5s
+  web:
+    env_file:
+      - .env.local
+    build: .
+    image: mudaz-be-api:tag
     ports:
-      - "80:3000"
+      - "8080:8080"

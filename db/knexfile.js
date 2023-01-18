@@ -1,4 +1,4 @@
-require("dotenv").config({ path: __dirname + "/../.env.local"});
+require("dotenv").config({ path: __dirname + "/../.env.local" });
 
 module.exports = {
   development: {
@@ -18,7 +18,12 @@ module.exports = {
 
   production: {
     client: "postgres",
-    connection: process.env.DATABASE_URL,
+    connection: {
+      host: process.env.DATABASE_URL,
+      database: process.env.DB_NAME,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+    },
     migrations: {
       directory: "./migrations",
     },

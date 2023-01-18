@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 
 const userModel = require("../model/UserModel");
 
-const CustomerController = {
+const UserController = {
   helloWorld: async (req, res) => {
     try {
       res.status(200).json({ message: "Hello world from User" });
@@ -284,4 +284,4 @@ const CustomerController = {
   },
 };
 
-module.exports = CustomerController;
+module.exports = UserController;

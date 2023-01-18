@@ -13,7 +13,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 3000
+EXPOSE 8080
 
 # Start Node server
 CMD [ "node", "app.js" ]
