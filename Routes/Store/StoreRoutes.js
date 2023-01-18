@@ -10,4 +10,6 @@ router.get(
   store_ctrl.getCurrentPastMealpack
 );
 
+router.post("/:store_id/mealpack", store_ctrl.postNewMealpackInfo);
+
 module.exports = router;
