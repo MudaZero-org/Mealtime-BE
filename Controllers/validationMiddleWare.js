@@ -41,7 +41,7 @@ const validateSignUp = async (req, res, next) => {
 const validateLogin = async (req, res, next) => {
   const { userEmail, userPassword } = req.body;
   const errorMessage = [];
-  if (!(userEmail || userPassword)) {
+  if (!(userEmail && userPassword)) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
     res.status(400).json({
       message: ERROR_MSGS.VALIDATION_ERROR,
@@ -102,4 +102,37 @@ const verifyToken = (req, res, next) => {
   }
 };
 
-module.exports = { validateSignUp, validateLogin, verifyToken };
+const validateGetRecipeByIngredients = async (req, res, next) => {
+  const { ingredients, filteredWords } = req.body;
+  const errorMessage = [];
+  if (!(ingredients && filteredWords)) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  }
+
+  if (ingredients.length < 1) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+  }
+
+  if (errorMessage.length > 0) {
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  } else {
+    next();
+    return;
+  }
+};
+
+module.exports = {
+  validateSignUp,
+  validateLogin,
+  verifyToken,
+  validateGetRecipeByIngredients,
+};
