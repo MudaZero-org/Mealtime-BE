@@ -39,11 +39,13 @@ const StoreController = {
   },
   postNewMealpackInfo: async (req, res) => {
     try {
-      const { store_id } = req.params;
-      const { data } = req.body;
-      console.log(data);
+      let { store_id } = req.params;
+      let { mealpack_name, recipe_id, recipe } = req.body;
+      store_id = Number(store_id)
+      recipe_id = Number(recipe_id)
+      console.log(mealpack_name, recipe_id, recipe);
 
-      const returnData = await mealpackModel.postNewMealPack(data, store_id);
+      const returnData = await mealpackModel.postNewMealPack(mealpack_name, store_id, recipe_id, recipe);
       console.log(returnData);
       res.status(200).json(returnData);
     } catch (error) {
@@ -54,13 +56,15 @@ const StoreController = {
   putMealPackPublishingStatus: async (req, res) => {
     try {
       const { store_id, mealpack_id } = req.params;
-      const { is_publishing } = req.body;
+      const { mealpack_name, is_publishing, is_delete } = req.body;
       console.log(is_publishing);
 
       const data = await mealpackModel.putMealpackPublishStatus(
+        mealpack_name,
         store_id,
         mealpack_id,
-        is_publishing
+        is_publishing,
+        is_delete
       );
       console.log(data);
       res.status(200).json(data);

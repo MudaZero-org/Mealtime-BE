@@ -27,13 +27,13 @@ const UserModel = {
       .from("meal_packs")
       .where({ store_id: storeId, is_publishing: status });
   },
-  postNewMealPack(data, storeId) {
+  postNewMealPack(mealpackName, storeId, recipeId, recipe) {
     return knex("meal_packs")
       .insert({
-        name: data[0],
-        store_id: Number(storeId),
-        recipe_id: Number(data[1]),
-        recipe: data[2] || null,
+        name: mealpackName,
+        store_id: storeId,
+        recipe_id: recipeId,
+        recipe: recipe,
         is_publishing: true,
         is_delete: false,
       })
@@ -47,13 +47,21 @@ const UserModel = {
         "is_delete",
       ]);
   },
-  putMealpackPublishStatus(storeId, mealpackId, status) {
+  putMealpackPublishStatus(
+    mealpackName,
+    storeId,
+    mealpackId,
+    isPublishing,
+    isDelete
+  ) {
     return knex("meal_packs")
       .update({
-        is_publishing: status,
+        name: mealpackName,
+        is_publishing: isPublishing,
+        is_delete: isDelete,
       })
       .where({ store_id: storeId, id: mealpackId })
-      .returning(["id", "name", "store_id", "is_publishing"]);
+      .returning(["id", "name", "store_id", "is_publishing", "is_delete"]);
   },
 };
 
