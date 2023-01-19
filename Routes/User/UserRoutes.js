@@ -8,5 +8,6 @@ const {
 
 router.post("/logIn", validateLogin, user_ctrl.logIn);
 router.post("/signUp", validateSignUp, user_ctrl.signUp);
+router.get("/refreshToken", user_ctrl.refreshToken);
 
 module.exports = router;
