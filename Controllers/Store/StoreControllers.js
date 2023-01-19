@@ -1,6 +1,8 @@
-const knex = require("../../db/knex");
 const { ERROR_MSGS } = require("../../Configs/Constants");
 const mealpackModel = require("../model/MealpackModel");
+const {
+  sampleDetailRecipeData,
+} = require("../../db/spooonacular/recipes/index");
 
 const StoreController = {
   helloWorld: async (req, res) => {
@@ -29,7 +31,7 @@ const StoreController = {
         storeId,
         publishStatus
       );
-      
+
       console.log(data);
       res.status(200).json(data);
     } catch (error) {
@@ -39,13 +41,26 @@ const StoreController = {
   },
   postNewMealpackInfo: async (req, res) => {
     try {
-      const { store_id } = req.params;
-      const { data } = req.body;
+      const { store_id: storeId } = req.params;
+      const { data: recipeList } = req.body;
+      const data = [];
+      console.log(storeId, recipeList);
+      for (const recipe of recipeList) {
+        const detailRecipe = sampleDetailRecipeData[recipe.id];
+        const mealpack = {
+          detailRecipe: detailRecipe,
+          storeId: Number(storeId),
+          mealpackName: detailRecipe.title,
+          recipeId: detailRecipe.id,
+        };
+        const [mealpackData] = await mealpackModel.postNewMealPack(
+          mealpack,
+          storeId
+        );
+        data.push(mealpackData);
+      }
       console.log(data);
-
-      const returnData = await mealpackModel.postNewMealPack(data, store_id);
-      console.log(returnData);
-      res.status(200).json(returnData);
+      res.status(200).json(data);
     } catch (error) {
       console.log(error);
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
