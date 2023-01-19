@@ -1,7 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const store_ctrl = require("../../Controllers/Store/StoreControllers");
-const { verifyToken } = require("../../Controllers/validationMiddleWare");
+const {
+  verifyToken,
+  validatePostMealPack,
+  validatePutMealPack,
+} = require("../../Controllers/validationMiddleWare");
 
 router.get("/", verifyToken, store_ctrl.helloWorld);
 
@@ -11,10 +15,15 @@ router.get(
   store_ctrl.getCurrentPastMealpack
 );
 
-router.post("/:store_id/mealpack", store_ctrl.postNewMealpackInfo);
+router.post(
+  "/:store_id/mealpack",
+  validatePostMealPack,
+  store_ctrl.postNewMealpackInfo
+);
 
 router.put(
   "/:store_id/mealpack/:mealpack_id",
+  validatePutMealPack,
   store_ctrl.putMealPackPublishingStatus
 );
 

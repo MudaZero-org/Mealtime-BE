@@ -48,13 +48,21 @@ const UserModel = {
         "is_delete",
       ]);
   },
-  putMealpackPublishStatus(storeId, mealpackId, status) {
+  putMealpackPublishStatus(
+    mealpackName,
+    storeId,
+    mealpackId,
+    isPublishing,
+    isDelete
+  ) {
     return knex("meal_packs")
       .update({
-        is_publishing: status,
+        name: mealpackName,
+        is_publishing: isPublishing,
+        is_delete: isDelete,
       })
       .where({ store_id: storeId, id: mealpackId })
-      .returning(["id", "name", "store_id", "is_publishing"]);
+      .returning(["id", "name", "store_id", "is_publishing", "is_delete"]);
   },
 };
 

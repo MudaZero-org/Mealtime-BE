@@ -69,13 +69,15 @@ const StoreController = {
   putMealPackPublishingStatus: async (req, res) => {
     try {
       const { store_id, mealpack_id } = req.params;
-      const { is_publishing } = req.body;
+      const { mealpack_name, is_publishing, is_delete } = req.body;
       console.log(is_publishing);
 
       const data = await mealpackModel.putMealpackPublishStatus(
+        mealpack_name,
         store_id,
         mealpack_id,
-        is_publishing
+        is_publishing,
+        is_delete
       );
       console.log(data);
       res.status(200).json(data);

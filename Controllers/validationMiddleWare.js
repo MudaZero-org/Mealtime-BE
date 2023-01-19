@@ -130,9 +130,70 @@ const validateGetRecipeByIngredients = async (req, res, next) => {
   }
 };
 
+const validatePostMealPack = async (req, res, next) => {
+  const { mealpack_name, recipe_id } = req.body;
+  const errorMessage = [];
+  if (!(mealpack_name && recipe_id)) {
+    console.log(mealpack_name);
+    console.log(recipe_id);
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  }
+
+  if (typeof mealpack_name !== "string") {
+    console.log("name");
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+  }
+
+  if (errorMessage.length > 0) {
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  } else {
+    next();
+    return;
+  }
+};
+
+const validatePutMealPack = async (req, res, next) => {
+  const { mealpack_name, is_publishing, is_delete } = req.body;
+  const errorMessage = [];
+  if (!mealpack_name && is_publishing && is_delete) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  }
+
+  if (typeof mealpack_name !== "string") {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+  }
+
+  if (errorMessage.length > 0) {
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  } else {
+    next();
+    return;
+  }
+};
+
 module.exports = {
   validateSignUp,
   validateLogin,
   verifyToken,
   validateGetRecipeByIngredients,
+  validatePostMealPack,
+  validatePutMealPack,
 };
