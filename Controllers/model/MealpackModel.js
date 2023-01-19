@@ -23,6 +23,8 @@ const UserModel = {
         mealpackName: "name",
         storeId: "store_id",
         isPublishing: "is_publishing",
+        recipeDetail: "recipe",
+        recipeId: "recipe_id",
       })
       .from("meal_packs")
       .where({ store_id: storeId, is_publishing: status });
