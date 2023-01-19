@@ -7,7 +7,10 @@ const { dataFilter } = require("./ControllerHelper");
 const SampleController = {
   getRecipeByIngredients: async (req, res) => {
     try {
-      const { ingredients, filteredWords } = req.body;
+      let { ingredients, filteredWords } = req.body;
+      ingredients = ingredients.map((ingre) => ingre.toLowerCase());
+      filteredWords = filteredWords.map((word) => word.toLowerCase());
+
       console.log(ingredients, filteredWords);
       let eggplant = false;
       let onion = false;

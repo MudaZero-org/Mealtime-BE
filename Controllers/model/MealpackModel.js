@@ -28,12 +28,13 @@ const UserModel = {
       .where({ store_id: storeId, is_publishing: status });
   },
   postNewMealPack(data, storeId) {
+    const { mealpackName, recipeId, detailRecipe } = data;
     return knex("meal_packs")
       .insert({
-        name: data[0],
-        store_id: Number(storeId),
-        recipe_id: Number(data[1]),
-        recipe: data[2] || null,
+        name: mealpackName,
+        store_id: storeId,
+        recipe_id: recipeId,
+        recipe: detailRecipe,
         is_publishing: true,
         is_delete: false,
       })
