@@ -13,32 +13,10 @@ const StoreController = {
   },
   getAllMaelpacks: async (req, res) => {
     try {
-      let { store_id } = req.params;
-      store_id = Number(store_id);
-
-      const data = await knex
-        .select({
-          id: "id",
-          name: "name",
-          store_id: "store_id",
-          recipe_id: "recipe_id",
-          is_publishing: "is_publishing",
-          is_delete: "is_delete",
-        })
-        .from("meal_packs")
-        .where("store_id", store_id);
+      let { store_id: storeId } = req.params;
+      const data = await mealpackModel.getAllMealPack(storeId);
 
       res.status(200).json(data);
-    } catch (error) {
-      console.log(error);
-      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
-    }
-  },
-  getRecipeInfo: async (req, res) => {
-    try {
-      const recipe648470 = require("../../db/spooonacular/recipes/648470.json");
-      const recipe663323 = require("../../db/spooonacular/recipes/663323.json");
-      const recipe664206 = require("../../db/spooonacular/recipes/664206.json");
     } catch (error) {
       console.log(error);
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
@@ -50,6 +28,39 @@ const StoreController = {
       const data = await mealpackModel.getAllMealPackCurrentPast(
         storeId,
         publishStatus
+      );
+      
+      console.log(data);
+      res.status(200).json(data);
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+    }
+  },
+  postNewMealpackInfo: async (req, res) => {
+    try {
+      const { store_id } = req.params;
+      const { data } = req.body;
+      console.log(data);
+
+      const returnData = await mealpackModel.postNewMealPack(data, store_id);
+      console.log(returnData);
+      res.status(200).json(returnData);
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+    }
+  },
+  putMealPackPublishingStatus: async (req, res) => {
+    try {
+      const { store_id, mealpack_id } = req.params;
+      const { is_publishing } = req.body;
+      console.log(is_publishing);
+
+      const data = await mealpackModel.putMealpackPublishStatus(
+        store_id,
+        mealpack_id,
+        is_publishing
       );
       console.log(data);
       res.status(200).json(data);
