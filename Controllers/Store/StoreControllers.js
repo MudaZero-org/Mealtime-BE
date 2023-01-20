@@ -47,17 +47,21 @@ const StoreController = {
       console.log(storeId, recipeList);
       for (const recipe of recipeList) {
         const detailRecipe = sampleDetailRecipeData[recipe.id];
-        const mealpack = {
-          detailRecipe: detailRecipe,
-          storeId: Number(storeId),
-          mealpackName: detailRecipe.title,
-          recipeId: detailRecipe.id,
-        };
-        const [mealpackData] = await mealpackModel.postNewMealPack(
-          mealpack,
-          storeId
-        );
-        data.push(mealpackData);
+        if (!detailRecipe) {
+          data.push({ message: ERROR_MSGS.CREATE_FAILED });
+        } else {
+          const mealpack = {
+            detailRecipe: detailRecipe,
+            storeId: Number(storeId),
+            mealpackName: detailRecipe.title,
+            recipeId: detailRecipe.id,
+          };
+          const [mealpackData] = await mealpackModel.postNewMealPack(
+            mealpack,
+            storeId
+          );
+          data.push(mealpackData);
+        }
       }
       console.log(data);
       res.status(200).json(data);
@@ -69,15 +73,15 @@ const StoreController = {
   putMealPackPublishingStatus: async (req, res) => {
     try {
       const { store_id, mealpack_id } = req.params;
-      const { mealpack_name, is_publishing, is_delete } = req.body;
-      console.log(is_publishing);
+      const { mealpackName, isPublishing, isDelete } = req.body;
+      console.log(isPublishing);
 
-      const data = await mealpackModel.putMealpackPublishStatus(
-        mealpack_name,
+      const [data] = await mealpackModel.putMealpackPublishStatus(
+        mealpackName,
         store_id,
         mealpack_id,
-        is_publishing,
-        is_delete
+        isPublishing,
+        isDelete
       );
       console.log(data);
       res.status(200).json(data);

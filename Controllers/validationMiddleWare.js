@@ -38,6 +38,7 @@ const validateSignUp = async (req, res, next) => {
     return;
   }
 };
+
 const validateLogin = async (req, res, next) => {
   const { userEmail, userPassword } = req.body;
   const errorMessage = [];
@@ -131,11 +132,11 @@ const validateGetRecipeByIngredients = async (req, res, next) => {
 };
 
 const validatePostMealPack = async (req, res, next) => {
-  const { mealpack_name, recipe_id } = req.body;
+  const { data } = req.body;
+  const { store_id: storeId } = req.params;
   const errorMessage = [];
-  if (!(mealpack_name && recipe_id)) {
-    console.log(mealpack_name);
-    console.log(recipe_id);
+
+  if (!(data && storeId)) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
     res.status(400).json({
       message: ERROR_MSGS.VALIDATION_ERROR,
@@ -144,8 +145,7 @@ const validatePostMealPack = async (req, res, next) => {
     return;
   }
 
-  if (typeof mealpack_name !== "string") {
-    console.log("name");
+  if (data.length < 1) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
   }
 
@@ -162,9 +162,19 @@ const validatePostMealPack = async (req, res, next) => {
 };
 
 const validatePutMealPack = async (req, res, next) => {
-  const { mealpack_name, is_publishing, is_delete } = req.body;
+  const { mealpackName, isPublishing, isDelete } = req.body;
+  const { store_id: storeId, mealpack_id: mealpackId } = req.params;
   const errorMessage = [];
-  if (!(mealpack_name && is_publishing && is_delete)) {
+
+  if (
+    !(
+      storeId &&
+      mealpackId &&
+      mealpackName &&
+      isPublishing &&
+      isDelete !== undefined
+    )
+  ) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
     res.status(400).json({
       message: ERROR_MSGS.VALIDATION_ERROR,
@@ -173,7 +183,7 @@ const validatePutMealPack = async (req, res, next) => {
     return;
   }
 
-  if (typeof mealpack_name !== "string") {
+  if (typeof mealpackName !== "string") {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
   }
 

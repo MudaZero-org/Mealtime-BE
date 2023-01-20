@@ -6,6 +6,7 @@ const ERROR_MSGS = {
   EMAIL_IN_USE: "Email already in use",
   NOT_FOUND: "Not found",
   INVALID_INPUT: "Invalid input",
+  CREATE_FAILED: "Failed to create mealpack",
 };
 const REGEXES = {
   EMAIL:
