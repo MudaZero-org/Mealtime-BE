@@ -72,7 +72,7 @@ const StoreController = {
       const { mealpackName, isPublishing, isDelete } = req.body;
       console.log(isPublishing);
 
-      const data = await mealpackModel.putMealpackPublishStatus(
+      const [data] = await mealpackModel.putMealpackPublishStatus(
         mealpackName,
         store_id,
         mealpack_id,

@@ -165,7 +165,16 @@ const validatePutMealPack = async (req, res, next) => {
   const { mealpackName, isPublishing, isDelete } = req.body;
   const { store_id: storeId, mealpack_id: mealpackId } = req.params;
   const errorMessage = [];
-  if (!(storeId && mealpackId && mealpackName && isPublishing && isDelete)) {
+
+  if (
+    !(
+      storeId &&
+      mealpackId &&
+      mealpackName &&
+      isPublishing &&
+      isDelete !== undefined
+    )
+  ) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
     res.status(400).json({
       message: ERROR_MSGS.VALIDATION_ERROR,
