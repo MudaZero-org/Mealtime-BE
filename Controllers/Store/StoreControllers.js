@@ -47,17 +47,21 @@ const StoreController = {
       console.log(storeId, recipeList);
       for (const recipe of recipeList) {
         const detailRecipe = sampleDetailRecipeData[recipe.id];
-        const mealpack = {
-          detailRecipe: detailRecipe,
-          storeId: Number(storeId),
-          mealpackName: detailRecipe.title,
-          recipeId: detailRecipe.id,
-        };
-        const [mealpackData] = await mealpackModel.postNewMealPack(
-          mealpack,
-          storeId
-        );
-        data.push(mealpackData);
+        if (!detailRecipe) {
+          data.push({ message: ERROR_MSGS.CREATE_FAILED });
+        } else {
+          const mealpack = {
+            detailRecipe: detailRecipe,
+            storeId: Number(storeId),
+            mealpackName: detailRecipe.title,
+            recipeId: detailRecipe.id,
+          };
+          const [mealpackData] = await mealpackModel.postNewMealPack(
+            mealpack,
+            storeId
+          );
+          data.push(mealpackData);
+        }
       }
       console.log(data);
       res.status(200).json(data);
