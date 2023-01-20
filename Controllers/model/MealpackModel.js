@@ -7,11 +7,12 @@ const UserModel = {
     return knex
       .select({
         id: "id",
-        name: "name",
-        store_id: "store_id",
-        recipe_id: "recipe_id",
-        is_publishing: "is_publishing",
-        is_delete: "is_delete",
+        mealpackName: "name",
+        storeId: "store_id",
+        recipeId: "recipe_id",
+        recipeDetail: "recipe",
+        isPublishing: "is_publishing",
+        isDelete: "is_delete",
       })
       .from("meal_packs")
       .where("store_id", storeId);
@@ -29,8 +30,8 @@ const UserModel = {
       .from("meal_packs")
       .where({ store_id: storeId, is_publishing: status });
   },
-  postNewMealPack(data, storeId) {
-    const { mealpackName, recipeId, detailRecipe } = data;
+  postNewMealPack(mealpack, storeId) {
+    const { mealpackName, recipeId, detailRecipe } = mealpack;
     return knex("meal_packs")
       .insert({
         name: mealpackName,
