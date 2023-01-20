@@ -7,9 +7,7 @@ const {
   validatePutMealPack,
 } = require("../../Controllers/validationMiddleWare");
 
-// router.get("/", verifyToken, store_ctrl.helloWorld);
-
-router.get("/:store_id/mealpack/all", verifyToken, store_ctrl.getAllMaelpacks);
+router.get("/:store_id/mealpack/all", verifyToken, store_ctrl.getAllMealpacks);
 router.get(
   "/:store_id/mealpack/all/status/:publish_status",
   verifyToken,

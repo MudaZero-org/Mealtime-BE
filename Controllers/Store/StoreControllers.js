@@ -5,15 +5,7 @@ const {
 } = require("../../db/spooonacular/recipes/index");
 
 const StoreController = {
-  helloWorld: async (req, res) => {
-    try {
-      res.status(200).json({ message: "Hello world from store" });
-    } catch (error) {
-      console.log(error);
-      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
-    }
-  },
-  getAllMaelpacks: async (req, res) => {
+  getAllMealpacks: async (req, res) => {
     try {
       let { store_id: storeId } = req.params;
       const data = await mealpackModel.getAllMealPack(storeId);

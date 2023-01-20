@@ -4,6 +4,7 @@ const app = express();
 const PORT = process.env.DOCKER_PORT || 8080;
 const timeout = require("connect-timeout");
 const cors = require("cors");
+const { ERROR_MSGS } = require("./Configs/Constants");
 
 const customerRoutes = require("./Routes/Customer/CustomerRoutes");
 const mealpackRoutes = require("./Routes/Mealpack/MealpackRoutes");
@@ -19,10 +20,6 @@ app.use((req, res, next) => {
   if (!req.timedout) next();
 });
 
-app.get("/", (req, res) => {
-  res.send("hello world");
-});
-
 app.use("/user", userRoutes);
 app.use("/customer", customerRoutes);
 app.use("/mealpack", mealpackRoutes);
@@ -32,7 +29,7 @@ app.use("/store", storeRoutes);
 // Not found handling
 app.use((req, res, next) => {
   res.status(404);
-  const error = new Error("not found");
+  const error = new Error(ERROR_MSGS.NOT_FOUND);
   next(error);
 });
 // Errors handling
