@@ -1,0 +1,407 @@
+{
+  "vegetarian": false,
+  "vegan": false,
+  "glutenFree": false,
+  "dairyFree": true,
+  "veryHealthy": true,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 99,
+  "gaps": "no",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 1,
+  "healthScore": 95,
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 1224.72,
+  "extendedIngredients": [
+      {
+          "id": 11124,
+          "aisle": "Produce",
+          "image": "sliced-carrot.png",
+          "consistency": "SOLID",
+          "name": "carrot",
+          "nameClean": "carrot",
+          "original": "1 Finely chopped carrot",
+          "originalName": "Finely chopped carrot",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [
+              "finely chopped"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 17224,
+          "aisle": "Meat",
+          "image": "meat-ground.jpg",
+          "consistency": "SOLID",
+          "name": "lamb",
+          "nameClean": "ground lamb",
+          "original": "1 pound Minced lamb",
+          "originalName": "Minced lamb",
+          "amount": 1.0,
+          "unit": "pound",
+          "meta": [
+              "minced"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "lb",
+                  "unitLong": "pound"
+              },
+              "metric": {
+                  "amount": 453.592,
+                  "unitShort": "g",
+                  "unitLong": "grams"
+              }
+          }
+      },
+      {
+          "id": 11246,
+          "aisle": "Produce",
+          "image": "leeks.jpg",
+          "consistency": "SOLID",
+          "name": "leek",
+          "nameClean": "leek",
+          "original": "1 Finely shredded leek",
+          "originalName": "Finely shredded leek",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [
+              "shredded",
+              "finely"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 11282,
+          "aisle": "Produce",
+          "image": "brown-onion.png",
+          "consistency": "SOLID",
+          "name": "onion",
+          "nameClean": "onion",
+          "original": "1 small Onion, chopped",
+          "originalName": "Onion, chopped",
+          "amount": 1.0,
+          "unit": "small",
+          "meta": [
+              "chopped"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "small",
+                  "unitLong": "small"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "small",
+                  "unitLong": "small"
+              }
+          }
+      },
+      {
+          "id": 11352,
+          "aisle": "Produce",
+          "image": "potatoes-yukon-gold.png",
+          "consistency": "SOLID",
+          "name": "potato",
+          "nameClean": "potato",
+          "original": "1 pound Boiled diced potato",
+          "originalName": "Boiled diced potato",
+          "amount": 1.0,
+          "unit": "pound",
+          "meta": [
+              "diced",
+              "boiled"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "lb",
+                  "unitLong": "pound"
+              },
+              "metric": {
+                  "amount": 453.592,
+                  "unitShort": "g",
+                  "unitLong": "grams"
+              }
+          }
+      },
+      {
+          "id": 1102047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt-and-pepper.jpg",
+          "consistency": "SOLID",
+          "name": "salt and pepper",
+          "nameClean": "salt and pepper",
+          "original": "Salt and pepper to taste",
+          "originalName": "Salt and pepper to taste",
+          "amount": 1.0,
+          "unit": "serving",
+          "meta": [
+              "to taste"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "serving",
+                  "unitLong": "serving"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "serving",
+                  "unitLong": "serving"
+              }
+          }
+      },
+      {
+          "id": 10018338,
+          "aisle": "Refrigerated;Frozen",
+          "image": "dough.jpg",
+          "consistency": "SOLID",
+          "name": "shortcrust pastry",
+          "nameClean": "shortcrust pastry",
+          "original": "1 pound Shortcrust pastry",
+          "originalName": "Shortcrust pastry",
+          "amount": 1.0,
+          "unit": "pound",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "lb",
+                  "unitLong": "pound"
+              },
+              "metric": {
+                  "amount": 453.592,
+                  "unitShort": "g",
+                  "unitLong": "grams"
+              }
+          }
+      },
+      {
+          "id": 1026076,
+          "aisle": "Canned and Jarred",
+          "image": "no.jpg",
+          "consistency": "SOLID",
+          "name": "stock cube",
+          "nameClean": "bouillon cube",
+          "original": "1 Stock cube, (chicken or vegetable)",
+          "originalName": "Stock cube, (chicken or vegetable)",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [
+              "(chicken or vegetable)"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 4669,
+          "aisle": "Oil, Vinegar, Salad Dressing",
+          "image": "vegetable-oil.jpg",
+          "consistency": "LIQUID",
+          "name": "little vegetable oil",
+          "nameClean": "vegetable oil",
+          "original": "A little vegetable oil",
+          "originalName": "A little vegetable oil",
+          "amount": 1.0,
+          "unit": "serving",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "serving",
+                  "unitLong": "serving"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "serving",
+                  "unitLong": "serving"
+              }
+          }
+      }
+  ],
+  "id": 649229,
+  "title": "Lamb Pie",
+  "readyInMinutes": 45,
+  "servings": 1,
+  "sourceUrl": "http://www.foodista.com/recipe/XGTXL3TN/lamb-pie",
+  "image": "https://spoonacular.com/recipeImages/649229-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "If you have about <b>45 minutes</b> to spend in the kitchen, Lamb Pie might be an awesome <b>dairy free</b> recipe to try. This recipe makes 1 servings with <b>3222 calories</b>, <b>120g of protein</b>, and <b>148g of fat</b> each. For <b>$12.25 per serving</b>, this recipe <b>covers 79%</b> of your daily requirements of vitamins and minerals. It is brought to you by Foodista. 1 person has tried and liked this recipe. Head to the store and pick up little vegetable oil, lamb, shortcrust pastry, and a few other things to make it today. Taking all factors into account, this recipe <b>earns a spoonacular score of 88%</b>, which is great. If you like this recipe, take a look at these similar recipes: <a href=\"https://spoonacular.com/recipes/spiced-lamb-pie-1088362\">Spiced lamb pie</a>, <a href=\"https://spoonacular.com/recipes/lamb-and-sausage-pie-96995\">Lamb and Sausage Pie</a>, and <a href=\"https://spoonacular.com/recipes/spiced-lamb-pie-1192793\">Spiced Lamb Pie</a>.",
+  "cuisines": [],
+  "dishTypes": [],
+  "diets": [
+      "dairy free"
+  ],
+  "occasions": [],
+  "winePairing": {
+      "pairedWines": [
+          "vin santo",
+          "late harvest riesling",
+          "lambrusco dolce"
+      ],
+      "pairingText": "Pie on the menu? Try pairing with Vin Santo, Late Harvest Riesling, and Lambrusco Dolce. These wines are all sweet, which is important since wine should usually be sweeter than the food you're pairing with it. You could try Vineyards Late Harvest Riesling. Reviewers quite like it with a 5 out of 5 star rating and a price of about 25 dollars per bottle.",
+      "productMatches": [
+          {
+              "id": 431536,
+              "title": "Vineyards Late Harvest Riesling",
+              "description": "Pale yellow in color, the nose opens with aromas of fresh pineapple, juicy nectarine and citrus notes. The wine fully coats the palate expressing vibrant flavors of orange blossom, tart granny smith apple and honeycomb. A long finish displays the perfect balance of sweetness and mouth-watering acidity, inviting another sip.",
+              "price": "$25.0",
+              "imageUrl": "https://spoonacular.com/productImages/431536-312x231.jpg",
+              "averageRating": 1.0,
+              "ratingCount": 1.0,
+              "score": 0.75,
+              "link": "https://www.amazon.com/Willamette-Valley-Vineyards-Harvest-Riesling/dp/B00X4IQOV4?tag=spoonacular-20"
+          }
+      ]
+  },
+  "instructions": "<ol><li>Use a pan with an airtight lid. Put a little oil and seasoning along with the carrot, onion and leek, saute this then place lid firmly, lower heat to allow cooking . Add to diced potatoes last. Do the same to the lamb, adding pre-mixed stock, seal lid to cook.</li><li>In an ovenproof dish, first put a layer of the cooked vegetables, then a layer of the lamb, first straining any excess fatty liquid, build this up to fill. Cut pastry to size, glaze with a beaten egg if a crispy finish is preferred. Cook for 30 to 35 minutes or until golden.</li></ol>",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "Use a pan with an airtight lid. Put a little oil and seasoning along with the carrot, onion and leek, saute this then place lid firmly, lower heat to allow cooking .",
+                  "ingredients": [
+                      {
+                          "id": 1042027,
+                          "name": "seasoning",
+                          "localizedName": "seasoning",
+                          "image": "seasoning.png"
+                      },
+                      {
+                          "id": 11124,
+                          "name": "carrot",
+                          "localizedName": "carrot",
+                          "image": "sliced-carrot.png"
+                      },
+                      {
+                          "id": 11282,
+                          "name": "onion",
+                          "localizedName": "onion",
+                          "image": "brown-onion.png"
+                      },
+                      {
+                          "id": 11246,
+                          "name": "leek",
+                          "localizedName": "leek",
+                          "image": "leeks.jpg"
+                      },
+                      {
+                          "id": 4582,
+                          "name": "cooking oil",
+                          "localizedName": "cooking oil",
+                          "image": "vegetable-oil.jpg"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404645,
+                          "name": "frying pan",
+                          "localizedName": "frying pan",
+                          "image": "pan.png"
+                      }
+                  ]
+              },
+              {
+                  "number": 2,
+                  "step": "Add to diced potatoes last. Do the same to the lamb, adding pre-mixed stock, seal lid to cook.In an ovenproof dish, first put a layer of the cooked vegetables, then a layer of the lamb, first straining any excess fatty liquid, build this up to fill.",
+                  "ingredients": [
+                      {
+                          "id": 11583,
+                          "name": "vegetable",
+                          "localizedName": "vegetable",
+                          "image": "mixed-vegetables.png"
+                      },
+                      {
+                          "id": 11352,
+                          "name": "potato",
+                          "localizedName": "potato",
+                          "image": "potatoes-yukon-gold.png"
+                      },
+                      {
+                          "id": 1006615,
+                          "name": "stock",
+                          "localizedName": "stock",
+                          "image": "chicken-broth.png"
+                      },
+                      {
+                          "id": 10017224,
+                          "name": "lamb",
+                          "localizedName": "lamb",
+                          "image": "lamb-shanks.jpg"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 3,
+                  "step": "Cut pastry to size, glaze with a beaten egg if a crispy finish is preferred. Cook for 30 to 35 minutes or until golden.",
+                  "ingredients": [
+                      {
+                          "id": 0,
+                          "name": "glaze",
+                          "localizedName": "glaze",
+                          "image": ""
+                      },
+                      {
+                          "id": 1123,
+                          "name": "egg",
+                          "localizedName": "egg",
+                          "image": "egg.png"
+                      }
+                  ],
+                  "equipment": [],
+                  "length": {
+                      "number": 30,
+                      "unit": "minutes"
+                  }
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/lamb-pie-649229"
+}

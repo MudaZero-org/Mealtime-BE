@@ -1,0 +1,382 @@
+{
+  "vegetarian": true,
+  "vegan": true,
+  "glutenFree": true,
+  "dairyFree": true,
+  "veryHealthy": true,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 4,
+  "gaps": "no",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 2,
+  "healthScore": 87,
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 42.38,
+  "extendedIngredients": [
+      {
+          "id": 11124,
+          "aisle": "Produce",
+          "image": "sliced-carrot.png",
+          "consistency": "SOLID",
+          "name": "carrot",
+          "nameClean": "carrot",
+          "original": "1/2 carrot - grated",
+          "originalName": "carrot - grated",
+          "amount": 0.5,
+          "unit": "",
+          "meta": [
+              "grated"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.5,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 0.5,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 2009,
+          "aisle": "Spices and Seasonings",
+          "image": "chili-powder.jpg",
+          "consistency": "SOLID",
+          "name": "chilli powder",
+          "nameClean": "chili powder",
+          "original": "Red chilli powder- 1/2 tsp",
+          "originalName": "Red chilli powder",
+          "amount": 0.5,
+          "unit": "tsp",
+          "meta": [
+              "red"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.5,
+                  "unitShort": "tsps",
+                  "unitLong": "teaspoons"
+              },
+              "metric": {
+                  "amount": 0.5,
+                  "unitShort": "tsps",
+                  "unitLong": "teaspoons"
+              }
+          }
+      },
+      {
+          "id": 20027,
+          "aisle": "Baking",
+          "image": "white-powder.jpg",
+          "consistency": "SOLID",
+          "name": "cornflour",
+          "nameClean": "corn starch",
+          "original": "1 1/2 tablespoon cornflour",
+          "originalName": "cornflour",
+          "amount": 1.5,
+          "unit": "tablespoon",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.5,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              },
+              "metric": {
+                  "amount": 1.5,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              }
+          }
+      },
+      {
+          "id": 11282,
+          "aisle": "Produce",
+          "image": "brown-onion.png",
+          "consistency": "SOLID",
+          "name": "onion",
+          "nameClean": "onion",
+          "original": "1/2 medium onion- chopped finely",
+          "originalName": "onion- chopped finely",
+          "amount": 0.5,
+          "unit": "medium",
+          "meta": [
+              "chopped",
+              "finely"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.5,
+                  "unitShort": "medium",
+                  "unitLong": "mediums"
+              },
+              "metric": {
+                  "amount": 0.5,
+                  "unitShort": "medium",
+                  "unitLong": "mediums"
+              }
+          }
+      },
+      {
+          "id": 11352,
+          "aisle": "Produce",
+          "image": "potatoes-yukon-gold.png",
+          "consistency": "SOLID",
+          "name": "potatoes",
+          "nameClean": "potato",
+          "original": "3 medium potatoes- grated",
+          "originalName": "potatoes- grated",
+          "amount": 3.0,
+          "unit": "medium",
+          "meta": [
+              "grated"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 3.0,
+                  "unitShort": "medium",
+                  "unitLong": "mediums"
+              },
+              "metric": {
+                  "amount": 3.0,
+                  "unitShort": "medium",
+                  "unitLong": "mediums"
+              }
+          }
+      },
+      {
+          "id": 2047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt.jpg",
+          "consistency": "SOLID",
+          "name": "salt",
+          "nameClean": "table salt",
+          "original": "Salt- To taste.",
+          "originalName": "Salt- To taste",
+          "amount": 3.0,
+          "unit": "servings",
+          "meta": [
+              "to taste"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 3.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 3.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 10011457,
+          "aisle": "Produce",
+          "image": "spinach.jpg",
+          "consistency": "SOLID",
+          "name": "spinach leaves",
+          "nameClean": "spinach",
+          "original": "1/2 cup fresh spinach leaves - chopped",
+          "originalName": "fresh spinach leaves - chopped",
+          "amount": 0.5,
+          "unit": "cup",
+          "meta": [
+              "fresh",
+              "chopped"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 0.5,
+                  "unitShort": "cups",
+                  "unitLong": "cups"
+              },
+              "metric": {
+                  "amount": 118.294,
+                  "unitShort": "ml",
+                  "unitLong": "milliliters"
+              }
+          }
+      }
+  ],
+  "id": 647016,
+  "title": "HomeMade Hashbrowns with Spinach and Carrots",
+  "readyInMinutes": 35,
+  "servings": 3,
+  "sourceUrl": "http://www.foodista.com/recipe/WBDJ57G8/homemade-hashbrowns-with-spinach-and-carrots",
+  "image": "https://spoonacular.com/recipeImages/647016-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "You can never have too many side dish recipes, so give HomeMade Hashbrowns with Spinach and Carrots a try. This recipe serves 3 and costs 42 cents per serving. Watching your figure? This gluten free and vegan recipe has <b>153 calories</b>, <b>6g of protein</b>, and <b>0g of fat</b> per serving. Only a few people made this recipe, and 1 would say it hit the spot. If you have salt, chilli powder, cornflour, and a few other ingredients on hand, you can make it. From preparation to the plate, this recipe takes about <b>35 minutes</b>. All things considered, we decided this recipe <b>deserves a spoonacular score of 93%</b>. This score is awesome. Try <a href=\"https://spoonacular.com/recipes/hashbrowns-spinach-and-tomato-pie-566553\">Hashbrowns, Spinach and Tomato Pie</a>, <a href=\"https://spoonacular.com/recipes/cheesy-spinach-and-egg-hashbrowns-skillet-176202\">Cheesy Spinach and Egg Hashbrowns Skillet</a>, and <a href=\"https://spoonacular.com/recipes/carrots-artichokes-hearts-and-spinach-13978\">Carrots, Artichokes Hearts And Spinach</a> for similar recipes.",
+  "cuisines": [],
+  "dishTypes": [
+      "side dish"
+  ],
+  "diets": [
+      "gluten free",
+      "dairy free",
+      "lacto ovo vegetarian",
+      "vegan"
+  ],
+  "occasions": [],
+  "winePairing": {},
+  "instructions": "<ol><li>In a bowl mix grated potatoes, spinach, onion, carrot</li><li>Add 1/2 tsp salt and mix well</li><li>Squeeze the veggie mixture to remove all the moisture out</li><li>Add red chilli powder and corn starch</li><li>Adjust salt by tasting the mixture</li><li>Form the mixture into patties</li><li>Heat oil in a pan for shallow frying</li><li>Put the patties gently in the hot pan</li><li>Let them brown on medium high heat for few minutes from both the sides then lower the       heat to medium.</li><li>Cook till done.</li></ol>",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "In a bowl mix grated potatoes, spinach, onion, carrot",
+                  "ingredients": [
+                      {
+                          "id": 11352,
+                          "name": "potato",
+                          "localizedName": "potato",
+                          "image": "potatoes-yukon-gold.png"
+                      },
+                      {
+                          "id": 10011457,
+                          "name": "spinach",
+                          "localizedName": "spinach",
+                          "image": "spinach.jpg"
+                      },
+                      {
+                          "id": 11124,
+                          "name": "carrot",
+                          "localizedName": "carrot",
+                          "image": "sliced-carrot.png"
+                      },
+                      {
+                          "id": 11282,
+                          "name": "onion",
+                          "localizedName": "onion",
+                          "image": "brown-onion.png"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404783,
+                          "name": "bowl",
+                          "localizedName": "bowl",
+                          "image": "bowl.jpg"
+                      }
+                  ]
+              },
+              {
+                  "number": 2,
+                  "step": "Add 1/2 tsp salt and mix well",
+                  "ingredients": [
+                      {
+                          "id": 2047,
+                          "name": "salt",
+                          "localizedName": "salt",
+                          "image": "salt.jpg"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 3,
+                  "step": "Squeeze the veggie mixture to remove all the moisture out",
+                  "ingredients": [],
+                  "equipment": []
+              },
+              {
+                  "number": 4,
+                  "step": "Add red chilli powder and corn starch",
+                  "ingredients": [
+                      {
+                          "id": 2009,
+                          "name": "chili powder",
+                          "localizedName": "chili powder",
+                          "image": "chili-powder.jpg"
+                      },
+                      {
+                          "id": 20027,
+                          "name": "corn starch",
+                          "localizedName": "corn starch",
+                          "image": "white-powder.jpg"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 5,
+                  "step": "Adjust salt by tasting the mixture",
+                  "ingredients": [
+                      {
+                          "id": 2047,
+                          "name": "salt",
+                          "localizedName": "salt",
+                          "image": "salt.jpg"
+                      }
+                  ],
+                  "equipment": []
+              },
+              {
+                  "number": 6,
+                  "step": "Form the mixture into patties",
+                  "ingredients": [],
+                  "equipment": []
+              },
+              {
+                  "number": 7,
+                  "step": "Heat oil in a pan for shallow frying",
+                  "ingredients": [
+                      {
+                          "id": 4582,
+                          "name": "cooking oil",
+                          "localizedName": "cooking oil",
+                          "image": "vegetable-oil.jpg"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404645,
+                          "name": "frying pan",
+                          "localizedName": "frying pan",
+                          "image": "pan.png"
+                      }
+                  ]
+              },
+              {
+                  "number": 8,
+                  "step": "Put the patties gently in the hot pan",
+                  "ingredients": [],
+                  "equipment": [
+                      {
+                          "id": 404645,
+                          "name": "frying pan",
+                          "localizedName": "frying pan",
+                          "image": "pan.png"
+                      }
+                  ]
+              },
+              {
+                  "number": 9,
+                  "step": "Let them brown on medium high heat for few minutes from both the sides then lower the",
+                  "ingredients": [],
+                  "equipment": []
+              },
+              {
+                  "number": 10,
+                  "step": "heat to medium.Cook till done.",
+                  "ingredients": [],
+                  "equipment": []
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/homemade-hashbrowns-with-spinach-and-carrots-647016"
+}

@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "fda134ba-aab7-4c66-93b4-dcaed14f4c08",
+		"name": "Mudaz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15777333"
+	},
+	"item": [
+		{
+			"name": "Store",
+			"item": [
+				{
+					"name": "GetAllStoreMealpack",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJ0ZXN0MTBAZ21haWwuY29tIiwiaWF0IjoxNjc0MjE2MjgzLCJleHAiOjE2NzQyMTk4ODN9.akvhnEaogmDhfNNJsSeAIYjaIuktwLEAS3sVskgxlGg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/store/1/mealpack/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"store",
+								"1",
+								"mealpack",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllStoreCurrentPastMealpack",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJ0ZXN0MTBAZ21haWwuY29tIiwiaWF0IjoxNjc0MjE2MjgzLCJleHAiOjE2NzQyMTk4ODN9.akvhnEaogmDhfNNJsSeAIYjaIuktwLEAS3sVskgxlGg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/store/1/mealpack/all/status/true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"store",
+								"1",
+								"mealpack",
+								"all",
+								"status",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostNewMealpack",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJ0ZXN0MTBAZ21haWwuY29tIiwiaWF0IjoxNjc0MjE2MjgzLCJleHAiOjE2NzQyMTk4ODN9.akvhnEaogmDhfNNJsSeAIYjaIuktwLEAS3sVskgxlGg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "0pxWP1QPFN85iGFGE6GpTa7IvEbQ3LZD2HCNI1qD",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": [\r\n        {\r\n            \"id\": 648118\r\n        },\r\n        {\r\n            \"id\": 632821\r\n        },\r\n        {\r\n            \"id\": 632463\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/store/1/mealpack",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"store",
+								"1",
+								"mealpack"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateMealpack",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJ0ZXN0MTBAZ21haWwuY29tIiwiaWF0IjoxNjc0MjE2MjgzLCJleHAiOjE2NzQyMTk4ODN9.akvhnEaogmDhfNNJsSeAIYjaIuktwLEAS3sVskgxlGg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "0pxWP1QPFN85iGFGE6GpTa7IvEbQ3LZD2HCNI1qD",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mealpackName\": \"test\",\r\n    \"isPublishing\": true,\r\n    \"isDelete\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/store/1/mealpack/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"store",
+								"1",
+								"mealpack",
+								"21"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetNewToken",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJ0ZXN0MTVAZ21haWwuY29tIiwiaWF0IjoxNjc0MjE3NzQzLCJleHAiOjE2NzQyMTgwNDN9.glG7gVZWebdHQb4HO_JTgRhuoPzaaIs9-6KeDs8XgQc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "0pxWP1QPFN85iGFGE6GpTa7IvEbQ3LZD2HCNI1qD",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userEmail\": \"test7@gmail.com\",\r\n    \"userPassword\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/refreshToken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"refreshToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "0pxWP1QPFN85iGFGE6GpTa7IvEbQ3LZD2HCNI1qD",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userEmail\": \"test15@gmail.com\",\r\n    \"userPassword\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "0pxWP1QPFN85iGFGE6GpTa7IvEbQ3LZD2HCNI1qD",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"storeName\": \"storename\",\r\n    \"companyName\": \"companyname\",\r\n    \"postalCode\": \"123456\",\r\n    \"address\": \"address\",\r\n    \"phoneNumber\": \"123456789\",\r\n    \"email\": \"test15@gmail.com\",\r\n    \"storeManager\": \"storemanager\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user/signUp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"signUp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sample",
+			"item": [
+				{
+					"name": "GetRecipeDetail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJ0ZXN0MTBAZ21haWwuY29tIiwiaWF0IjoxNjc0MTIyODMzLCJleHAiOjE2NzQxMjMxMzN9.L_OMqFMs7aL86ibyAO2DHV8TqggGh77nxhrc5PLP7Xk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "0pxWP1QPFN85iGFGE6GpTa7IvEbQ3LZD2HCNI1qD",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userEmail\": \"test7@gmail.com\",\r\n    \"userPassword\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sample/recipe/detail/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sample",
+								"recipe",
+								"detail",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchRecipes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyRW1haWwiOiJ0ZXN0MTBAZ21haWwuY29tIiwiaWF0IjoxNjc0MjE3NTk0LCJleHAiOjE2NzQyMjExOTR9.M0kFLH-Mnz3NHXCFcBS97oxDQEe1vbx0kUxr1B4lLM0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "0pxWP1QPFN85iGFGE6GpTa7IvEbQ3LZD2HCNI1qD",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ingredients\":[\"Eggplant\"],\r\n    \"filteredWords\":[\"Tamari\", \"Cheese\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/sample/recipe/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sample",
+								"recipe",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

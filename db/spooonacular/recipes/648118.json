@@ -1,0 +1,295 @@
+{
+  "vegetarian": true,
+  "vegan": true,
+  "glutenFree": true,
+  "dairyFree": true,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 4,
+  "gaps": "no",
+  "preparationMinutes": -1,
+  "cookingMinutes": -1,
+  "aggregateLikes": 1,
+  "healthScore": 20,
+  "creditsText": "Foodista.com – The Cooking Encyclopedia Everyone Can Edit",
+  "license": "CC BY 3.0",
+  "sourceName": "Foodista",
+  "pricePerServing": 100.62,
+  "extendedIngredients": [
+      {
+          "id": 2009,
+          "aisle": "Spices and Seasonings",
+          "image": "chili-powder.jpg",
+          "consistency": "SOLID",
+          "name": "chili powder",
+          "nameClean": "chili powder",
+          "original": "chili powder",
+          "originalName": "chili powder",
+          "amount": 4.0,
+          "unit": "servings",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 4.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 4.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 11209,
+          "aisle": "Produce",
+          "image": "eggplant.png",
+          "consistency": "SOLID",
+          "name": "eggplant",
+          "nameClean": "eggplant",
+          "original": "1.75 pounds eggplant",
+          "originalName": "eggplant",
+          "amount": 1.75,
+          "unit": "pounds",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.75,
+                  "unitShort": "lb",
+                  "unitLong": "pounds"
+              },
+              "metric": {
+                  "amount": 793.787,
+                  "unitShort": "g",
+                  "unitLong": "grams"
+              }
+          }
+      },
+      {
+          "id": 11215,
+          "aisle": "Produce",
+          "image": "garlic.png",
+          "consistency": "SOLID",
+          "name": "garlic",
+          "nameClean": "garlic",
+          "original": "1 clove garlic, chopped",
+          "originalName": "garlic, chopped",
+          "amount": 1.0,
+          "unit": "clove",
+          "meta": [
+              "chopped"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "clove",
+                  "unitLong": "clove"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "clove",
+                  "unitLong": "clove"
+              }
+          }
+      },
+      {
+          "id": 4053,
+          "aisle": "Oil, Vinegar, Salad Dressing",
+          "image": "olive-oil.jpg",
+          "consistency": "LIQUID",
+          "name": "olive oil",
+          "nameClean": "olive oil",
+          "original": "olive oil",
+          "originalName": "olive oil",
+          "amount": 4.0,
+          "unit": "servings",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 4.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 4.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 11297,
+          "aisle": "Produce;Spices and Seasonings",
+          "image": "parsley.jpg",
+          "consistency": "SOLID",
+          "name": "parsley",
+          "nameClean": "parsley",
+          "original": "2 tablespoons finely chopped parsley",
+          "originalName": "finely chopped parsley",
+          "amount": 2.0,
+          "unit": "tablespoons",
+          "meta": [
+              "finely chopped"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 2.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              },
+              "metric": {
+                  "amount": 2.0,
+                  "unitShort": "Tbsps",
+                  "unitLong": "Tbsps"
+              }
+          }
+      },
+      {
+          "id": 2047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt.jpg",
+          "consistency": "SOLID",
+          "name": "salt",
+          "nameClean": "table salt",
+          "original": "1/2 teaspoon salt",
+          "originalName": "salt",
+          "amount": 0.5,
+          "unit": "teaspoon",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 0.5,
+                  "unitShort": "tsps",
+                  "unitLong": "teaspoons"
+              },
+              "metric": {
+                  "amount": 0.5,
+                  "unitShort": "tsps",
+                  "unitLong": "teaspoons"
+              }
+          }
+      }
+  ],
+  "id": 648118,
+  "title": "Sauteed Italian Eggplant Side Dish",
+  "readyInMinutes": 45,
+  "servings": 4,
+  "sourceUrl": "http://www.foodista.com/recipe/7CDB77H8/italian-eggplant-sauteed",
+  "image": "https://spoonacular.com/recipeImages/648118-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "Sauteed Italian Eggplant Side Dish requires about <b>45 minutes</b> from start to finish. This side dish has <b>181 calories</b>, <b>2g of protein</b>, and <b>15g of fat</b> per serving. For <b>$1.01 per serving</b>, this recipe <b>covers 10%</b> of your daily requirements of vitamins and minerals. This recipe serves 4. 1 person has tried and liked this recipe. If you have parsley, eggplant, salt, and a few other ingredients on hand, you can make it. This recipe is typical of Mediterranean cuisine. It is a good option if you're following a <b>gluten free, dairy free, paleolithic, and lacto ovo vegetarian</b> diet. It is brought to you by Foodista. With a spoonacular <b>score of 64%</b>, this dish is solid. Similar recipes are <a href=\"https://spoonacular.com/recipes/cauliflower-dish-side-dish-111834\">Cauliflower Dish (Side Dish)</a>, <a href=\"https://spoonacular.com/recipes/cabbage-side-dish-1397625\">Cabbage Side Dish</a>, and <a href=\"https://spoonacular.com/recipes/cucumber-side-dish-1190825\">Cucumber Side Dish</a>.",
+  "cuisines": [
+      "Mediterranean",
+      "Italian",
+      "European"
+  ],
+  "dishTypes": [
+      "side dish"
+  ],
+  "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "lacto ovo vegetarian",
+      "primal",
+      "whole 30",
+      "vegan"
+  ],
+  "occasions": [],
+  "winePairing": {
+      "pairedWines": [
+          "chianti",
+          "verdicchio",
+          "trebbiano"
+      ],
+      "pairingText": "Italian can be paired with Chianti, Verdicchio, and Trebbiano. Italians know food and they know wine. Trebbiano and Verdicchio are Italian white wines that pair well with fish and white meat, while Chianti is a great Italian red for heavier, bolder dishes. One wine you could try is Poggerino Chianti Classico. It has 4.6 out of 5 stars and a bottle costs about 25 dollars.",
+      "productMatches": [
+          {
+              "id": 450853,
+              "title": "Poggerino Chianti Classico",
+              "description": "#18 Wine Spectator Top 100 of 2013The winery's largest production, the Poggerino Chianti Classico is made from Sangiovese 100%.The wine spends one year in barriques before being aged in bottle. Its color is light ruby, with aromas of blackberries, cherries and redcurrant, with a touch of licorice and vanilla spice. The tannins are sweet and persistent.Recommended with spicy-sauced pasta and mild-tasting red meats.",
+              "price": "$24.99",
+              "imageUrl": "https://spoonacular.com/productImages/450853-312x231.jpg",
+              "averageRating": 0.9199999999999999,
+              "ratingCount": 5.0,
+              "score": 0.8574999999999999,
+              "link": "https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Fpoggerino-chianti-classico-2010%2F127987"
+          }
+      ]
+  },
+  "instructions": "<ol><li>Cut the eggplant into chunks and soak in a basin of water and a bit of salt, leave for 15 to 20 minutes.</li><li>Rinse the eggplant under the running water and dry with a cloth.</li><li>In a pan, fry the chopped garlic for a couple minutes, then add the eggplant. Lower the gas flame and cook slowly for about 20 minutes. Add parsley the last minute.</li><li>Season with salt and pepper.</li></ol>",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "Cut the eggplant into chunks and soak in a basin of water and a bit of salt, leave for 15 to 20 minutes.Rinse the eggplant under the running water and dry with a cloth.In a pan, fry the chopped garlic for a couple minutes, then add the eggplant. Lower the gas flame and cook slowly for about 20 minutes.",
+                  "ingredients": [
+                      {
+                          "id": 11209,
+                          "name": "eggplant",
+                          "localizedName": "eggplant",
+                          "image": "eggplant.png"
+                      },
+                      {
+                          "id": 11215,
+                          "name": "garlic",
+                          "localizedName": "garlic",
+                          "image": "garlic.png"
+                      },
+                      {
+                          "id": 14412,
+                          "name": "water",
+                          "localizedName": "water",
+                          "image": "water.png"
+                      },
+                      {
+                          "id": 2047,
+                          "name": "salt",
+                          "localizedName": "salt",
+                          "image": "salt.jpg"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404645,
+                          "name": "frying pan",
+                          "localizedName": "frying pan",
+                          "image": "pan.png"
+                      }
+                  ],
+                  "length": {
+                      "number": 35,
+                      "unit": "minutes"
+                  }
+              },
+              {
+                  "number": 2,
+                  "step": "Add parsley the last minute.Season with salt and pepper.",
+                  "ingredients": [
+                      {
+                          "id": 1102047,
+                          "name": "salt and pepper",
+                          "localizedName": "salt and pepper",
+                          "image": "salt-and-pepper.jpg"
+                      },
+                      {
+                          "id": 11297,
+                          "name": "parsley",
+                          "localizedName": "parsley",
+                          "image": "parsley.jpg"
+                      }
+                  ],
+                  "equipment": []
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/sauteed-italian-eggplant-side-dish-648118"
+}

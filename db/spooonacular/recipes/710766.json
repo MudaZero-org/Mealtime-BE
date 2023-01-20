@@ -1,0 +1,375 @@
+{
+  "vegetarian": false,
+  "vegan": false,
+  "glutenFree": true,
+  "dairyFree": true,
+  "veryHealthy": false,
+  "cheap": false,
+  "veryPopular": false,
+  "sustainable": false,
+  "lowFodmap": false,
+  "weightWatcherSmartPoints": 9,
+  "gaps": "no",
+  "preparationMinutes": 480,
+  "cookingMinutes": 180,
+  "aggregateLikes": 0,
+  "healthScore": 21,
+  "creditsText": "Jen West",
+  "sourceName": "Pink When",
+  "pricePerServing": 185.64,
+  "extendedIngredients": [
+      {
+          "id": 5311,
+          "aisle": "Canned and Jarred",
+          "image": "canned-food.png",
+          "consistency": "SOLID",
+          "name": "chicken broth",
+          "nameClean": "canned chicken",
+          "original": "1 can chicken broth",
+          "originalName": "chicken broth",
+          "amount": 1.0,
+          "unit": "can",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "can",
+                  "unitLong": "can"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "can",
+                  "unitLong": "can"
+              }
+          }
+      },
+      {
+          "id": 9150,
+          "aisle": "Produce",
+          "image": "lemon.png",
+          "consistency": "SOLID",
+          "name": "lemon",
+          "nameClean": "lemon",
+          "original": "1 large lemon. sliced",
+          "originalName": "lemon. sliced",
+          "amount": 1.0,
+          "unit": "large",
+          "meta": [
+              "sliced"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "large",
+                  "unitLong": "large"
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "large",
+                  "unitLong": "large"
+              }
+          }
+      },
+      {
+          "id": 2028,
+          "aisle": "Spices and Seasonings",
+          "image": "paprika.jpg",
+          "consistency": "SOLID",
+          "name": "paprika",
+          "nameClean": "paprika",
+          "original": "paprika",
+          "originalName": "paprika",
+          "amount": 6.0,
+          "unit": "servings",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 6.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 6.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 10211821,
+          "aisle": "Produce",
+          "image": "bell-pepper-orange.png",
+          "consistency": "SOLID",
+          "name": "bell pepper",
+          "nameClean": "bell pepper",
+          "original": "pepper",
+          "originalName": "pepper",
+          "amount": 6.0,
+          "unit": "servings",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 6.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 6.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 2036,
+          "aisle": "Produce;Spices and Seasonings",
+          "image": "rosemary.jpg",
+          "consistency": "SOLID",
+          "name": "rosemary flakes",
+          "nameClean": "rosemary",
+          "original": "rosemary flakes",
+          "originalName": "rosemary flakes",
+          "amount": 6.0,
+          "unit": "servings",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 6.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 6.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 2047,
+          "aisle": "Spices and Seasonings",
+          "image": "salt.jpg",
+          "consistency": "SOLID",
+          "name": "salt",
+          "nameClean": "table salt",
+          "original": "salt",
+          "originalName": "salt",
+          "amount": 6.0,
+          "unit": "servings",
+          "meta": [],
+          "measures": {
+              "us": {
+                  "amount": 6.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              },
+              "metric": {
+                  "amount": 6.0,
+                  "unitShort": "servings",
+                  "unitLong": "servings"
+              }
+          }
+      },
+      {
+          "id": 10611282,
+          "aisle": "Produce",
+          "image": "white-onion.png",
+          "consistency": "SOLID",
+          "name": "onion",
+          "nameClean": "white onion",
+          "original": "1 white onion, quartered",
+          "originalName": "white onion, quartered",
+          "amount": 1.0,
+          "unit": "",
+          "meta": [
+              "white",
+              "quartered"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              },
+              "metric": {
+                  "amount": 1.0,
+                  "unitShort": "",
+                  "unitLong": ""
+              }
+          }
+      },
+      {
+          "id": 5006,
+          "aisle": "Meat",
+          "image": "whole-chicken.jpg",
+          "consistency": "SOLID",
+          "name": "chicken",
+          "nameClean": "whole chicken",
+          "original": "4lb whole chicken",
+          "originalName": "whole chicken",
+          "amount": 4.0,
+          "unit": "lb",
+          "meta": [
+              "whole"
+          ],
+          "measures": {
+              "us": {
+                  "amount": 4.0,
+                  "unitShort": "lb",
+                  "unitLong": "pounds"
+              },
+              "metric": {
+                  "amount": 1.814,
+                  "unitShort": "kgs",
+                  "unitLong": "kgs"
+              }
+          }
+      }
+  ],
+  "id": 710766,
+  "title": "Easy Baked Chicken",
+  "readyInMinutes": 660,
+  "servings": 6,
+  "sourceUrl": "http://www.pinkwhen.com/easy-baked-chicken-recipe/",
+  "image": "https://spoonacular.com/recipeImages/710766-556x370.jpg",
+  "imageType": "jpg",
+  "summary": "The recipe Easy Baked Chicken can be made <b>in about 11 hour</b>. Watching your figure? This gluten free, dairy free, paleolithic, and primal recipe has <b>389 calories</b>, <b>34g of protein</b>, and <b>24g of fat</b> per serving. This recipe serves 6. For <b>$1.86 per serving</b>, this recipe <b>covers 23%</b> of your daily requirements of vitamins and minerals. 1 person were impressed by this recipe. It works well as a reasonably priced main course. Head to the store and pick up salt, rosemary flakes, paprika, and a few other things to make it today. It is brought to you by Pink When. All things considered, we decided this recipe <b>deserves a spoonacular score of 59%</b>. This score is solid. Try <a href=\"https://spoonacular.com/recipes/easy-baked-chicken-1694643\">Easy Baked Chicken</a>, <a href=\"https://spoonacular.com/recipes/easy-baked-chicken-406444\">Easy Baked Chicken</a>, and <a href=\"https://spoonacular.com/recipes/easy-baked-chicken-996733\">Easy Baked Chicken</a> for similar recipes.",
+  "cuisines": [],
+  "dishTypes": [
+      "lunch",
+      "main course",
+      "main dish",
+      "dinner"
+  ],
+  "diets": [
+      "gluten free",
+      "dairy free",
+      "paleolithic",
+      "primal",
+      "whole 30",
+      "ketogenic"
+  ],
+  "occasions": [],
+  "winePairing": {
+      "pairedWines": [],
+      "pairingText": "",
+      "productMatches": []
+  },
+  "instructions": "Heat the oven to 350.Make sure the bird has been patted dry, and try and dry the inside as best as you can.Take the quartered onion and the sliced lemons and place these inside of the cavity.Take the chicken and place it into a 9 x 13 baking dish.Take the paprika, rosemary, salt, and pepper and season the bird all over. Cover the bottom of the dish with chicken broth and place into the oven for 2 hours. (Place foil over the top of the bird if it is browning too much.) Take a thermometer and check that the inside temperature is 165. If not, cook for an additional 20 minutes and check again.Remove and allow to cool before serving.",
+  "analyzedInstructions": [
+      {
+          "name": "",
+          "steps": [
+              {
+                  "number": 1,
+                  "step": "Heat the oven to 350.Make sure the bird has been patted dry, and try and dry the inside as best as you can.Take the quartered onion and the sliced lemons and place these inside of the cavity.Take the chicken and place it into a 9 x 13 baking dish.Take the paprika, rosemary, salt, and pepper and season the bird all over. Cover the bottom of the dish with chicken broth and place into the oven for 2 hours. (",
+                  "ingredients": [
+                      {
+                          "id": 6194,
+                          "name": "chicken broth",
+                          "localizedName": "chicken broth",
+                          "image": "chicken-broth.png"
+                      },
+                      {
+                          "id": 2036,
+                          "name": "rosemary",
+                          "localizedName": "rosemary",
+                          "image": "rosemary.jpg"
+                      },
+                      {
+                          "id": 5006,
+                          "name": "whole chicken",
+                          "localizedName": "whole chicken",
+                          "image": "whole-chicken.jpg"
+                      },
+                      {
+                          "id": 2028,
+                          "name": "paprika",
+                          "localizedName": "paprika",
+                          "image": "paprika.jpg"
+                      },
+                      {
+                          "id": 9150,
+                          "name": "lemon",
+                          "localizedName": "lemon",
+                          "image": "lemon.png"
+                      },
+                      {
+                          "id": 1002030,
+                          "name": "pepper",
+                          "localizedName": "pepper",
+                          "image": "pepper.jpg"
+                      },
+                      {
+                          "id": 11282,
+                          "name": "onion",
+                          "localizedName": "onion",
+                          "image": "brown-onion.png"
+                      },
+                      {
+                          "id": 2047,
+                          "name": "salt",
+                          "localizedName": "salt",
+                          "image": "salt.jpg"
+                      }
+                  ],
+                  "equipment": [
+                      {
+                          "id": 404646,
+                          "name": "baking pan",
+                          "localizedName": "baking pan",
+                          "image": "roasting-pan.jpg"
+                      },
+                      {
+                          "id": 404784,
+                          "name": "oven",
+                          "localizedName": "oven",
+                          "image": "oven.jpg"
+                      }
+                  ],
+                  "length": {
+                      "number": 120,
+                      "unit": "minutes"
+                  }
+              },
+              {
+                  "number": 2,
+                  "step": "Place foil over the top of the bird if it is browning too much.) Take a thermometer and check that the inside temperature is 16",
+                  "ingredients": [],
+                  "equipment": [
+                      {
+                          "id": 404789,
+                          "name": "kitchen thermometer",
+                          "localizedName": "kitchen thermometer",
+                          "image": "food-thermometer.jpg"
+                      },
+                      {
+                          "id": 404765,
+                          "name": "aluminum foil",
+                          "localizedName": "aluminum foil",
+                          "image": "aluminum-foil.png"
+                      }
+                  ]
+              },
+              {
+                  "number": 3,
+                  "step": "If not, cook for an additional 20 minutes and check again.",
+                  "ingredients": [],
+                  "equipment": [],
+                  "length": {
+                      "number": 20,
+                      "unit": "minutes"
+                  }
+              },
+              {
+                  "number": 4,
+                  "step": "Remove and allow to cool before serving.",
+                  "ingredients": [],
+                  "equipment": []
+              }
+          ]
+      }
+  ],
+  "originalId": null,
+  "spoonacularSourceUrl": "https://spoonacular.com/easy-baked-chicken-710766"
+}

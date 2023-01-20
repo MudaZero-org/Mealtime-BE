@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  web:
+    env_file:
+      - .env.local
+    build: .
+    image: mudaz-be-api:tag
+    ports:
+      - "8080:8080"
