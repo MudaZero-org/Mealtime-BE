@@ -4,6 +4,6 @@ services:
     env_file:
       - .env.local
     build: .
-    image: mudaz-be-api:tag
+    image: mudazero-be-web:latest
     ports:
       - "8080:8080"

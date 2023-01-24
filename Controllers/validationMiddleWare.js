@@ -51,8 +51,14 @@ const validateLogin = async (req, res, next) => {
     return;
   }
   const [userInfo] = await userModel.getUserEmailPass(userEmail);
+  console.log(userInfo);
   if (!userInfo) {
     errorMessage.push(ERROR_MSGS.NOT_FOUND);
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
   }
   const isPasswordMatched = await bcrypt.compare(
     userPassword,
