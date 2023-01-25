@@ -3,8 +3,8 @@
 run DB migrate
 
 ```
-npx knex migrate:latest --knexfile db/knexfile
-npx knex seed:run --knexfile db/knexfile
+npm run migrate:latest
+npx knex seed:run --knexfile ./db/knexfile
 ```
 
 run docker local
