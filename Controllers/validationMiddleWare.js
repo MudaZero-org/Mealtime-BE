@@ -5,11 +5,10 @@ const bcrypt = require("bcrypt");
 const userModel = require("./model/UserModel");
 
 const validateSignUp = async (req, res, next) => {
-  const { email } = req.body;
+  const { email, storeName, password } = req.body;
   const errorMessage = [];
 
-  // check for neccesary input prevent crash
-  if (!email) {
+  if (!(email && storeName && password)) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
     res.status(400).json({
       message: ERROR_MSGS.VALIDATION_ERROR,

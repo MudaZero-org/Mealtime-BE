@@ -44,27 +44,14 @@ module.exports = {
       .where("email", "=", userEmail);
   },
 
-  saveUserData(data) {
-    const {
-      storeName,
-      companyName,
-      postalCode,
-      address,
-      phoneNumber,
-      email,
-      storeManager,
-      hashedPassword,
-    } = data;
-
-    return knex("stores").insert({
-      store_name: storeName,
-      company_name: companyName,
-      postal_code: postalCode,
-      store_address: address,
-      phone_number: phoneNumber,
-      email: email,
-      store_manager: storeManager,
-      password: hashedPassword,
-    });
+  postUser(data) {
+    const { storeName, email, hashedPassword } = data;
+    return knex("stores")
+      .insert({
+        store_name: storeName,
+        email: email,
+        password: hashedPassword,
+      })
+      .returning(["id", "store_name", "email"]);
   },
 };
