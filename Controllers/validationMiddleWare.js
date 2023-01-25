@@ -5,11 +5,10 @@ const bcrypt = require("bcrypt");
 const userModel = require("./model/UserModel");
 
 const validateSignUp = async (req, res, next) => {
-  const { email } = req.body;
+  const { email, storeName, password } = req.body;
   const errorMessage = [];
 
-  // check for neccesary input prevent crash
-  if (!email) {
+  if (!(email && storeName && password)) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
     res.status(400).json({
       message: ERROR_MSGS.VALIDATION_ERROR,
@@ -22,7 +21,7 @@ const validateSignUp = async (req, res, next) => {
   if (!isEmailValid) {
     errorMessage.push(ERROR_MSGS.INVALID_EMAIL);
   }
-  const data = await userModel.getUserEmailPass(email);
+  const data = await userModel.getUserByEmail(email);
   if (data.length > 0) {
     errorMessage.push(ERROR_MSGS.EMAIL_IN_USE);
   }
@@ -50,7 +49,7 @@ const validateLogin = async (req, res, next) => {
     });
     return;
   }
-  const [userInfo] = await userModel.getUserEmailPass(userEmail);
+  const [userInfo] = await userModel.getUserByEmail(userEmail);
   console.log(userInfo);
   if (!userInfo) {
     errorMessage.push(ERROR_MSGS.NOT_FOUND);
@@ -139,10 +138,10 @@ const validateGetRecipeByIngredients = async (req, res, next) => {
 
 const validatePostMealPack = async (req, res, next) => {
   const { data } = req.body;
-  const { store_id: storeId } = req.params;
+  let { store_id: storeId } = req.params;
   const errorMessage = [];
 
-  if (!(data && storeId)) {
+  if (!(data !== undefined && storeId !== undefined)) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
     res.status(400).json({
       message: ERROR_MSGS.VALIDATION_ERROR,
@@ -151,6 +150,20 @@ const validatePostMealPack = async (req, res, next) => {
     return;
   }
 
+  storeId = Number(storeId);
+  if (!storeId) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  }
+
+  const [isStoreExist] = await userModel.getUserById(storeId);
+  if (!isStoreExist) {
+    errorMessage.push(ERROR_MSGS.NOT_FOUND);
+  }
   if (data.length < 1) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
   }
@@ -169,19 +182,29 @@ const validatePostMealPack = async (req, res, next) => {
 
 const validatePutMealPack = async (req, res, next) => {
   const { mealpackName, isPublishing, isDelete } = req.body;
-  const { store_id: storeId, mealpack_id: mealpackId } = req.params;
-  console.log(isPublishing, isDelete);
+  let { store_id: storeId, mealpack_id: mealpackId } = req.params;
   const errorMessage = [];
 
   if (
     !(
-      storeId &&
-      mealpackId &&
-      mealpackName &&
+      storeId !== undefined &&
+      mealpackId !== undefined &&
+      mealpackName !== undefined &&
       isPublishing !== undefined &&
       isDelete !== undefined
     )
   ) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  }
+
+  storeId = Number(storeId);
+  mealpackId = Number(mealpackId);
+  if (!(storeId && mealpackId)) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
     res.status(400).json({
       message: ERROR_MSGS.VALIDATION_ERROR,
@@ -206,6 +229,79 @@ const validatePutMealPack = async (req, res, next) => {
   }
 };
 
+const validatePutUser = async (req, res, next) => {
+  let { store_id: storeId } = req.params;
+  const {
+    storeName,
+    postalCode,
+    companyName,
+    storeAddress,
+    phoneNumber,
+    storeManager,
+    profileImg,
+  } = req.body;
+  const errorMessage = [];
+  if (
+    !(
+      storeId !== undefined &&
+      storeName !== undefined &&
+      postalCode !== undefined &&
+      companyName !== undefined &&
+      storeAddress !== undefined &&
+      phoneNumber !== undefined &&
+      storeManager !== undefined &&
+      profileImg !== undefined
+    )
+  ) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  }
+
+  storeId = Number(storeId);
+  if (!storeId) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  }
+
+  const [isStoreExist] = await userModel.getUserById(storeId);
+  if (!isStoreExist) {
+    errorMessage.push(ERROR_MSGS.NOT_FOUND);
+  }
+
+  if (typeof storeName !== "string") {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+  }
+
+  const isPostalCodeValid = Number(postalCode);
+  if (!isPostalCodeValid) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+  }
+
+  const isPhoneNumberValid = Number(phoneNumber);
+  if (!isPhoneNumberValid) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+  }
+
+  if (errorMessage.length > 0) {
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  } else {
+    next();
+    return;
+  }
+};
+
 module.exports = {
   validateSignUp,
   validateLogin,
@@ -213,4 +309,5 @@ module.exports = {
   validateGetRecipeByIngredients,
   validatePostMealPack,
   validatePutMealPack,
+  validatePutUser,
 };
