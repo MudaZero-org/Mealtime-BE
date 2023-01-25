@@ -116,6 +116,59 @@ const UserController = {
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
     }
   },
+  getStoreById: async (req, res) => {
+    try {
+      const { store_id: storeId } = req.params;
+      console.log(storeId);
+      const [data] = await userModel.getUserById(storeId);
+      console.log(data);
+      res.status(200).json(data);
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+    }
+  },
+  updateStore: async (req, res) => {
+    try {
+      const { store_id: storeId } = req.params;
+      const {
+        storeName,
+        postalCode,
+        companyName,
+        storeAddress,
+        phoneNumber,
+        storeManager,
+        profileImg,
+      } = req.body;
+
+      console.log(
+        storeId,
+        storeName,
+        postalCode,
+        companyName,
+        storeAddress,
+        phoneNumber,
+        storeManager,
+        profileImg
+      );
+      const updateData = {
+        storeName,
+        postalCode,
+        companyName,
+        storeAddress,
+        phoneNumber,
+        storeManager,
+        profileImg,
+      };
+
+      const [data] = await userModel.updateUser(storeId, updateData);
+      console.log(data);
+      res.status(200).json(data);
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+    }
+  },
 };
 
 module.exports = UserController;
