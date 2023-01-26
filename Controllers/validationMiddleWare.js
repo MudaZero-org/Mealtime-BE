@@ -281,12 +281,12 @@ const validatePutUser = async (req, res, next) => {
   }
 
   const isPostalCodeValid = Number(postalCode);
-  if (!isPostalCodeValid) {
+  if (postalCode !== null && !isPostalCodeValid) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
   }
 
   const isPhoneNumberValid = Number(phoneNumber);
-  if (!isPhoneNumberValid) {
+  if (postalCode !== null && !isPhoneNumberValid) {
     errorMessage.push(ERROR_MSGS.INVALID_INPUT);
   }
 
