@@ -5,6 +5,7 @@ const PORT = process.env.DOCKER_PORT || 8080;
 const timeout = require("connect-timeout");
 const cors = require("cors");
 const { ERROR_MSGS } = require("./Configs/Constants");
+const appRoot = require("app-root-path");
 
 const customerRoutes = require("./Routes/Customer/CustomerRoutes");
 const mealpackRoutes = require("./Routes/Mealpack/MealpackRoutes");
@@ -12,6 +13,8 @@ const sampleRoutes = require("./Routes/Sample/SampleRoutes");
 const storeRoutes = require("./Routes/Store/StoreRoutes");
 const userRoutes = require("./Routes/User/UserRoutes");
 
+app.set("view engine", "ejs");
+app.set("views", appRoot.resolve("./Views"));
 app.use(cors());
 app.use(express.json());
 app.use(timeout("5s"));

@@ -77,7 +77,7 @@ const SampleController = {
   },
   getRecipeInfo: async (req, res) => {
     try {
-      let { recipe_id } = req.params;
+      const { recipe_id } = req.params;
       const recipeId = Number(recipe_id);
       const data = sampleDetailRecipeData[recipeId];
       if (!data) {

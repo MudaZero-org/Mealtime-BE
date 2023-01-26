@@ -25,6 +25,7 @@ const UserModel = {
         storeId: "id",
         storeName: "store_name",
         email: "email",
+        password: "password",
       })
       .from("stores")
       .where("email", "=", userEmail);
