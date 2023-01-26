@@ -3,25 +3,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Instructions</title>
   </head>
   <body>
-    <div className="info-page-container">
-        <div className="mealpack-info-page card">
+    <div className="info-page-container" style="display: flex; justify-content: center;">
+        <div className="mealpack-info-page" style="margin: 30px;width: 50%;text-align: center;padding: 1rem 2rem;">
             <% if(recipe)  {%>
-                <img className="food-image" src="<%= recipe.image %>"></img>
+                <img className="food-image" src="<%= recipe.image %>" style="height: auto;width: 300px;margin: 2rem auto;"></img>
                 <h1><%= recipe.title %></h1>
                 <h4>Servings: <%= recipe.servings %></h4>
-                <div className="ingredients-block">
+                <div className="ingredients-block" style="margin: 1rem;">
                     <h4>Ingredients:</h4>
                     <% for (let e of recipe.extendedIngredients) {%>
-                        <p className="ingredient"><%= e.name %></p>
+                        <p className="ingredient" style="margin: 0px;padding: 0px;"><%= e.name %></p>
                     <% } %>
                 </div>
                 <h4>Instructions:</h4>
-                <div className="instructions-block">                   
+                <div className="instructions-block" style="text-align: left;">                   
                         <% for (let e of recipe.analyzedInstructions[0].steps) {%>
-                            <p className="instruction"><strong><%= e.number %>.</strong> <%= e.step %></p>
+                            <p className="instruction" style="margin: 1rem;"><strong><%= e.number %>.</strong> <%= e.step %></p>
                         <% } %>
                     </ul>
                 </div>
