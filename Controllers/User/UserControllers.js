@@ -45,38 +45,13 @@ const UserController = {
   },
   signUp: async (req, res) => {
     try {
-      const {
-        storeName,
-        companyName,
-        postalCode,
-        address,
-        phoneNumber,
-        email,
-        storeManager,
-        password,
-      } = req.body;
-
-      console.log(
-        storeName,
-        companyName,
-        postalCode,
-        address,
-        phoneNumber,
-        email,
-        storeManager,
-        password
-      );
+      const { storeName, email, password } = req.body;
+      console.log(storeName, email, password);
 
       const hashedPassword = await bcrypt.hashSync(password, 10);
-
-      await userModel.saveUserData({
+      const [data] = await userModel.postUser({
         storeName,
-        companyName,
-        postalCode,
-        address,
-        phoneNumber,
         email,
-        storeManager,
         hashedPassword,
       });
 
@@ -97,7 +72,6 @@ const UserController = {
         expiresIn: "5m",
       });
 
-      const [data] = await userModel.getUserByEmail(email);
       console.log(data, accessToken, refreshToken);
       res.status(200).json({ data, accessToken, refreshToken });
     } catch (error) {
@@ -137,6 +111,59 @@ const UserController = {
       });
       console.log(accessToken);
       res.status(200).json({ accessToken });
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+    }
+  },
+  getStoreById: async (req, res) => {
+    try {
+      const { store_id: storeId } = req.params;
+      console.log(storeId);
+      const [data] = await userModel.getUserById(storeId);
+      console.log(data);
+      res.status(200).json(data);
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+    }
+  },
+  updateStore: async (req, res) => {
+    try {
+      const { store_id: storeId } = req.params;
+      const {
+        storeName,
+        postalCode,
+        companyName,
+        storeAddress,
+        phoneNumber,
+        storeManager,
+        profileImg,
+      } = req.body;
+
+      console.log(
+        storeId,
+        storeName,
+        postalCode,
+        companyName,
+        storeAddress,
+        phoneNumber,
+        storeManager,
+        profileImg
+      );
+      const updateData = {
+        storeName,
+        postalCode,
+        companyName,
+        storeAddress,
+        phoneNumber,
+        storeManager,
+        profileImg,
+      };
+
+      const [data] = await userModel.updateUser(storeId, updateData);
+      console.log(data);
+      res.status(200).json(data);
     } catch (error) {
       console.log(error);
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
