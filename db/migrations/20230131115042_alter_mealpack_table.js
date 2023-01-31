@@ -4,7 +4,7 @@
  */
 exports.up = function (knex) {
   return knex.schema.table("meal_packs", (table) => {
-    table.integer("recipe_id");
+    table.renameColumn("is_publishing", "is_favorite");
   });
 };
 
@@ -14,6 +14,6 @@ exports.up = function (knex) {
  */
 exports.down = function (knex) {
   return knex.schema.table("meal_packs", (table) => {
-    table.dropColumn("recipe_id");
+    table.renameColumn("is_favorite", "is_publishing");
   });
 };
