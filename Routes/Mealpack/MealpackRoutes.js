@@ -12,8 +12,8 @@ router.get("/recipe/detail/:recipe_id", mp_ctrl.getRecipeInfo);
 
 router.post(
   "/recipe",
-  verifyToken,
-  validateGetRecipeByIngredients,
+  // verifyToken,
+  // validateGetRecipeByIngredients,
   mp_ctrl.getRecipeByIngredients
 );
 

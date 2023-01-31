@@ -5,7 +5,7 @@ const { ERROR_MSGS } = require("../../Configs/Constants");
 const {
   sampleDetailRecipeData,
 } = require("../../db/spooonacular/recipes/index");
-const {dataFilter} = require("./ControllerHelper");
+const { dataFilter } = require("./ControllerHelper");
 
 const MealpackController = {
   helloWorld: async (req, res) => {
@@ -19,22 +19,22 @@ const MealpackController = {
 
   getRecipeByIngredients: async (req, res) => {
     try {
-      const { ingredients, filteredWords } = req.body;
+      let { ingredients, filteredWords } = req.body;
       ingredients = ingredients.map((ingre) => ingre.toLowerCase());
       filteredWords = filteredWords.map((word) => word.toLowerCase());
 
       console.log(ingredients, filteredWords);
+      console.log(process.env.API_KEY);
 
-      const data = axios.get(
-        "https://api.spoonacular.com/recipes/findByIngredients",
-        {
+      const resData = await axios
+        .get("https://api.spoonacular.com/recipes/findByIngredients", {
           params: {
-            ingredients: ingredients,
+            ingredients: JSON.stringify(...ingredients),
             apiKey: process.env.API_KEY,
-            numbers: 10,
+            numbers: 1,
           },
-        }
-      );
+        })
+      const data = resData.data;
       console.log(data);
 
       if (filteredWords.length < 1) {
@@ -42,7 +42,7 @@ const MealpackController = {
         return;
       }
 
-      const filteredData = dataFilter(data, filteredWords)
+      const filteredData = dataFilter(data, filteredWords);
       console.log(filteredData);
 
       res.status(200).json(filteredData);
@@ -55,6 +55,21 @@ const MealpackController = {
 
   getRecipeInfo: async (req, res) => {
     try {
+      const { recipe_id } = req.params;
+      const recipeId = Number(recipe_id);
+      console.log(recipe_id);
+
+      const data = axios.get(
+        `https://api.spoonacular.com/recipes/${recipeId}/information`,
+        {
+          params: {
+            apiKey: process.env.API_KEY,
+          },
+        }
+      );
+      console.log(data);
+
+      res.status(200).json({ data });
     } catch (error) {
       console.log(error);
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
