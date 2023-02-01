@@ -3,7 +3,7 @@
 const knex = require("../../db/knex");
 
 const UserModel = {
-  getAllMealPack(storeId) {
+  getAllMealPacks(storeId) {
     return knex
       .select({
         id: "id",
@@ -11,26 +11,26 @@ const UserModel = {
         storeId: "store_id",
         recipeId: "recipe_id",
         recipeDetail: "recipe",
-        isPublishing: "is_publishing",
+        isFavorite: "is_favorite",
         isDelete: "is_delete",
       })
       .from("meal_packs")
-      .where("store_id", storeId);
+      .where({store_id: storeId, is_delete: false});
   },
-  getAllMealPackCurrentPast(storeId, status) {
+  getAllMealPacksFavorite(storeId) {
     return knex
       .select({
         id: "id",
         mealpackName: "name",
         storeId: "store_id",
-        isPublishing: "is_publishing",
+        isFavorite: "is_favorite",
         recipeDetail: "recipe",
         recipeId: "recipe_id",
       })
       .from("meal_packs")
-      .where({ store_id: storeId, is_publishing: status });
+      .where({ store_id: storeId, is_favorite: true, is_delete: false });
   },
-  postNewMealPack(mealpack, storeId) {
+  createNewMealPack(mealpack, storeId) {
     const { mealpackName, recipeId, detailRecipe } = mealpack;
     return knex("meal_packs")
       .insert({
@@ -38,7 +38,7 @@ const UserModel = {
         store_id: storeId,
         recipe_id: recipeId,
         recipe: detailRecipe,
-        is_publishing: true,
+        is_favorite: false,
         is_delete: false,
       })
       .returning([
@@ -47,25 +47,25 @@ const UserModel = {
         "store_id",
         "recipe_id",
         "recipe",
-        "is_publishing",
+        "is_favorite",
         "is_delete",
       ]);
   },
-  putMealpackPublishStatus(
+  updateMealpackInfo(
     mealpackName,
     storeId,
     mealpackId,
-    isPublishing,
+    isFavorite,
     isDelete
   ) {
     return knex("meal_packs")
       .update({
         name: mealpackName,
-        is_publishing: isPublishing,
+        is_favorite: isFavorite,
         is_delete: isDelete,
       })
       .where({ store_id: storeId, id: mealpackId })
-      .returning(["id", "name", "store_id", "is_publishing", "is_delete"]);
+      .returning(["id", "name", "store_id", "is_favorite", "is_delete"]);
   },
 };
 
