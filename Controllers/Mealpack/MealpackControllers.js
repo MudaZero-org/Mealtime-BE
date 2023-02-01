@@ -26,14 +26,16 @@ const MealpackController = {
       console.log(ingredients, filteredWords);
       console.log(process.env.API_KEY);
 
-      const resData = await axios
-        .get("https://api.spoonacular.com/recipes/findByIngredients", {
+      const resData = await axios.get(
+        "https://api.spoonacular.com/recipes/findByIngredients",
+        {
           params: {
             ingredients: JSON.stringify(...ingredients),
             apiKey: process.env.API_KEY,
             numbers: 1,
           },
-        })
+        }
+      );
       const data = resData.data;
       console.log(data);
 
@@ -56,17 +58,17 @@ const MealpackController = {
   getRecipeInfo: async (req, res) => {
     try {
       const { recipe_id } = req.params;
-      const recipeId = Number(recipe_id);
       console.log(recipe_id);
 
-      const data = axios.get(
-        `https://api.spoonacular.com/recipes/${recipeId}/information`,
+      const resData = await axios.get(
+        `https://api.spoonacular.com/recipes/${recipe_id}/information`,
         {
           params: {
             apiKey: process.env.API_KEY,
           },
         }
       );
+      const data = resData.data;
       console.log(data);
 
       res.status(200).json({ data });
