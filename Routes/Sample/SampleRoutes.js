@@ -7,6 +7,7 @@ const {
 } = require("../../Controllers/validationMiddleWare");
 
 router.get("/recipe/detail/:recipe_id", sample_ctrl.getRecipeInfo);
+
 router.post(
   "/recipe",
   verifyToken,
