@@ -1,8 +1,6 @@
+const axios = require("axios").default;
 const { ERROR_MSGS } = require("../../Configs/Constants");
 const mealpackModel = require("../model/MealpackModel");
-const {
-  sampleDetailRecipeData,
-} = require("../../db/spooonacular/recipes/index");
 
 const StoreController = {
   getAllMealpacksInfo: async (req, res) => {
@@ -35,15 +33,24 @@ const StoreController = {
       const data = [];
       console.log(storeId, recipeList);
       for (const recipe of recipeList) {
-        const detailRecipe = sampleDetailRecipeData[recipe.id];
-        if (!detailRecipe) {
+        const resData = await axios.get(
+          `https://api.spoonacular.com/recipes/${recipe.id}/information`,
+          {
+            params: {
+              apiKey: process.env.API_KEY,
+            },
+          }
+        );
+        const recipeDetail = resData.data;
+
+        if (!recipeDetail) {
           data.push({ message: ERROR_MSGS.CREATE_FAILED });
         } else {
           const mealpack = {
-            detailRecipe: detailRecipe,
+            detailRecipe: recipeDetail,
             storeId: Number(storeId),
-            mealpackName: detailRecipe.title,
-            recipeId: detailRecipe.id,
+            mealpackName: recipeDetail.title,
+            recipeId: recipeDetail.id,
           };
           const [mealpackData] = await mealpackModel.createNewMealPack(
             mealpack,
