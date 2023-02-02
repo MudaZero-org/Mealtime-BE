@@ -74,9 +74,8 @@ const StoreController = {
     try {
       const { store_id: storeId, mealpack_id: mealpackId } = req.params;
       const { mealpackName, isFavorite, isDelete } = req.body;
-      console.log(isPublishing);
 
-      const [data] = await mealpackModel.updateMealpack(
+      const [data] = await mealpackModel.updateMealpackInfo(
         mealpackName,
         storeId,
         mealpackId,
