@@ -1,6 +1,7 @@
 const { ERROR_MSGS } = require("../../Configs/Constants");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
+require("dotenv").config({ path: "./.env.local" });
 
 const userModel = require("../model/UserModel");
 

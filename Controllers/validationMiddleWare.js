@@ -181,7 +181,7 @@ const validatePostMealPack = async (req, res, next) => {
 };
 
 const validatePutMealPack = async (req, res, next) => {
-  const { mealpackName, isPublishing, isDelete } = req.body;
+  const { mealpackName, isFavorite, isDelete } = req.body;
   let { store_id: storeId, mealpack_id: mealpackId } = req.params;
   const errorMessage = [];
 
@@ -190,7 +190,7 @@ const validatePutMealPack = async (req, res, next) => {
       storeId !== undefined &&
       mealpackId !== undefined &&
       mealpackName !== undefined &&
-      isPublishing !== undefined &&
+      isFavorite !== undefined &&
       isDelete !== undefined
     )
   ) {

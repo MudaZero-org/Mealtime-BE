@@ -15,7 +15,7 @@ const UserModel = {
         isDelete: "is_delete",
       })
       .from("meal_packs")
-      .where({store_id: storeId, is_delete: false});
+      .where({ store_id: storeId, is_delete: false });
   },
   getAllMealPacksFavorite(storeId) {
     return knex
@@ -51,13 +51,7 @@ const UserModel = {
         "is_delete",
       ]);
   },
-  updateMealpackInfo(
-    mealpackName,
-    storeId,
-    mealpackId,
-    isFavorite,
-    isDelete
-  ) {
+  updateMealpackInfo(mealpackName, storeId, mealpackId, isFavorite, isDelete) {
     return knex("meal_packs")
       .update({
         name: mealpackName,
