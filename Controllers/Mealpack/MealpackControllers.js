@@ -1,4 +1,4 @@
-require("dotenv").config({ path: __dirname + "/../../.env.local" });
+require("dotenv").config();
 
 const axios = require("axios").default;
 const { ERROR_MSGS } = require("../../Configs/Constants");
@@ -22,9 +22,7 @@ const MealpackController = {
       let { ingredients, filteredWords } = req.body;
       ingredients = ingredients.map((ingre) => ingre.toLowerCase());
       filteredWords = filteredWords.map((word) => word.toLowerCase());
-
       console.log(ingredients, filteredWords);
-      console.log(process.env.API_KEY);
 
       const resData = await axios.get(
         "https://api.spoonacular.com/recipes/findByIngredients",

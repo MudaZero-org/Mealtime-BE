@@ -1,8 +1,8 @@
 version: "3.9"
 services:
   web:
-    env_file:
-      - .env.local
+    # env_file:
+    #   - .env
     build: .
     image: mudazero-be-web:latest
     ports:
