@@ -1,6 +1,10 @@
 const axios = require("axios").default;
 const { ERROR_MSGS } = require("../../Configs/Constants");
 const mealpackModel = require("../model/MealpackModel");
+const filterListModel = require("../model/FilterListModel");
+const {
+  sampleDetailRecipeData,
+} = require("../../db/spooonacular/recipes/index");
 
 const StoreController = {
   getAllMealpacksInfo: async (req, res) => {
@@ -80,6 +84,34 @@ const StoreController = {
         isDelete
       );
       console.log(data);
+      res.status(200).json(data);
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+    }
+  },
+
+  getFilterList: async (req, res) => {
+    try {
+      const { store_id: storeId } = req.params;
+      console.log(storeId);
+      const data = await filterListModel.getFilterListByStoreId(storeId);
+      res.status(200).json(data);
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
+    }
+  },
+  postFilterList: async (req, res) => {
+    try {
+      const { store_id: storeId } = req.params;
+      const { filterName, filteredIngredients } = req.body;
+      console.log(storeId, filterName, filteredIngredients);
+      const [data] = await filterListModel.createFilterList({
+        storeId,
+        filterName,
+        filteredIngredients,
+      });
       res.status(200).json(data);
     } catch (error) {
       console.log(error);
