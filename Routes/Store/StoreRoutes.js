@@ -9,11 +9,11 @@ const {
   validateGetFilterListByStoreId,
 } = require("../../Controllers/validationMiddleWare");
 
-router.get("/:store_id/mealpack/all", verifyToken, store_ctrl.getAllMealpacks);
+router.get("/:store_id/mealpack/all", verifyToken, store_ctrl.getAllMealpacksInfo);
 router.get(
-  "/:store_id/mealpack/all/status/:publish_status",
+  "/:store_id/mealpack/all/favorite",
   verifyToken,
-  store_ctrl.getCurrentPastMealpack
+  store_ctrl.getFavoriteMealpacks
 );
 
 router.post(
@@ -27,7 +27,7 @@ router.put(
   "/:store_id/mealpack/:mealpack_id",
   verifyToken,
   validatePutMealPack,
-  store_ctrl.putMealPackPublishingStatus
+  store_ctrl.putMealPackInfo
 );
 
 router.get(

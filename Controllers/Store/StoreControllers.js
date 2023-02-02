@@ -1,3 +1,4 @@
+const axios = require("axios").default;
 const { ERROR_MSGS } = require("../../Configs/Constants");
 const mealpackModel = require("../model/MealpackModel");
 const filterListModel = require("../model/FilterListModel");
@@ -6,10 +7,10 @@ const {
 } = require("../../db/spooonacular/recipes/index");
 
 const StoreController = {
-  getAllMealpacks: async (req, res) => {
+  getAllMealpacksInfo: async (req, res) => {
     try {
       let { store_id: storeId } = req.params;
-      const data = await mealpackModel.getAllMealPack(storeId);
+      const data = await mealpackModel.getAllMealPacks(storeId);
 
       res.status(200).json(data);
     } catch (error) {
@@ -17,13 +18,10 @@ const StoreController = {
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
     }
   },
-  getCurrentPastMealpack: async (req, res) => {
+  getFavoriteMealpacks: async (req, res) => {
     try {
-      const { store_id: storeId, publish_status: publishStatus } = req.params;
-      const data = await mealpackModel.getAllMealPackCurrentPast(
-        storeId,
-        publishStatus
-      );
+      const { store_id: storeId } = req.params;
+      const data = await mealpackModel.getAllMealPacksFavorite(storeId);
 
       console.log(data);
       res.status(200).json(data);
@@ -39,17 +37,26 @@ const StoreController = {
       const data = [];
       console.log(storeId, recipeList);
       for (const recipe of recipeList) {
-        const detailRecipe = sampleDetailRecipeData[recipe.id];
-        if (!detailRecipe) {
+        const resData = await axios.get(
+          `https://api.spoonacular.com/recipes/${recipe.id}/information`,
+          {
+            params: {
+              apiKey: process.env.API_KEY,
+            },
+          }
+        );
+        const recipeDetail = resData.data;
+
+        if (!recipeDetail) {
           data.push({ message: ERROR_MSGS.CREATE_FAILED });
         } else {
           const mealpack = {
-            detailRecipe: detailRecipe,
+            detailRecipe: recipeDetail,
             storeId: Number(storeId),
-            mealpackName: detailRecipe.title,
-            recipeId: detailRecipe.id,
+            mealpackName: recipeDetail.title,
+            recipeId: recipeDetail.id,
           };
-          const [mealpackData] = await mealpackModel.postNewMealPack(
+          const [mealpackData] = await mealpackModel.createNewMealPack(
             mealpack,
             storeId
           );
@@ -63,17 +70,17 @@ const StoreController = {
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });
     }
   },
-  putMealPackPublishingStatus: async (req, res) => {
+  putMealPackInfo: async (req, res) => {
     try {
-      const { store_id, mealpack_id } = req.params;
-      const { mealpackName, isPublishing, isDelete } = req.body;
+      const { store_id: storeId, mealpack_id: mealpackId } = req.params;
+      const { mealpackName, isFavorite, isDelete } = req.body;
       console.log(isPublishing);
 
-      const [data] = await mealpackModel.putMealpackPublishStatus(
+      const [data] = await mealpackModel.updateMealpack(
         mealpackName,
-        store_id,
-        mealpack_id,
-        isPublishing,
+        storeId,
+        mealpackId,
+        isFavorite,
         isDelete
       );
       console.log(data);
