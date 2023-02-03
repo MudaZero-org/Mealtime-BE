@@ -7,7 +7,7 @@ const {
 } = require("../../Controllers/validationMiddleWare");
 
 router.get("/", mp_ctrl.helloWorld);
-router.get("/:recipe_id/instruction", mp_ctrl.getMealpackInstruction);
+router.get("/recipe/:recipe_id/instruction", mp_ctrl.getMealpackInstruction);
 router.get("/recipe/detail/:recipe_id", mp_ctrl.getRecipeInfo);
 
 router.post(

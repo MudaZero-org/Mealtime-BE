@@ -2,9 +2,7 @@ require("dotenv").config();
 
 const axios = require("axios").default;
 const { ERROR_MSGS } = require("../../Configs/Constants");
-const {
-  sampleDetailRecipeData,
-} = require("../../db/spooonacular/recipes/index");
+const mealpackModel = require("../model/MealpackModel");
 const { dataFilter } = require("./ControllerHelper");
 
 const MealpackController = {
@@ -80,13 +78,15 @@ const MealpackController = {
     try {
       const { recipe_id } = req.params;
       const recipeId = Number(recipe_id);
-      const data = sampleDetailRecipeData[recipeId];
+      console.log(recipeId);
+
+      const [data] = await mealpackModel.getMealpackRecipe(recipeId);
       if (!data) {
         res.status(404).json({ message: ERROR_MSGS.NOT_FOUND });
         return;
       }
-      console.log(data);
-      res.render("./index.ejs", { recipe: data });
+      console.log(data.recipeDetail);
+      res.render("./index.ejs", { recipe: data.recipeDetail });
     } catch (error) {
       console.log(error);
       res.status(500).json({ message: ERROR_MSGS.INTERNAL_SERVER_ERROR });

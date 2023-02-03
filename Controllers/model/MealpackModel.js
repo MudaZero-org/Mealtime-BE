@@ -61,6 +61,13 @@ const UserModel = {
       .where({ store_id: storeId, id: mealpackId })
       .returning(["id", "name", "store_id", "is_favorite", "is_delete"]);
   },
+  getMealpackRecipe(recipeId) {
+    return knex("meal_packs")
+      .select({
+        recipeDetail: "recipe",
+      })
+      .where({ recipe_id: recipeId });
+  },
 };
 
 module.exports = UserModel;
