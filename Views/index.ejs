@@ -8,9 +8,9 @@
   </head>
   <body>
     <div className="info-page-container" style="display: flex; justify-content: center;">
-        <div className="mealpack-info-page" style="margin: 15px;width: 100%;text-align: center;padding: 1rem 2rem;">
+        <div className="mealpack-info-page" style="margin: 15px;width: 100%;max-width: 500px;text-align: center;padding: 1rem 2rem;">
             <% if(recipe)  {%>
-                <img className="food-image" src="<%= recipe.image %>" style="height: auto;width: 300px;margin: 2rem auto;"></img>
+                <img className="food-image" src="<%= recipe.image %>" style="height: auto;width: 500px;margin: 2rem auto;"></img>
                 <h1><%= recipe.title %></h1>
                 <h4>Servings: <%= recipe.servings %></h4>
                 <div className="ingredients-block" style="margin: 1rem;">
