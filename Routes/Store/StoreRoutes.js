@@ -5,13 +5,15 @@ const {
   verifyToken,
   validatePostMealPack,
   validatePutMealPack,
+  validatePostFilterList,
+  validateGetFilterListByStoreId,
 } = require("../../Controllers/validationMiddleWare");
 
-router.get("/:store_id/mealpack/all", verifyToken, store_ctrl.getAllMealpacks);
+router.get("/:store_id/mealpack/all", verifyToken, store_ctrl.getAllMealpacksInfo);
 router.get(
-  "/:store_id/mealpack/all/status/:publish_status",
+  "/:store_id/mealpack/all/favorite",
   verifyToken,
-  store_ctrl.getCurrentPastMealpack
+  store_ctrl.getFavoriteMealpacks
 );
 
 router.post(
@@ -25,7 +27,20 @@ router.put(
   "/:store_id/mealpack/:mealpack_id",
   verifyToken,
   validatePutMealPack,
-  store_ctrl.putMealPackPublishingStatus
+  store_ctrl.putMealPackInfo
+);
+
+router.get(
+  "/:store_id/filter_list",
+  verifyToken,
+  validateGetFilterListByStoreId,
+  store_ctrl.getFilterList
+);
+router.post(
+  "/:store_id/filter_list",
+  verifyToken,
+  validatePostFilterList,
+  store_ctrl.postFilterList
 );
 
 module.exports = router;

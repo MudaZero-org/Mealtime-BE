@@ -13,9 +13,9 @@ const sampleRoutes = require("./Routes/Sample/SampleRoutes");
 const storeRoutes = require("./Routes/Store/StoreRoutes");
 const userRoutes = require("./Routes/User/UserRoutes");
 
+app.use(cors());
 app.set("view engine", "ejs");
 app.set("views", appRoot.resolve("./Views"));
-app.use(cors());
 app.use(express.json());
 app.use(timeout("5s"));
 

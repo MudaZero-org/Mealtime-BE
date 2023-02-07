@@ -181,7 +181,7 @@ const validatePostMealPack = async (req, res, next) => {
 };
 
 const validatePutMealPack = async (req, res, next) => {
-  const { mealpackName, isPublishing, isDelete } = req.body;
+  const { mealpackName, isFavorite, isDelete } = req.body;
   let { store_id: storeId, mealpack_id: mealpackId } = req.params;
   const errorMessage = [];
 
@@ -190,7 +190,7 @@ const validatePutMealPack = async (req, res, next) => {
       storeId !== undefined &&
       mealpackId !== undefined &&
       mealpackName !== undefined &&
-      isPublishing !== undefined &&
+      isFavorite !== undefined &&
       isDelete !== undefined
     )
   ) {
@@ -301,6 +301,92 @@ const validatePutUser = async (req, res, next) => {
     return;
   }
 };
+const validatePostFilterList = async (req, res, next) => {
+  let { store_id: storeId } = req.params;
+  const { filterName, filteredIngredients } = req.body;
+  const errorMessage = [];
+
+  if (
+    !(
+      storeId !== undefined &&
+      filterName !== undefined &&
+      filteredIngredients !== undefined
+    )
+  ) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  }
+
+  storeId = Number(storeId);
+  if (!storeId) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  }
+
+  const [isStoreExist] = await userModel.getUserById(storeId);
+  if (!isStoreExist) {
+    errorMessage.push(ERROR_MSGS.NOT_FOUND);
+  }
+
+  const isFilterNameValid =
+    typeof filterName == "string" && filterName.length > 0;
+  const isFilteredIngredientsValid =
+    Array.isArray(filteredIngredients) && filteredIngredients.length > 0;
+
+  if (!(isFilterNameValid && isFilteredIngredientsValid)) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+  }
+
+  if (errorMessage.length > 0) {
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  } else {
+    next();
+    return;
+  }
+};
+
+const validateGetFilterListByStoreId = async (req, res, next) => {
+  let { store_id: storeId } = req.params;
+  const errorMessage = [];
+
+  storeId = Number(storeId);
+  if (!(storeId !== NaN)) {
+    errorMessage.push(ERROR_MSGS.INVALID_INPUT);
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  }
+
+  const [isStoreExist] = await userModel.getUserById(storeId);
+  if (!isStoreExist) {
+    errorMessage.push(ERROR_MSGS.NOT_FOUND);
+  }
+
+  if (errorMessage.length > 0) {
+    res.status(400).json({
+      message: ERROR_MSGS.VALIDATION_ERROR,
+      error: JSON.stringify(errorMessage),
+    });
+    return;
+  } else {
+    next();
+    return;
+  }
+};
 
 module.exports = {
   validateSignUp,
@@ -310,4 +396,6 @@ module.exports = {
   validatePostMealPack,
   validatePutMealPack,
   validatePutUser,
+  validatePostFilterList,
+  validateGetFilterListByStoreId,
 };

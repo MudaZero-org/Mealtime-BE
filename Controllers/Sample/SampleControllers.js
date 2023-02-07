@@ -4,6 +4,7 @@ const {
 } = require("../../db/spooonacular/recipes/index");
 const { sampleRecipeData } = require("../../db/spooonacular/ingredients/index");
 const { dataFilter } = require("./ControllerHelper");
+
 const SampleController = {
   getRecipeByIngredients: async (req, res) => {
     try {
